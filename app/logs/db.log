@@ -1,0 +1,455 @@
+[Thu, 16 Jan 14 09:55:05 -0800][DEBUG] SELECT `users`.`u_id`, `users`.`u_name`, `users`.`u_username`, `users`.`u_password`, `users`.`mustChangePassword`, `users`.`profilesId`, `users`.`u_secret_key`, `users`.`active`, `users`.`banned`, `users`.`suspended` FROM `users` WHERE `users`.`u_username` = :0 LIMIT 1
+[Thu, 16 Jan 14 09:55:05 -0800][DEBUG] INSERT INTO `failed_logins` (`usersId`, `ipAddress`, `attempted`) VALUES (?, ?, ?)
+[Thu, 16 Jan 14 09:55:05 -0800][DEBUG] SELECT COUNT(*) AS `rowcount` FROM `failed_logins` WHERE `failed_logins`.`ipAddress` = :0 AND `failed_logins`.`attempted` >= :1
+[Thu, 16 Jan 14 09:56:25 -0800][DEBUG] SELECT `users`.`u_id`, `users`.`u_name`, `users`.`u_username`, `users`.`u_password`, `users`.`mustChangePassword`, `users`.`profilesId`, `users`.`u_secret_key`, `users`.`active`, `users`.`banned`, `users`.`suspended` FROM `users` WHERE `users`.`u_username` = :0 LIMIT 1
+[Thu, 16 Jan 14 09:56:25 -0800][DEBUG] INSERT INTO `failed_logins` (`usersId`, `ipAddress`, `attempted`) VALUES (?, ?, ?)
+[Thu, 16 Jan 14 09:56:25 -0800][DEBUG] SELECT COUNT(*) AS `rowcount` FROM `failed_logins` WHERE `failed_logins`.`ipAddress` = :0 AND `failed_logins`.`attempted` >= :1
+[Thu, 16 Jan 14 09:57:14 -0800][DEBUG] SELECT `users`.`u_id`, `users`.`u_name`, `users`.`u_username`, `users`.`u_password`, `users`.`mustChangePassword`, `users`.`profilesId`, `users`.`u_secret_key`, `users`.`active`, `users`.`banned`, `users`.`suspended` FROM `users` WHERE `users`.`u_username` = :0 LIMIT 1
+[Thu, 16 Jan 14 09:57:14 -0800][DEBUG] INSERT INTO `failed_logins` (`usersId`, `ipAddress`, `attempted`) VALUES (?, ?, ?)
+[Thu, 16 Jan 14 09:57:14 -0800][DEBUG] SELECT COUNT(*) AS `rowcount` FROM `failed_logins` WHERE `failed_logins`.`ipAddress` = :0 AND `failed_logins`.`attempted` >= :1
+[Thu, 16 Jan 14 09:59:03 -0800][DEBUG] SELECT `users`.`u_id`, `users`.`u_name`, `users`.`u_username`, `users`.`u_password`, `users`.`mustChangePassword`, `users`.`profilesId`, `users`.`u_secret_key`, `users`.`active`, `users`.`banned`, `users`.`suspended` FROM `users` WHERE `users`.`u_username` = :0 LIMIT 1
+[Thu, 16 Jan 14 09:59:03 -0800][DEBUG] INSERT INTO `failed_logins` (`usersId`, `ipAddress`, `attempted`) VALUES (?, ?, ?)
+[Thu, 16 Jan 14 09:59:03 -0800][DEBUG] SELECT COUNT(*) AS `rowcount` FROM `failed_logins` WHERE `failed_logins`.`ipAddress` = :0 AND `failed_logins`.`attempted` >= :1
+[Thu, 16 Jan 14 10:02:25 -0800][DEBUG] SELECT `users`.`u_id`, `users`.`u_name`, `users`.`u_username`, `users`.`u_password`, `users`.`mustChangePassword`, `users`.`profilesId`, `users`.`u_secret_key`, `users`.`active`, `users`.`banned`, `users`.`suspended` FROM `users` WHERE `users`.`u_username` = :0 LIMIT 1
+[Thu, 16 Jan 14 10:02:25 -0800][DEBUG] INSERT INTO `failed_logins` (`usersId`, `ipAddress`, `attempted`) VALUES (?, ?, ?)
+[Thu, 16 Jan 14 10:02:25 -0800][DEBUG] SELECT COUNT(*) AS `rowcount` FROM `failed_logins` WHERE `failed_logins`.`ipAddress` = :0 AND `failed_logins`.`attempted` >= :1
+[Thu, 16 Jan 14 10:04:14 -0800][DEBUG] INSERT INTO `users` (`u_name`, `u_username`, `u_password`, `mustChangePassword`, `profilesId`, `u_secret_key`, `active`, `banned`, `suspended`) VALUES (null, ?, ?, null, null, null, ?, ?, ?)
+[Thu, 16 Jan 14 10:04:14 -0800][DEBUG] UPDATE `users` SET `u_name` = null, `u_username` = ?, `u_password` = ?, `mustChangePassword` = null, `profilesId` = null, `u_secret_key` = null, `active` = ?, `banned` = ?, `suspended` = ? WHERE `u_id` = ?
+[Thu, 16 Jan 14 10:04:14 -0800][DEBUG] SELECT `users`.`u_id`, `users`.`u_name`, `users`.`u_username`, `users`.`u_password`, `users`.`mustChangePassword`, `users`.`profilesId`, `users`.`u_secret_key`, `users`.`active`, `users`.`banned`, `users`.`suspended` FROM `users` WHERE `users`.`u_username` = :0 LIMIT 1
+[Thu, 16 Jan 14 10:04:14 -0800][DEBUG] INSERT INTO `failed_logins` (`usersId`, `ipAddress`, `attempted`) VALUES (?, ?, ?)
+[Thu, 16 Jan 14 10:04:14 -0800][DEBUG] SELECT COUNT(*) AS `rowcount` FROM `failed_logins` WHERE `failed_logins`.`ipAddress` = :0 AND `failed_logins`.`attempted` >= :1
+[Thu, 16 Jan 14 10:05:10 -0800][DEBUG] INSERT INTO `users` (`u_name`, `u_username`, `u_password`, `mustChangePassword`, `profilesId`, `u_secret_key`, `active`, `banned`, `suspended`) VALUES (null, ?, ?, null, null, null, ?, ?, ?)
+[Thu, 16 Jan 14 10:05:10 -0800][DEBUG] UPDATE `users` SET `u_name` = null, `u_username` = ?, `u_password` = ?, `mustChangePassword` = null, `profilesId` = null, `u_secret_key` = null, `active` = ?, `banned` = ?, `suspended` = ? WHERE `u_id` = ?
+[Thu, 16 Jan 14 10:05:10 -0800][DEBUG] SELECT `users`.`u_id`, `users`.`u_name`, `users`.`u_username`, `users`.`u_password`, `users`.`mustChangePassword`, `users`.`profilesId`, `users`.`u_secret_key`, `users`.`active`, `users`.`banned`, `users`.`suspended` FROM `users` WHERE `users`.`u_username` = :0 LIMIT 1
+[Thu, 16 Jan 14 10:05:10 -0800][DEBUG] INSERT INTO `failed_logins` (`usersId`, `ipAddress`, `attempted`) VALUES (?, ?, ?)
+[Thu, 16 Jan 14 10:05:10 -0800][DEBUG] SELECT COUNT(*) AS `rowcount` FROM `failed_logins` WHERE `failed_logins`.`ipAddress` = :0 AND `failed_logins`.`attempted` >= :1
+[Thu, 16 Jan 14 10:05:14 -0800][DEBUG] INSERT INTO `failed_logins` (`usersId`, `ipAddress`, `attempted`) VALUES (null, ?, ?)
+[Thu, 16 Jan 14 10:05:14 -0800][DEBUG] SELECT COUNT(*) AS `rowcount` FROM `failed_logins` WHERE `failed_logins`.`ipAddress` = :0 AND `failed_logins`.`attempted` >= :1
+[Thu, 16 Jan 14 23:17:03 -0800][DEBUG] INSERT INTO `users` (`u_name`, `u_username`, `u_password`, `mustChangePassword`, `profilesId`, `u_secret_key`, `active`, `banned`, `suspended`) VALUES (null, ?, ?, null, null, null, ?, ?, ?)
+[Thu, 16 Jan 14 23:19:17 -0800][DEBUG] SELECT `users`.`u_id`, `users`.`u_name`, `users`.`u_username`, `users`.`u_password`, `users`.`mustChangePassword`, `users`.`profilesId`, `users`.`u_secret_key`, `users`.`active`, `users`.`banned`, `users`.`suspended` FROM `users` WHERE `users`.`u_username` = :0 LIMIT 1
+[Fri, 17 Jan 14 01:36:03 -0800][DEBUG] SELECT `users`.`u_id`, `users`.`u_name`, `users`.`u_username`, `users`.`u_password`, `users`.`mustChangePassword`, `users`.`profilesId`, `users`.`u_secret_key`, `users`.`active`, `users`.`banned`, `users`.`suspended` FROM `users` WHERE `users`.`u_username` = :0 LIMIT 1
+[Fri, 17 Jan 14 01:39:12 -0800][DEBUG] SELECT `users`.`u_id`, `users`.`u_name`, `users`.`u_username`, `users`.`u_password`, `users`.`mustChangePassword`, `users`.`profilesId`, `users`.`u_secret_key`, `users`.`active`, `users`.`banned`, `users`.`suspended` FROM `users` WHERE `users`.`u_username` = :0 LIMIT 1
+[Fri, 17 Jan 14 01:40:58 -0800][DEBUG] SELECT `users`.`u_id`, `users`.`u_name`, `users`.`u_username`, `users`.`u_password`, `users`.`mustChangePassword`, `users`.`profilesId`, `users`.`u_secret_key`, `users`.`active`, `users`.`banned`, `users`.`suspended` FROM `users` WHERE `users`.`u_username` = :0 LIMIT 1
+[Fri, 17 Jan 14 01:41:39 -0800][DEBUG] SELECT `users`.`u_id`, `users`.`u_name`, `users`.`u_username`, `users`.`u_password`, `users`.`mustChangePassword`, `users`.`profilesId`, `users`.`u_secret_key`, `users`.`active`, `users`.`banned`, `users`.`suspended` FROM `users` WHERE `users`.`u_username` = :0 LIMIT 1
+[Fri, 17 Jan 14 01:42:46 -0800][DEBUG] SELECT `users`.`u_id`, `users`.`u_name`, `users`.`u_username`, `users`.`u_password`, `users`.`mustChangePassword`, `users`.`profilesId`, `users`.`u_secret_key`, `users`.`active`, `users`.`banned`, `users`.`suspended` FROM `users` WHERE `users`.`u_username` = :0 LIMIT 1
+[Fri, 17 Jan 14 01:42:46 -0800][DEBUG] SELECT IF(COUNT(*)>0, 1 , 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME`='success_logins'
+[Fri, 17 Jan 14 01:42:46 -0800][DEBUG] DESCRIBE `success_logins`
+[Fri, 17 Jan 14 01:42:46 -0800][DEBUG] INSERT INTO `success_logins` (`usersId`, `ipAddress`, `userAgent`) VALUES (?, ?, ?)
+[Fri, 17 Jan 14 04:21:38 -0800][DEBUG] SELECT `users`.`u_id`, `users`.`u_name`, `users`.`u_username`, `users`.`u_password`, `users`.`mustChangePassword`, `users`.`profilesId`, `users`.`u_secret_key`, `users`.`active`, `users`.`banned`, `users`.`suspended` FROM `users` WHERE `users`.`u_username` = :0 LIMIT 1
+[Fri, 17 Jan 14 04:21:38 -0800][DEBUG] INSERT INTO `success_logins` (`usersId`, `ipAddress`, `userAgent`) VALUES (?, ?, ?)
+[Fri, 17 Jan 14 04:22:12 -0800][DEBUG] SELECT `users`.`u_id`, `users`.`u_name`, `users`.`u_username`, `users`.`u_password`, `users`.`mustChangePassword`, `users`.`profilesId`, `users`.`u_secret_key`, `users`.`active`, `users`.`banned`, `users`.`suspended` FROM `users` WHERE `users`.`u_username` = :0 LIMIT 1
+[Fri, 17 Jan 14 04:22:12 -0800][DEBUG] INSERT INTO `success_logins` (`usersId`, `ipAddress`, `userAgent`) VALUES (?, ?, ?)
+[Fri, 17 Jan 14 04:22:49 -0800][DEBUG] SELECT `users`.`u_id`, `users`.`u_name`, `users`.`u_username`, `users`.`u_password`, `users`.`mustChangePassword`, `users`.`profilesId`, `users`.`u_secret_key`, `users`.`active`, `users`.`banned`, `users`.`suspended` FROM `users` WHERE `users`.`u_username` = :0 LIMIT 1
+[Fri, 17 Jan 14 04:22:49 -0800][DEBUG] INSERT INTO `success_logins` (`usersId`, `ipAddress`, `userAgent`) VALUES (?, ?, ?)
+[Thu, 13 Feb 14 22:21:01 -0800][DEBUG] SELECT IF(COUNT(*)>0, 1 , 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME`='course_spec'
+[Thu, 13 Feb 14 22:21:02 -0800][DEBUG] DESCRIBE `course_spec`
+[Thu, 13 Feb 14 22:21:02 -0800][DEBUG] SELECT `course_spec`.`cspec_id`, `course_spec`.`courseDescription`, `course_spec`.`courseAbout`, `course_spec`.`courseInstructors`, `course_spec`.`courseLength`, `course_spec`.`courseEffort` FROM `course_spec`
+[Thu, 13 Feb 14 22:21:23 -0800][DEBUG] SELECT `course_spec`.`cspec_id`, `course_spec`.`courseDescription`, `course_spec`.`courseAbout`, `course_spec`.`courseInstructors`, `course_spec`.`courseLength`, `course_spec`.`courseEffort` FROM `course_spec`
+[Thu, 13 Feb 14 22:21:58 -0800][DEBUG] SELECT `course_spec`.`cspec_id`, `course_spec`.`courseDescription`, `course_spec`.`courseAbout`, `course_spec`.`courseInstructors`, `course_spec`.`courseLength`, `course_spec`.`courseEffort` FROM `course_spec`
+[Thu, 13 Feb 14 22:22:43 -0800][DEBUG] SELECT `course_spec`.`cspec_id`, `course_spec`.`courseDescription`, `course_spec`.`courseAbout`, `course_spec`.`courseInstructors`, `course_spec`.`courseLength`, `course_spec`.`courseEffort` FROM `course_spec`
+[Thu, 13 Feb 14 22:24:17 -0800][DEBUG] SELECT `course_spec`.`cspec_id`, `course_spec`.`courseDescription`, `course_spec`.`courseAbout`, `course_spec`.`courseInstructors`, `course_spec`.`courseLength`, `course_spec`.`courseEffort` FROM `course_spec`
+[Thu, 13 Feb 14 22:26:08 -0800][DEBUG] SELECT `course_spec`.`cspec_id`, `course_spec`.`courseDescription`, `course_spec`.`courseAbout`, `course_spec`.`courseInstructors`, `course_spec`.`courseLength`, `course_spec`.`courseEffort` FROM `course_spec`
+[Thu, 13 Feb 14 22:26:23 -0800][DEBUG] SELECT `course_spec`.`cspec_id`, `course_spec`.`courseDescription`, `course_spec`.`courseAbout`, `course_spec`.`courseInstructors`, `course_spec`.`courseLength`, `course_spec`.`courseEffort` FROM `course_spec`
+[Thu, 13 Feb 14 22:27:48 -0800][DEBUG] SELECT `course_spec`.`cspec_id`, `course_spec`.`courseDescription`, `course_spec`.`courseAbout`, `course_spec`.`courseInstructors`, `course_spec`.`courseLength`, `course_spec`.`courseEffort` FROM `course_spec`
+[Thu, 13 Feb 14 22:43:37 -0800][DEBUG] SELECT `course_spec`.`cspec_id`, `course_spec`.`courseDescription`, `course_spec`.`courseAbout`, `course_spec`.`courseInstructors`, `course_spec`.`courseLength`, `course_spec`.`courseEffort` FROM `course_spec`
+[Thu, 13 Feb 14 22:45:22 -0800][DEBUG] SELECT `course_spec`.`cspec_id`, `course_spec`.`courseDescription`, `course_spec`.`courseAbout`, `course_spec`.`courseInstructors`, `course_spec`.`courseLength`, `course_spec`.`courseEffort` FROM `course_spec`
+[Thu, 13 Feb 14 22:46:07 -0800][DEBUG] SELECT `course_spec`.`cspec_id`, `course_spec`.`courseDescription`, `course_spec`.`courseAbout`, `course_spec`.`courseInstructors`, `course_spec`.`courseLength`, `course_spec`.`courseEffort` FROM `course_spec`
+[Thu, 13 Feb 14 22:46:30 -0800][DEBUG] SELECT `course_spec`.`cspec_id`, `course_spec`.`courseDescription`, `course_spec`.`courseAbout`, `course_spec`.`courseInstructors`, `course_spec`.`courseLength`, `course_spec`.`courseEffort` FROM `course_spec`
+[Thu, 13 Feb 14 22:48:15 -0800][DEBUG] SELECT `course_spec`.`cspec_id`, `course_spec`.`courseDescription`, `course_spec`.`courseAbout`, `course_spec`.`courseInstructors`, `course_spec`.`courseLength`, `course_spec`.`courseEffort` FROM `course_spec`
+[Thu, 13 Feb 14 22:56:16 -0800][DEBUG] SELECT `course_spec`.`cspec_id`, `course_spec`.`courseDescription`, `course_spec`.`courseAbout`, `course_spec`.`courseInstructors`, `course_spec`.`courseLength`, `course_spec`.`courseEffort` FROM `course_spec`
+[Thu, 13 Feb 14 23:05:41 -0800][DEBUG] SELECT `course_spec`.`cspec_id`, `course_spec`.`courseDescription`, `course_spec`.`courseAbout`, `course_spec`.`courseInstructors`, `course_spec`.`courseLength`, `course_spec`.`courseEffort` FROM `course_spec`
+[Thu, 13 Feb 14 23:05:59 -0800][DEBUG] SELECT `course_spec`.`cspec_id`, `course_spec`.`courseDescription`, `course_spec`.`courseAbout`, `course_spec`.`courseInstructors`, `course_spec`.`courseLength`, `course_spec`.`courseEffort` FROM `course_spec`
+[Thu, 13 Feb 14 23:15:19 -0800][DEBUG] SELECT `course_spec`.`cspec_id`, `course_spec`.`courseDescription`, `course_spec`.`courseAbout`, `course_spec`.`courseInstructors`, `course_spec`.`courseLength`, `course_spec`.`courseEffort` FROM `course_spec`
+[Thu, 13 Feb 14 23:16:42 -0800][DEBUG] SELECT `course_spec`.`cspec_id`, `course_spec`.`courseDescription`, `course_spec`.`courseAbout`, `course_spec`.`courseInstructors`, `course_spec`.`courseLength`, `course_spec`.`courseEffort` FROM `course_spec`
+[Thu, 13 Feb 14 23:39:54 -0800][DEBUG] SELECT `course_spec`.`cspec_id`, `course_spec`.`courseDescription`, `course_spec`.`courseAbout`, `course_spec`.`courseInstructors`, `course_spec`.`courseLength`, `course_spec`.`courseEffort` FROM `course_spec` LIMIT 1
+[Thu, 13 Feb 14 23:40:45 -0800][DEBUG] SELECT `course_spec`.`cspec_id`, `course_spec`.`courseDescription`, `course_spec`.`courseAbout`, `course_spec`.`courseInstructors`, `course_spec`.`courseLength`, `course_spec`.`courseEffort` FROM `course_spec` LIMIT 1
+[Thu, 13 Feb 14 23:41:38 -0800][DEBUG] SELECT `course_spec`.`cspec_id`, `course_spec`.`courseDescription`, `course_spec`.`courseAbout`, `course_spec`.`courseInstructors`, `course_spec`.`courseLength`, `course_spec`.`courseEffort` FROM `course_spec` LIMIT 1
+[Thu, 13 Feb 14 23:42:04 -0800][DEBUG] SELECT `course_spec`.`cspec_id`, `course_spec`.`courseDescription`, `course_spec`.`courseAbout`, `course_spec`.`courseInstructors`, `course_spec`.`courseLength`, `course_spec`.`courseEffort` FROM `course_spec` LIMIT 1
+[Thu, 13 Feb 14 23:47:00 -0800][DEBUG] SELECT `course_spec`.`cspec_id`, `course_spec`.`courseDescription`, `course_spec`.`courseAbout`, `course_spec`.`courseInstructors`, `course_spec`.`courseLength`, `course_spec`.`courseEffort` FROM `course_spec` LIMIT 1
+[Thu, 13 Feb 14 23:47:26 -0800][DEBUG] SELECT `course_spec`.`cspec_id`, `course_spec`.`courseDescription`, `course_spec`.`courseAbout`, `course_spec`.`courseInstructors`, `course_spec`.`courseLength`, `course_spec`.`courseEffort` FROM `course_spec` LIMIT 1
+[Thu, 13 Feb 14 23:47:31 -0800][DEBUG] SELECT `course_spec`.`cspec_id`, `course_spec`.`courseDescription`, `course_spec`.`courseAbout`, `course_spec`.`courseInstructors`, `course_spec`.`courseLength`, `course_spec`.`courseEffort` FROM `course_spec` LIMIT 1
+[Fri, 14 Feb 14 00:21:48 -0800][DEBUG] SELECT `course_spec`.`cspec_id`, `course_spec`.`courseDescription`, `course_spec`.`courseAbout`, `course_spec`.`courseInstructors`, `course_spec`.`courseLength`, `course_spec`.`courseEffort` FROM `course_spec` LIMIT 1
+[Sat, 15 Feb 14 05:05:17 -0800][DEBUG] SELECT `course_spec`.`cspec_id`, `course_spec`.`courseDescription`, `course_spec`.`courseAbout`, `course_spec`.`courseInstructors`, `course_spec`.`courseLength`, `course_spec`.`courseEffort` FROM `course_spec` LIMIT 1
+[Tue, 18 Feb 14 20:24:13 -0800][DEBUG] SELECT `course_spec`.`cspec_id`, `course_spec`.`courseDescription`, `course_spec`.`courseAbout`, `course_spec`.`courseInstructors`, `course_spec`.`courseLength`, `course_spec`.`courseEffort` FROM `course_spec` LIMIT 1
+[Wed, 19 Feb 14 01:00:52 -0800][DEBUG] SELECT IF(COUNT(*)>0, 1 , 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME`='test'
+[Wed, 19 Feb 14 01:00:52 -0800][DEBUG] DESCRIBE `test`
+[Wed, 19 Feb 14 01:00:52 -0800][DEBUG] SELECT COUNT(*) "rowcount" FROM `test` WHERE `test_id` = ?
+[Wed, 19 Feb 14 02:30:00 -0800][DEBUG] SELECT COUNT(*) "rowcount" FROM `test` WHERE `test_id` = ?
+[Wed, 19 Feb 14 02:31:49 -0800][DEBUG] SELECT COUNT(*) "rowcount" FROM `test` WHERE `test_id` = ?
+[Wed, 19 Feb 14 02:33:55 -0800][DEBUG] SELECT COUNT(*) "rowcount" FROM `test` WHERE `test_id` = ?
+[Wed, 19 Feb 14 02:45:14 -0800][DEBUG] SELECT COUNT(*) "rowcount" FROM `test` WHERE `test_id` = ?
+[Wed, 19 Feb 14 02:45:22 -0800][DEBUG] SELECT COUNT(*) "rowcount" FROM `test` WHERE `test_id` = ?
+[Wed, 19 Feb 14 02:45:39 -0800][DEBUG] SELECT COUNT(*) "rowcount" FROM `test` WHERE `test_id` = ?
+[Wed, 19 Feb 14 02:45:50 -0800][DEBUG] SELECT COUNT(*) "rowcount" FROM `test` WHERE `test_id` = ?
+[Wed, 19 Feb 14 02:46:11 -0800][DEBUG] SELECT COUNT(*) "rowcount" FROM `test` WHERE `test_id` = ?
+[Wed, 19 Feb 14 04:20:10 -0800][DEBUG] SELECT COUNT(*) "rowcount" FROM `test` WHERE `test_id` = ?
+[Wed, 19 Feb 14 04:21:02 -0800][DEBUG] SELECT COUNT(*) "rowcount" FROM `test` WHERE `test_id` = ?
+[Wed, 19 Feb 14 04:21:34 -0800][DEBUG] SELECT COUNT(*) "rowcount" FROM `test` WHERE `test_id` = ?
+[Wed, 19 Feb 14 04:23:04 -0800][DEBUG] SELECT COUNT(*) "rowcount" FROM `test` WHERE `test_id` = ?
+[Wed, 19 Feb 14 04:23:23 -0800][DEBUG] SELECT COUNT(*) "rowcount" FROM `test` WHERE `test_id` = ?
+[Wed, 19 Feb 14 04:23:31 -0800][DEBUG] SELECT COUNT(*) "rowcount" FROM `test` WHERE `test_id` = ?
+[Wed, 19 Feb 14 04:25:58 -0800][DEBUG] SELECT COUNT(*) "rowcount" FROM `test` WHERE `test_id` = ?
+[Wed, 19 Feb 14 04:26:22 -0800][DEBUG] SELECT COUNT(*) "rowcount" FROM `test` WHERE `test_id` = ?
+[Wed, 19 Feb 14 04:30:10 -0800][DEBUG] SELECT COUNT(*) "rowcount" FROM `test` WHERE `test_id` = ?
+[Wed, 19 Feb 14 04:32:52 -0800][DEBUG] SELECT COUNT(*) "rowcount" FROM `test` WHERE `test_id` = ?
+[Wed, 19 Feb 14 04:33:11 -0800][DEBUG] SELECT COUNT(*) "rowcount" FROM `test` WHERE `test_id` = ?
+[Wed, 19 Feb 14 04:38:28 -0800][DEBUG] SELECT COUNT(*) "rowcount" FROM `test` WHERE `test_id` = ?
+[Wed, 19 Feb 14 04:38:28 -0800][DEBUG] INSERT INTO `test` (`testCreaterID`, `testName`, `testStartDate`, `testCreatedAt`, `testIsActive`, `test_id`) VALUES (?, ?, ?, ?, ?, ?)
+[Wed, 19 Feb 14 04:41:31 -0800][DEBUG] SELECT COUNT(*) "rowcount" FROM `test` WHERE `test_id` = ?
+[Wed, 19 Feb 14 04:41:31 -0800][DEBUG] INSERT INTO `test` (`testCreaterID`, `testName`, `testStartDate`, `testCreatedAt`, `testIsActive`, `test_id`) VALUES (?, ?, ?, ?, ?, ?)
+[Wed, 19 Feb 14 05:20:56 -0800][DEBUG] SELECT IF(COUNT(*)>0, 1 , 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME`='questions'
+[Wed, 19 Feb 14 05:20:56 -0800][DEBUG] DESCRIBE `questions`
+[Wed, 19 Feb 14 05:20:56 -0800][DEBUG] SELECT COUNT(*) "rowcount" FROM `questions` WHERE `question_id` = ?
+[Wed, 19 Feb 14 05:22:51 -0800][DEBUG] SELECT COUNT(*) "rowcount" FROM `questions` WHERE `question_id` = ?
+[Wed, 19 Feb 14 05:23:32 -0800][DEBUG] SELECT COUNT(*) "rowcount" FROM `questions` WHERE `question_id` = ?
+[Wed, 19 Feb 14 05:24:39 -0800][DEBUG] SELECT COUNT(*) "rowcount" FROM `questions` WHERE `question_id` = ?
+[Wed, 19 Feb 14 05:25:09 -0800][DEBUG] SELECT COUNT(*) "rowcount" FROM `questions` WHERE `question_id` = ?
+[Wed, 19 Feb 14 05:25:39 -0800][DEBUG] SELECT COUNT(*) "rowcount" FROM `questions` WHERE `question_id` = ?
+[Wed, 19 Feb 14 05:28:35 -0800][DEBUG] SELECT COUNT(*) "rowcount" FROM `questions` WHERE `question_id` = ?
+[Wed, 19 Feb 14 05:29:06 -0800][DEBUG] SELECT COUNT(*) "rowcount" FROM `questions` WHERE `question_id` = ?
+[Wed, 19 Feb 14 05:29:52 -0800][DEBUG] SELECT COUNT(*) "rowcount" FROM `questions` WHERE `question_id` = ?
+[Wed, 19 Feb 14 05:29:58 -0800][DEBUG] SELECT COUNT(*) "rowcount" FROM `questions` WHERE `question_id` = ?
+[Wed, 19 Feb 14 05:45:39 -0800][DEBUG] SELECT IF(COUNT(*)>0, 1 , 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME`='questions'
+[Wed, 19 Feb 14 05:45:39 -0800][DEBUG] DESCRIBE `questions`
+[Wed, 19 Feb 14 05:45:39 -0800][DEBUG] INSERT INTO `questions` (`questionModuleID`, `questionText`, `questionOptions`, `questionMarks`) VALUES (?, ?, ?, ?)
+[Wed, 19 Feb 14 06:36:38 -0800][DEBUG] SELECT IF(COUNT(*)>0, 1 , 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME`='module'
+[Wed, 19 Feb 14 06:36:38 -0800][DEBUG] DESCRIBE `module`
+[Wed, 19 Feb 14 06:36:38 -0800][DEBUG] SELECT COUNT(*) "rowcount" FROM `module` WHERE `module_id` = ?
+[Wed, 19 Feb 14 06:37:06 -0800][DEBUG] SELECT COUNT(*) "rowcount" FROM `module` WHERE `module_id` = ?
+[Wed, 19 Feb 14 06:37:59 -0800][DEBUG] SELECT IF(COUNT(*)>0, 1 , 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME`='module'
+[Wed, 19 Feb 14 06:37:59 -0800][DEBUG] DESCRIBE `module`
+[Wed, 19 Feb 14 06:37:59 -0800][DEBUG] SELECT COUNT(*) "rowcount" FROM `module` WHERE `module_id` = ?
+[Wed, 19 Feb 14 06:40:35 -0800][DEBUG] SELECT IF(COUNT(*)>0, 1 , 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME`='module'
+[Wed, 19 Feb 14 06:40:35 -0800][DEBUG] DESCRIBE `module`
+[Wed, 19 Feb 14 06:40:35 -0800][DEBUG] SELECT COUNT(*) "rowcount" FROM `module` WHERE `module_id` = ?
+[Wed, 19 Feb 14 06:41:30 -0800][DEBUG] SELECT COUNT(*) "rowcount" FROM `module` WHERE `module_id` = ?
+[Wed, 19 Feb 14 06:42:12 -0800][DEBUG] SELECT COUNT(*) "rowcount" FROM `module` WHERE `module_id` = ?
+[Wed, 19 Feb 14 06:42:40 -0800][DEBUG] SELECT IF(COUNT(*)>0, 1 , 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME`='module'
+[Wed, 19 Feb 14 06:42:40 -0800][DEBUG] DESCRIBE `module`
+[Wed, 19 Feb 14 06:42:40 -0800][DEBUG] SELECT COUNT(*) "rowcount" FROM `module` WHERE `module_id` = ?
+[Wed, 19 Feb 14 06:42:40 -0800][DEBUG] INSERT INTO `module` (`moduleName`, `moduleType`, `module_id`) VALUES (?, ?, ?)
+[Wed, 19 Feb 14 10:39:14 -0800][DEBUG] SELECT IF(COUNT(*)>0, 1 , 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME`='questions'
+[Wed, 19 Feb 14 10:39:14 -0800][DEBUG] DESCRIBE `questions`
+[Wed, 19 Feb 14 10:39:14 -0800][DEBUG] INSERT INTO `questions` (`questionModuleID`, `questionText`, `questionOptions`, `questionMarks`) VALUES (?, ?, ?, ?)
+[Wed, 19 Feb 14 22:09:21 -0800][DEBUG] SELECT `module`.`module_id`, `module`.`moduleName`, `module`.`moduleType` FROM `module`
+[Wed, 19 Feb 14 22:11:24 -0800][DEBUG] SELECT `module`.`module_id`, `module`.`moduleName`, `module`.`moduleType` FROM `module`
+[Wed, 19 Feb 14 22:16:34 -0800][DEBUG] SELECT `module`.`module_id` AS `module_id` FROM `module`
+[Wed, 19 Feb 14 22:17:19 -0800][DEBUG] SELECT `module`.`module_id` AS `module_id` FROM `module`
+[Wed, 19 Feb 14 22:17:29 -0800][DEBUG] SELECT `module`.`module_id` AS `module_id` FROM `module`
+[Wed, 19 Feb 14 22:19:29 -0800][DEBUG] SELECT `module`.`module_id` AS `module_id` FROM `module`
+[Wed, 19 Feb 14 22:19:59 -0800][DEBUG] SELECT `module`.`module_id` AS `module_id` FROM `module`
+[Wed, 19 Feb 14 22:20:53 -0800][DEBUG] SELECT `module`.`module_id`, `module`.`moduleName`, `module`.`moduleType` FROM `module`
+[Wed, 19 Feb 14 22:21:53 -0800][DEBUG] SELECT `module`.`module_id`, `module`.`moduleName`, `module`.`moduleType` FROM `module`
+[Tue, 04 Mar 14 23:49:58 -0800][DEBUG] SELECT IF(COUNT(*)>0, 1 , 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME`='course_spec'
+[Tue, 04 Mar 14 23:49:59 -0800][DEBUG] DESCRIBE `course_spec`
+[Tue, 04 Mar 14 23:49:59 -0800][DEBUG] SELECT `course_spec`.`cspec_id`, `course_spec`.`courseDescription`, `course_spec`.`courseAbout`, `course_spec`.`courseInstructors`, `course_spec`.`courseLength`, `course_spec`.`courseEffort` FROM `course_spec` LIMIT 1
+[Tue, 04 Mar 14 23:57:10 -0800][DEBUG] SELECT `course_spec`.`cspec_id`, `course_spec`.`courseDescription`, `course_spec`.`courseAbout`, `course_spec`.`courseInstructors`, `course_spec`.`courseLength`, `course_spec`.`courseEffort` FROM `course_spec` LIMIT 1
+[Wed, 05 Mar 14 00:01:02 -0800][DEBUG] SELECT `course_spec`.`cspec_id`, `course_spec`.`courseDescription`, `course_spec`.`courseAbout`, `course_spec`.`courseInstructors`, `course_spec`.`courseLength`, `course_spec`.`courseEffort` FROM `course_spec` LIMIT 1
+[Wed, 05 Mar 14 00:01:10 -0800][DEBUG] SELECT `course_spec`.`cspec_id`, `course_spec`.`courseDescription`, `course_spec`.`courseAbout`, `course_spec`.`courseInstructors`, `course_spec`.`courseLength`, `course_spec`.`courseEffort` FROM `course_spec` LIMIT 1
+[Wed, 05 Mar 14 01:21:54 -0800][DEBUG] INSERT INTO `module` (`moduleName`, `moduleType`) VALUES (?, ?)
+[Wed, 05 Mar 14 01:46:13 -0800][DEBUG] SELECT `module`.`module_id`, `module`.`moduleName`, `module`.`moduleType` FROM `module`
+[Wed, 05 Mar 14 01:46:34 -0800][DEBUG] SELECT `module`.`module_id`, `module`.`moduleName`, `module`.`moduleType` FROM `module`
+[Wed, 05 Mar 14 01:46:54 -0800][DEBUG] SELECT `module`.`module_id`, `module`.`moduleName`, `module`.`moduleType` FROM `module`
+[Wed, 05 Mar 14 01:46:57 -0800][DEBUG] SELECT `module`.`module_id`, `module`.`moduleName`, `module`.`moduleType` FROM `module`
+[Wed, 05 Mar 14 01:47:11 -0800][DEBUG] SELECT `module`.`module_id`, `module`.`moduleName`, `module`.`moduleType` FROM `module`
+[Wed, 05 Mar 14 01:47:36 -0800][DEBUG] SELECT `module`.`module_id`, `module`.`moduleName`, `module`.`moduleType` FROM `module`
+[Wed, 05 Mar 14 01:48:32 -0800][DEBUG] SELECT `module`.`module_id`, `module`.`moduleName`, `module`.`moduleType` FROM `module`
+[Wed, 05 Mar 14 01:48:54 -0800][DEBUG] SELECT `module`.`module_id`, `module`.`moduleName`, `module`.`moduleType` FROM `module`
+[Wed, 05 Mar 14 01:51:16 -0800][DEBUG] SELECT `module`.`module_id`, `module`.`moduleName`, `module`.`moduleType` FROM `module` WHERE `module`.`moduleName`
+[Wed, 05 Mar 14 01:51:56 -0800][DEBUG] SELECT `module`.`module_id`, `module`.`moduleName`, `module`.`moduleType` FROM `module` LIMIT 1
+[Wed, 05 Mar 14 01:53:01 -0800][DEBUG] SELECT `module`.`module_id`, `module`.`moduleName`, `module`.`moduleType` FROM `module`
+[Wed, 05 Mar 14 01:53:33 -0800][DEBUG] SELECT `module`.`module_id`, `module`.`moduleName`, `module`.`moduleType` FROM `module`
+[Wed, 05 Mar 14 01:53:48 -0800][DEBUG] SELECT `module`.`module_id`, `module`.`moduleName`, `module`.`moduleType` FROM `module`
+[Wed, 05 Mar 14 01:54:43 -0800][DEBUG] SELECT `module`.`module_id`, `module`.`moduleName`, `module`.`moduleType` FROM `module` LIMIT 1
+[Wed, 05 Mar 14 01:59:30 -0800][DEBUG] SELECT `module`.`module_id`, `module`.`moduleName`, `module`.`moduleType` FROM `module` LIMIT 1
+[Wed, 05 Mar 14 02:00:39 -0800][DEBUG] SELECT `module`.`module_id`, `module`.`moduleName`, `module`.`moduleType` FROM `module` LIMIT 1
+[Wed, 05 Mar 14 02:01:41 -0800][DEBUG] SELECT `module`.`module_id`, `module`.`moduleName`, `module`.`moduleType` FROM `module` LIMIT 1
+[Wed, 05 Mar 14 02:03:13 -0800][DEBUG] SELECT `module`.`module_id`, `module`.`moduleName`, `module`.`moduleType` FROM `module`
+[Wed, 05 Mar 14 02:03:41 -0800][DEBUG] SELECT `module`.`module_id`, `module`.`moduleName`, `module`.`moduleType` FROM `module`
+[Wed, 05 Mar 14 02:04:24 -0800][DEBUG] INSERT INTO `questions` (`questionModuleID`, `questionText`, `questionOptions`, `questionMarks`) VALUES (?, ?, ?, ?)
+[Wed, 05 Mar 14 02:04:25 -0800][DEBUG] SELECT `module`.`module_id`, `module`.`moduleName`, `module`.`moduleType` FROM `module`
+[Wed, 05 Mar 14 02:09:59 -0800][DEBUG] SELECT `module`.`module_id`, `module`.`moduleName`, `module`.`moduleType` FROM `module` WHERE `module`.`module_id`
+[Wed, 05 Mar 14 02:10:11 -0800][DEBUG] SELECT `module`.`module_id`, `module`.`moduleName`, `module`.`moduleType` FROM `module` WHERE `module`.`module_id`
+[Wed, 05 Mar 14 02:10:54 -0800][DEBUG] SELECT `module`.`module_id`, `module`.`moduleName`, `module`.`moduleType` FROM `module` WHERE `module`.`module_id`
+[Wed, 05 Mar 14 02:13:12 -0800][DEBUG] SELECT `module`.`module_id`, `module`.`moduleName`, `module`.`moduleType` FROM `module` WHERE `module`.`module_id`
+[Wed, 05 Mar 14 03:00:50 -0800][DEBUG] SELECT `module`.`module_id`, `module`.`moduleName`, `module`.`moduleType` FROM `module` WHERE `module`.`module_id`
+[Wed, 05 Mar 14 03:00:55 -0800][DEBUG] SELECT `questions`.`question_id`, `questions`.`questionModuleID`, `questions`.`questionText`, `questions`.`questionOptions`, `questions`.`questionMarks` FROM `questions`
+[Wed, 05 Mar 14 03:01:18 -0800][DEBUG] SELECT `questions`.`question_id`, `questions`.`questionModuleID`, `questions`.`questionText`, `questions`.`questionOptions`, `questions`.`questionMarks` FROM `questions`
+[Wed, 05 Mar 14 03:02:11 -0800][DEBUG] SELECT `questions`.`question_id`, `questions`.`questionModuleID`, `questions`.`questionText`, `questions`.`questionOptions`, `questions`.`questionMarks` FROM `questions`
+[Wed, 05 Mar 14 03:02:51 -0800][DEBUG] SELECT `questions`.`question_id`, `questions`.`questionModuleID`, `questions`.`questionText`, `questions`.`questionOptions`, `questions`.`questionMarks` FROM `questions`
+[Wed, 05 Mar 14 03:03:05 -0800][DEBUG] SELECT `questions`.`question_id`, `questions`.`questionModuleID`, `questions`.`questionText`, `questions`.`questionOptions`, `questions`.`questionMarks` FROM `questions`
+[Wed, 05 Mar 14 03:03:35 -0800][DEBUG] SELECT `questions`.`question_id`, `questions`.`questionModuleID`, `questions`.`questionText`, `questions`.`questionOptions`, `questions`.`questionMarks` FROM `questions`
+[Wed, 05 Mar 14 03:05:27 -0800][DEBUG] SELECT `course_spec`.`cspec_id`, `course_spec`.`courseDescription`, `course_spec`.`courseAbout`, `course_spec`.`courseInstructors`, `course_spec`.`courseLength`, `course_spec`.`courseEffort` FROM `course_spec` LIMIT 1
+[Wed, 05 Mar 14 03:12:28 -0800][DEBUG] SELECT `questions`.`question_id`, `questions`.`questionModuleID`, `questions`.`questionText`, `questions`.`questionOptions`, `questions`.`questionMarks` FROM `questions`
+[Wed, 05 Mar 14 03:39:16 -0800][DEBUG] SELECT `questions`.`question_id`, `questions`.`questionModuleID`, `questions`.`questionText`, `questions`.`questionOptions`, `questions`.`questionMarks` FROM `questions`
+[Wed, 05 Mar 14 03:39:44 -0800][DEBUG] SELECT `questions`.`question_id`, `questions`.`questionModuleID`, `questions`.`questionText`, `questions`.`questionOptions`, `questions`.`questionMarks` FROM `questions`
+[Wed, 05 Mar 14 03:43:20 -0800][DEBUG] SELECT `questions`.`question_id`, `questions`.`questionModuleID`, `questions`.`questionText`, `questions`.`questionOptions`, `questions`.`questionMarks` FROM `questions`
+[Wed, 05 Mar 14 03:43:32 -0800][DEBUG] SELECT `questions`.`question_id`, `questions`.`questionModuleID`, `questions`.`questionText`, `questions`.`questionOptions`, `questions`.`questionMarks` FROM `questions`
+[Wed, 05 Mar 14 03:44:27 -0800][DEBUG] SELECT `questions`.`question_id`, `questions`.`questionModuleID`, `questions`.`questionText`, `questions`.`questionOptions`, `questions`.`questionMarks` FROM `questions`
+[Wed, 05 Mar 14 03:44:44 -0800][DEBUG] SELECT `questions`.`question_id`, `questions`.`questionModuleID`, `questions`.`questionText`, `questions`.`questionOptions`, `questions`.`questionMarks` FROM `questions`
+[Wed, 05 Mar 14 03:52:56 -0800][DEBUG] SELECT `questions`.`question_id`, `questions`.`questionModuleID`, `questions`.`questionText`, `questions`.`questionOptions`, `questions`.`questionMarks` FROM `questions`
+[Wed, 05 Mar 14 03:53:08 -0800][DEBUG] SELECT `questions`.`question_id`, `questions`.`questionModuleID`, `questions`.`questionText`, `questions`.`questionOptions`, `questions`.`questionMarks` FROM `questions`
+[Wed, 05 Mar 14 03:53:17 -0800][DEBUG] SELECT `questions`.`question_id`, `questions`.`questionModuleID`, `questions`.`questionText`, `questions`.`questionOptions`, `questions`.`questionMarks` FROM `questions`
+[Wed, 05 Mar 14 03:53:40 -0800][DEBUG] SELECT `questions`.`question_id`, `questions`.`questionModuleID`, `questions`.`questionText`, `questions`.`questionOptions`, `questions`.`questionMarks` FROM `questions`
+[Wed, 05 Mar 14 03:59:40 -0800][DEBUG] SELECT `questions`.`question_id`, `questions`.`questionModuleID`, `questions`.`questionText`, `questions`.`questionOptions`, `questions`.`questionMarks` FROM `questions`
+[Wed, 05 Mar 14 04:05:15 -0800][DEBUG] SELECT `module`.`module_id`, `module`.`moduleName`, `module`.`moduleType` FROM `module`
+[Wed, 05 Mar 14 04:05:15 -0800][DEBUG] SELECT `questions`.`question_id`, `questions`.`questionModuleID`, `questions`.`questionText`, `questions`.`questionOptions`, `questions`.`questionMarks` FROM `questions` WHERE `questions`.`questionModuleID` = ''
+[Wed, 05 Mar 14 04:05:19 -0800][DEBUG] SELECT `module`.`module_id`, `module`.`moduleName`, `module`.`moduleType` FROM `module`
+[Wed, 05 Mar 14 04:05:19 -0800][DEBUG] SELECT `questions`.`question_id`, `questions`.`questionModuleID`, `questions`.`questionText`, `questions`.`questionOptions`, `questions`.`questionMarks` FROM `questions` WHERE `questions`.`questionModuleID` = ''
+[Wed, 05 Mar 14 04:05:29 -0800][DEBUG] SELECT `module`.`module_id`, `module`.`moduleName`, `module`.`moduleType` FROM `module`
+[Wed, 05 Mar 14 04:05:29 -0800][DEBUG] SELECT `questions`.`question_id`, `questions`.`questionModuleID`, `questions`.`questionText`, `questions`.`questionOptions`, `questions`.`questionMarks` FROM `questions` WHERE `questions`.`questionModuleID` = ''
+[Wed, 05 Mar 14 04:05:39 -0800][DEBUG] SELECT `module`.`module_id`, `module`.`moduleName`, `module`.`moduleType` FROM `module`
+[Wed, 05 Mar 14 04:05:39 -0800][DEBUG] SELECT `questions`.`question_id`, `questions`.`questionModuleID`, `questions`.`questionText`, `questions`.`questionOptions`, `questions`.`questionMarks` FROM `questions` WHERE `questions`.`questionModuleID` = ''
+[Wed, 05 Mar 14 04:09:59 -0800][DEBUG] SELECT `questions`.`question_id`, `questions`.`questionModuleID`, `questions`.`questionText`, `questions`.`questionOptions`, `questions`.`questionMarks` FROM `questions`
+[Wed, 05 Mar 14 04:11:46 -0800][DEBUG] SELECT `questions`.`question_id`, `questions`.`questionModuleID`, `questions`.`questionText`, `questions`.`questionOptions`, `questions`.`questionMarks` FROM `questions`
+[Wed, 05 Mar 14 04:12:06 -0800][DEBUG] SELECT `questions`.`question_id`, `questions`.`questionModuleID`, `questions`.`questionText`, `questions`.`questionOptions`, `questions`.`questionMarks` FROM `questions`
+[Wed, 05 Mar 14 04:12:11 -0800][DEBUG] SELECT `questions`.`question_id`, `questions`.`questionModuleID`, `questions`.`questionText`, `questions`.`questionOptions`, `questions`.`questionMarks` FROM `questions`
+[Wed, 05 Mar 14 08:01:45 -0800][DEBUG] SELECT `questions`.`question_id`, `questions`.`questionModuleID`, `questions`.`questionText`, `questions`.`questionOptions`, `questions`.`questionMarks` FROM `questions`
+[Wed, 05 Mar 14 08:05:22 -0800][DEBUG] SELECT `questions`.`question_id`, `questions`.`questionModuleID`, `questions`.`questionText`, `questions`.`questionOptions`, `questions`.`questionMarks` FROM `questions`
+[Wed, 05 Mar 14 08:05:29 -0800][DEBUG] SELECT `questions`.`question_id`, `questions`.`questionModuleID`, `questions`.`questionText`, `questions`.`questionOptions`, `questions`.`questionMarks` FROM `questions`
+[Wed, 05 Mar 14 08:06:00 -0800][DEBUG] SELECT `questions`.`question_id`, `questions`.`questionModuleID`, `questions`.`questionText`, `questions`.`questionOptions`, `questions`.`questionMarks` FROM `questions`
+[Wed, 05 Mar 14 08:09:00 -0800][DEBUG] SELECT `questions`.`question_id`, `questions`.`questionModuleID`, `questions`.`questionText`, `questions`.`questionOptions`, `questions`.`questionMarks` FROM `questions`
+[Wed, 05 Mar 14 08:09:36 -0800][DEBUG] SELECT `questions`.`question_id`, `questions`.`questionModuleID`, `questions`.`questionText`, `questions`.`questionOptions`, `questions`.`questionMarks` FROM `questions`
+[Wed, 05 Mar 14 08:12:24 -0800][DEBUG] SELECT `course_spec`.`cspec_id`, `course_spec`.`courseDescription`, `course_spec`.`courseAbout`, `course_spec`.`courseInstructors`, `course_spec`.`courseLength`, `course_spec`.`courseEffort` FROM `course_spec` LIMIT 1
+[Wed, 05 Mar 14 08:13:05 -0800][DEBUG] SELECT `questions`.`question_id`, `questions`.`questionModuleID`, `questions`.`questionText`, `questions`.`questionOptions`, `questions`.`questionMarks` FROM `questions` WHERE `questions`.`question_id` = 3 LIMIT 1
+[Wed, 05 Mar 14 08:16:15 -0800][DEBUG] SELECT `questions`.`question_id`, `questions`.`questionModuleID`, `questions`.`questionText`, `questions`.`questionOptions`, `questions`.`questionMarks` FROM `questions` WHERE `questions`.`question_id` = 3 LIMIT 1
+[Wed, 05 Mar 14 08:16:15 -0800][DEBUG] SELECT `module`.`module_id`, `module`.`moduleName`, `module`.`moduleType` FROM `module` WHERE `module`.`module_id` = '1'
+[Wed, 05 Mar 14 08:16:29 -0800][DEBUG] SELECT `questions`.`question_id`, `questions`.`questionModuleID`, `questions`.`questionText`, `questions`.`questionOptions`, `questions`.`questionMarks` FROM `questions` WHERE `questions`.`question_id` = 3 LIMIT 1
+[Wed, 05 Mar 14 08:16:29 -0800][DEBUG] SELECT `module`.`module_id`, `module`.`moduleName`, `module`.`moduleType` FROM `module` WHERE `module`.`module_id` = '1'
+[Wed, 05 Mar 14 08:17:43 -0800][DEBUG] SELECT `questions`.`question_id`, `questions`.`questionModuleID`, `questions`.`questionText`, `questions`.`questionOptions`, `questions`.`questionMarks` FROM `questions` WHERE `questions`.`question_id` = 3 LIMIT 1
+[Wed, 05 Mar 14 08:17:43 -0800][DEBUG] SELECT `module`.`module_id`, `module`.`moduleName`, `module`.`moduleType` FROM `module` WHERE `module`.`module_id` = '1'
+[Wed, 05 Mar 14 08:18:15 -0800][DEBUG] SELECT `questions`.`question_id`, `questions`.`questionModuleID`, `questions`.`questionText`, `questions`.`questionOptions`, `questions`.`questionMarks` FROM `questions`
+[Wed, 05 Mar 14 08:18:15 -0800][DEBUG] SELECT `module`.`module_id`, `module`.`moduleName`, `module`.`moduleType` FROM `module` WHERE `module`.`module_id` = ''
+[Wed, 05 Mar 14 08:19:47 -0800][DEBUG] SELECT `questions`.`question_id`, `questions`.`questionModuleID`, `questions`.`questionText`, `questions`.`questionOptions`, `questions`.`questionMarks` FROM `questions` LIMIT 1
+[Wed, 05 Mar 14 08:19:47 -0800][DEBUG] SELECT `module`.`module_id`, `module`.`moduleName`, `module`.`moduleType` FROM `module` WHERE `module`.`module_id` = '2'
+[Wed, 05 Mar 14 08:19:58 -0800][DEBUG] SELECT `questions`.`question_id`, `questions`.`questionModuleID`, `questions`.`questionText`, `questions`.`questionOptions`, `questions`.`questionMarks` FROM `questions` WHERE `questions`.`question_id` = 2 LIMIT 1
+[Wed, 05 Mar 14 08:19:58 -0800][DEBUG] SELECT `module`.`module_id`, `module`.`moduleName`, `module`.`moduleType` FROM `module` WHERE `module`.`module_id` = '2'
+[Wed, 05 Mar 14 08:20:24 -0800][DEBUG] SELECT `questions`.`question_id`, `questions`.`questionModuleID`, `questions`.`questionText`, `questions`.`questionOptions`, `questions`.`questionMarks` FROM `questions` WHERE `questions`.`question_id` = 1 LIMIT 1
+[Wed, 05 Mar 14 08:20:24 -0800][DEBUG] SELECT `module`.`module_id`, `module`.`moduleName`, `module`.`moduleType` FROM `module` WHERE `module`.`module_id` = '2'
+[Wed, 05 Mar 14 08:20:59 -0800][DEBUG] SELECT `questions`.`question_id`, `questions`.`questionModuleID`, `questions`.`questionText`, `questions`.`questionOptions`, `questions`.`questionMarks` FROM `questions` WHERE `questions`.`question_id` = 3 LIMIT 1
+[Wed, 05 Mar 14 08:20:59 -0800][DEBUG] SELECT `module`.`module_id`, `module`.`moduleName`, `module`.`moduleType` FROM `module` WHERE `module`.`module_id` = '1'
+[Wed, 05 Mar 14 08:21:51 -0800][DEBUG] SELECT `questions`.`question_id`, `questions`.`questionModuleID`, `questions`.`questionText`, `questions`.`questionOptions`, `questions`.`questionMarks` FROM `questions` WHERE `questions`.`question_id` = 3 LIMIT 1
+[Wed, 05 Mar 14 08:21:51 -0800][DEBUG] SELECT `module`.`module_id`, `module`.`moduleName`, `module`.`moduleType` FROM `module` WHERE `module`.`module_id` = '1'
+[Wed, 05 Mar 14 08:39:56 -0800][DEBUG] SELECT `questions`.`question_id`, `questions`.`questionModuleID`, `questions`.`questionText`, `questions`.`questionOptions`, `questions`.`questionMarks` FROM `questions` WHERE `questions`.`question_id` = 3 LIMIT 1
+[Wed, 05 Mar 14 08:39:56 -0800][DEBUG] SELECT `module`.`module_id`, `module`.`moduleName`, `module`.`moduleType` FROM `module` WHERE `module`.`module_id` = '1'
+[Wed, 05 Mar 14 08:41:02 -0800][DEBUG] SELECT `questions`.`question_id`, `questions`.`questionModuleID`, `questions`.`questionText`, `questions`.`questionOptions`, `questions`.`questionMarks` FROM `questions` WHERE `questions`.`question_id` = 3 LIMIT 1
+[Wed, 05 Mar 14 08:41:02 -0800][DEBUG] SELECT `module`.`module_id`, `module`.`moduleName`, `module`.`moduleType` FROM `module` WHERE `module`.`module_id` = '1'
+[Wed, 05 Mar 14 08:41:28 -0800][DEBUG] SELECT `questions`.`question_id`, `questions`.`questionModuleID`, `questions`.`questionText`, `questions`.`questionOptions`, `questions`.`questionMarks` FROM `questions` WHERE `questions`.`question_id` = 3 LIMIT 1
+[Wed, 05 Mar 14 08:41:28 -0800][DEBUG] SELECT `module`.`module_id`, `module`.`moduleName`, `module`.`moduleType` FROM `module` WHERE `module`.`module_id` = '1'
+[Wed, 05 Mar 14 08:41:38 -0800][DEBUG] SELECT `questions`.`question_id`, `questions`.`questionModuleID`, `questions`.`questionText`, `questions`.`questionOptions`, `questions`.`questionMarks` FROM `questions` WHERE `questions`.`question_id` = 3 LIMIT 1
+[Wed, 05 Mar 14 08:41:38 -0800][DEBUG] SELECT `module`.`module_id`, `module`.`moduleName`, `module`.`moduleType` FROM `module` WHERE `module`.`module_id` = '1'
+[Wed, 05 Mar 14 08:48:52 -0800][DEBUG] SELECT `questions`.`question_id`, `questions`.`questionModuleID`, `questions`.`questionText`, `questions`.`questionOptions`, `questions`.`questionMarks` FROM `questions` WHERE `questions`.`question_id` = 3 LIMIT 1
+[Wed, 05 Mar 14 08:48:52 -0800][DEBUG] SELECT `module`.`module_id`, `module`.`moduleName`, `module`.`moduleType` FROM `module` WHERE `module`.`module_id` = '1'
+[Wed, 05 Mar 14 09:05:15 -0800][DEBUG] SELECT * FROM questions
+[Wed, 05 Mar 14 09:06:16 -0800][DEBUG] SELECT * FROM questions
+[Wed, 05 Mar 14 09:09:11 -0800][DEBUG] SELECT * FROM questionsWHERE questionModuleID =  1
+[Wed, 05 Mar 14 09:09:51 -0800][DEBUG] SELECT * FROM questions WHERE questionModuleID =  1
+[Wed, 05 Mar 14 09:16:14 -0800][DEBUG] SELECT * FROM questions q
+                JOIN module m
+                ON q.questionModuleID = m.module_id
+[Wed, 05 Mar 14 09:17:20 -0800][DEBUG] SELECT * FROM questions q
+                JOIN module m
+                ON q.questionModuleID = m.module_id
+[Wed, 05 Mar 14 09:18:00 -0800][DEBUG] SELECT * FROM questions q
+                JOIN module m
+                ON q.questionModuleID = m.module_id
+[Wed, 05 Mar 14 09:18:19 -0800][DEBUG] SELECT * FROM questions q
+                JOIN module m
+                ON q.questionModuleID = m.module_id
+[Wed, 05 Mar 14 09:46:30 -0800][DEBUG] SELECT * FROM questions q
+                JOIN module m
+                ON q.questionModuleID = m.module_id
+[Wed, 05 Mar 14 09:47:56 -0800][DEBUG] SELECT * FROM questions q
+                JOIN module m
+                ON q.questionModuleID = m.module_id
+[Wed, 05 Mar 14 09:48:00 -0800][DEBUG] SELECT * FROM questions q
+                JOIN module m
+                ON q.questionModuleID = m.module_id
+[Wed, 05 Mar 14 09:48:04 -0800][DEBUG] SELECT * FROM questions q
+                JOIN module m
+                ON q.questionModuleID = m.module_id
+[Wed, 05 Mar 14 09:48:07 -0800][DEBUG] SELECT * FROM questions q
+                JOIN module m
+                ON q.questionModuleID = m.module_id
+[Wed, 05 Mar 14 09:48:09 -0800][DEBUG] SELECT * FROM questions q
+                JOIN module m
+                ON q.questionModuleID = m.module_id
+[Wed, 05 Mar 14 09:48:11 -0800][DEBUG] SELECT * FROM questions q
+                JOIN module m
+                ON q.questionModuleID = m.module_id
+[Wed, 05 Mar 14 09:48:13 -0800][DEBUG] SELECT * FROM questions q
+                JOIN module m
+                ON q.questionModuleID = m.module_id
+[Wed, 05 Mar 14 09:48:19 -0800][DEBUG] SELECT * FROM questions q
+                JOIN module m
+                ON q.questionModuleID = m.module_id
+[Wed, 05 Mar 14 09:48:22 -0800][DEBUG] SELECT * FROM questions q
+                JOIN module m
+                ON q.questionModuleID = m.module_id
+[Wed, 05 Mar 14 09:53:49 -0800][DEBUG] SELECT * FROM questions q
+                JOIN module m
+                ON q.questionModuleID = m.module_id
+[Wed, 05 Mar 14 09:53:59 -0800][DEBUG] SELECT * FROM questions q
+                JOIN module m
+                ON q.questionModuleID = m.module_id
+[Wed, 05 Mar 14 09:54:12 -0800][DEBUG] SELECT * FROM questions q
+                JOIN module m
+                ON q.questionModuleID = m.module_id
+[Wed, 05 Mar 14 09:54:33 -0800][DEBUG] SELECT * FROM questions q
+                JOIN module m
+                ON q.questionModuleID = m.module_id
+[Wed, 05 Mar 14 09:56:02 -0800][DEBUG] SELECT * FROM questions q
+                JOIN module m
+                ON q.questionModuleID = m.module_id
+[Wed, 05 Mar 14 09:56:13 -0800][DEBUG] SELECT * FROM questions q
+                JOIN module m
+                ON q.questionModuleID = m.module_id
+[Wed, 05 Mar 14 09:56:49 -0800][DEBUG] SELECT * FROM questions q
+                JOIN module m
+                ON q.questionModuleID = m.module_id
+[Wed, 05 Mar 14 09:58:33 -0800][DEBUG] SELECT * FROM questions q
+                JOIN module m
+                ON q.questionModuleID = m.module_id
+[Wed, 05 Mar 14 10:03:11 -0800][DEBUG] SELECT * FROM questions q
+                JOIN module m
+                ON q.questionModuleID = m.module_id
+[Wed, 05 Mar 14 10:03:20 -0800][DEBUG] SELECT * FROM questions q
+                JOIN module m
+                ON q.questionModuleID = m.module_id
+[Wed, 05 Mar 14 10:40:06 -0800][DEBUG] SELECT * FROM questions q
+                JOIN module m
+                ON q.questionModuleID = m.module_id
+[Wed, 05 Mar 14 10:59:14 -0800][DEBUG] SELECT * FROM questions q
+                JOIN module m
+                ON q.questionModuleID = m.module_id
+[Wed, 05 Mar 14 10:59:25 -0800][DEBUG] SELECT * FROM questions q
+                JOIN module m
+                ON q.questionModuleID = m.module_id
+[Wed, 05 Mar 14 10:59:30 -0800][DEBUG] SELECT * FROM questions q
+                JOIN module m
+                ON q.questionModuleID = m.module_id
+[Wed, 05 Mar 14 11:00:21 -0800][DEBUG] SELECT * FROM questions q
+                JOIN module m
+                ON q.questionModuleID = m.module_id
+[Wed, 05 Mar 14 11:04:27 -0800][DEBUG] SELECT * FROM questions q
+                JOIN module m
+                ON q.questionModuleID = m.module_id
+[Wed, 05 Mar 14 11:05:18 -0800][DEBUG] SELECT * FROM questions q
+                JOIN module m
+                ON q.questionModuleID = m.module_id
+[Wed, 05 Mar 14 11:05:51 -0800][DEBUG] SELECT * FROM questions q
+                JOIN module m
+                ON q.questionModuleID = m.module_id
+[Wed, 05 Mar 14 11:06:55 -0800][DEBUG] SELECT * FROM questions q
+                JOIN module m
+                ON q.questionModuleID = m.module_id
+[Wed, 05 Mar 14 11:07:33 -0800][DEBUG] SELECT * FROM questions q
+                JOIN module m
+                ON q.questionModuleID = m.module_id
+[Wed, 05 Mar 14 11:07:50 -0800][DEBUG] SELECT * FROM questions q
+                JOIN module m
+                ON q.questionModuleID = m.module_id
+[Wed, 05 Mar 14 11:08:52 -0800][DEBUG] SELECT * FROM questions q
+                JOIN module m
+                ON q.questionModuleID = m.module_id
+[Wed, 05 Mar 14 11:20:49 -0800][DEBUG] SELECT * FROM questions q
+                JOIN module m
+                ON q.questionModuleID = m.module_id
+[Wed, 05 Mar 14 11:21:12 -0800][DEBUG] SELECT * FROM questions q
+                JOIN module m
+                ON q.questionModuleID = m.module_id
+[Wed, 05 Mar 14 11:21:26 -0800][DEBUG] SELECT * FROM questions q
+                JOIN module m
+                ON q.questionModuleID = m.module_id
+[Wed, 05 Mar 14 11:21:38 -0800][DEBUG] SELECT * FROM questions q
+                JOIN module m
+                ON q.questionModuleID = m.module_id
+[Wed, 05 Mar 14 11:23:14 -0800][DEBUG] SELECT * FROM questions q
+                JOIN module m
+                ON q.questionModuleID = m.module_id
+[Wed, 05 Mar 14 11:27:12 -0800][DEBUG] SELECT * FROM questions q
+                JOIN module m
+                ON q.questionModuleID = m.module_id
+[Wed, 05 Mar 14 11:36:51 -0800][DEBUG] SELECT * FROM questions q
+                JOIN module m
+                ON q.questionModuleID = m.module_id
+[Wed, 05 Mar 14 11:38:18 -0800][DEBUG] SELECT * FROM questions q
+                JOIN module m
+                ON q.questionModuleID = m.module_id
+[Wed, 05 Mar 14 11:40:23 -0800][DEBUG] SELECT * FROM questions q
+                JOIN module m
+                ON q.questionModuleID = m.module_id
+[Wed, 05 Mar 14 11:42:05 -0800][DEBUG] SELECT * FROM questions q
+                JOIN module m
+                ON q.questionModuleID = m.module_id
+[Wed, 05 Mar 14 11:42:12 -0800][DEBUG] SELECT * FROM questions q
+                JOIN module m
+                ON q.questionModuleID = m.module_id
+[Wed, 05 Mar 14 11:42:15 -0800][DEBUG] SELECT * FROM questions q
+                JOIN module m
+                ON q.questionModuleID = m.module_id
+[Wed, 05 Mar 14 11:43:02 -0800][DEBUG] SELECT * FROM questions q
+                JOIN module m
+                ON q.questionModuleID = m.module_id
+[Wed, 05 Mar 14 11:43:07 -0800][DEBUG] SELECT * FROM questions q
+                JOIN module m
+                ON q.questionModuleID = m.module_id
+[Wed, 05 Mar 14 11:43:11 -0800][DEBUG] SELECT * FROM questions q
+                JOIN module m
+                ON q.questionModuleID = m.module_id
+[Wed, 05 Mar 14 11:43:15 -0800][DEBUG] SELECT * FROM questions q
+                JOIN module m
+                ON q.questionModuleID = m.module_id
+[Wed, 05 Mar 14 11:43:18 -0800][DEBUG] SELECT * FROM questions q
+                JOIN module m
+                ON q.questionModuleID = m.module_id
+[Wed, 05 Mar 14 11:43:21 -0800][DEBUG] SELECT * FROM questions q
+                JOIN module m
+                ON q.questionModuleID = m.module_id
+[Wed, 05 Mar 14 11:43:25 -0800][DEBUG] SELECT * FROM questions q
+                JOIN module m
+                ON q.questionModuleID = m.module_id
+[Wed, 05 Mar 14 11:44:48 -0800][DEBUG] SELECT * FROM questions q
+                JOIN module m
+                ON q.questionModuleID = m.module_id
+[Wed, 05 Mar 14 11:44:52 -0800][DEBUG] SELECT * FROM questions q
+                JOIN module m
+                ON q.questionModuleID = m.module_id
+[Wed, 05 Mar 14 11:54:30 -0800][DEBUG] SELECT * FROM questions q
+                JOIN module m
+                ON q.questionModuleID = m.module_id
+[Wed, 05 Mar 14 11:54:37 -0800][DEBUG] SELECT * FROM questions q
+                JOIN module m
+                ON q.questionModuleID = m.module_id
+[Wed, 05 Mar 14 11:54:42 -0800][DEBUG] SELECT * FROM questions q
+                JOIN module m
+                ON q.questionModuleID = m.module_id
+[Wed, 05 Mar 14 11:54:47 -0800][DEBUG] SELECT * FROM questions q
+                JOIN module m
+                ON q.questionModuleID = m.module_id
+[Wed, 05 Mar 14 11:54:52 -0800][DEBUG] SELECT * FROM questions q
+                JOIN module m
+                ON q.questionModuleID = m.module_id
+[Wed, 05 Mar 14 11:54:57 -0800][DEBUG] SELECT * FROM questions q
+                JOIN module m
+                ON q.questionModuleID = m.module_id
+[Wed, 05 Mar 14 11:59:19 -0800][DEBUG] SELECT * FROM questions q
+                JOIN module m
+                ON q.questionModuleID = m.module_id
+[Wed, 05 Mar 14 12:05:18 -0800][DEBUG] SELECT `module`.`module_id`, `module`.`moduleName`, `module`.`moduleType` FROM `module` WHERE `module`.`module_id`
+[Wed, 05 Mar 14 12:05:47 -0800][DEBUG] SELECT `module`.`module_id`, `module`.`moduleName`, `module`.`moduleType` FROM `module` WHERE `module`.`module_id`
+[Wed, 05 Mar 14 12:06:33 -0800][DEBUG] SELECT * FROM questions q
+                JOIN module m
+                ON q.questionModuleID = m.module_id
+[Wed, 05 Mar 14 12:06:40 -0800][DEBUG] SELECT * FROM questions q
+                JOIN module m
+                ON q.questionModuleID = m.module_id
+[Wed, 05 Mar 14 12:10:52 -0800][DEBUG] SELECT `module`.`module_id`, `module`.`moduleName`, `module`.`moduleType` FROM `module` WHERE `module`.`module_id`
+[Wed, 05 Mar 14 12:45:21 -0800][DEBUG] SELECT IF(COUNT(*)>0, 1 , 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME`='module'
+[Wed, 05 Mar 14 12:45:22 -0800][DEBUG] DESCRIBE `module`
+[Wed, 05 Mar 14 12:51:05 -0800][DEBUG] SELECT IF(COUNT(*)>0, 1 , 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME`='test'
+[Wed, 05 Mar 14 12:51:05 -0800][DEBUG] DESCRIBE `test`
+[Wed, 05 Mar 14 12:51:05 -0800][DEBUG] SELECT `test`.`test_id`, `test`.`testCreaterID`, `test`.`testName`, `test`.`testStartDate`, `test`.`testCreatedAt`, `test`.`testIsActive` FROM `test`
+[Wed, 05 Mar 14 13:03:37 -0800][DEBUG] SELECT `module`.`module_id`, `module`.`moduleName`, `module`.`moduleType` FROM `module` WHERE `module`.`module_id`
+[Wed, 05 Mar 14 13:22:56 -0800][DEBUG] SELECT `module`.`module_id`, `module`.`moduleName`, `module`.`moduleType` FROM `module` WHERE `module`.`module_id`
+[Wed, 05 Mar 14 13:23:12 -0800][DEBUG] SELECT `test`.`test_id`, `test`.`testCreaterID`, `test`.`testName`, `test`.`testStartDate`, `test`.`testCreatedAt`, `test`.`testIsActive` FROM `test`

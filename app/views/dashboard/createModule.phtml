@@ -1,0 +1,62 @@
+<div class="row-fluid">
+    <form class="form-horizontal" action="<?php echo $this->url->get(array('for'=>'AddModule')); ?>" method="post">
+        <fieldset>
+
+            <!-- Form Name -->
+            <legend>Create Module</legend>
+
+            <!-- Select Test -->
+            <div class="form-group">
+                <label class="col-md-2 control-label" for="test">Test:</label>
+                <div class="col-md-6">
+                    <?php
+                    echo  Phalcon\Tag::select(
+                        array("test_id",
+                        \Unic\Models\Test::find(),
+                            "using"=>array("test_id","testName")
+                        )
+                    );
+                        ?>
+                </div>
+            </div>
+
+            <!-- Text input moduleName-->
+            <div class="form-group">
+                <label class="col-md-2 control-label" for="moduleName">Module Name:</label>
+                <div class="col-md-6">
+                    <input id="testName" name="moduleName" placeholder="Module Name" class="form-control input-md" type="text">
+                </div>
+            </div>
+
+            <!-- Select module -->
+            <div class="form-group">
+                <label class="col-md-2 control-label" for="moduleType">Module Type:</label>
+                <div class="col-md-6">
+                   <select id="moduleType" name="moduleType" class="form-control">
+                        <option value="1">Option one</option>
+                        <option value="2">Option two</option>
+                    </select>
+                </div>
+            </div>
+            <!-- Button (Double) -->
+            <div class="form-group">
+                <label class="col-md-2 control-label" for="submit"></label>
+                <div class="col-md-8">
+                    <button id="submit" name="submit" type="submit" class="btn btn-success col-md-4">Submit</button>
+                    <button id="reset" name="reset" type="reset" class="btn btn-danger col-md-4">Reset</button>
+                </div>
+            </div>
+
+
+        </fieldset>
+    </form>
+</div>
+
+
+<script>
+    $('.datepicker1').datepicker({
+        changeMonth: true,
+        changeYear: true
+
+    });
+</script>

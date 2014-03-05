@@ -1,0 +1,34 @@
+<div class="page-title">
+    <h2><i class="color" style=""></i> View Questions </h2>
+    <hr />
+</div>
+<?php //echo "<pre>";print_r($question); ?>
+<table class="table table-hover table-bordered " >
+    <thead>
+    <tr>
+        <th>#</th>
+        <th>QuestionName</th>
+        <th>Module Name</th>
+        <th>Controls</th>
+    </tr>
+    </thead>
+    <tbody>
+    <?php $i=1; if(count($question)>0){ foreach($question->items as $value){ ?>
+    <tr>
+        <td><?php echo $i; $i++; ?></td>
+        <td><?php echo $value->questionText; ?></td>
+        <td><?php echo $value->moduleName; ?></td>
+        <td>
+            <button class="btn btn-xs btn-info"><i class="glyphicon glyphicon-edit"></i> </button>
+            <button class="btn btn-xs btn-danger"><i class="glyphicon glyphicon-trash"></i> </button>
+        </td>
+    </tr>
+    <?php }} ?>
+</tbody>
+    </table>
+<a href="<?php echo $this->url->get('dashboard/viewQuestions')."/search" ?>">First</a>&nbsp;&nbsp;&nbsp;
+<a href="<?php echo $this->url->get('dashboard/viewQuestions').'/search?page='.$question->before; ?>" >Previous</a>&nbsp;&nbsp;&nbsp;
+<a href="<?php echo $this->url->get('dashboard/viewQuestions').'/search?page='.$question->next; ?>">Next</a>&nbsp;&nbsp;&nbsp;
+<a href="<?php echo $this->url->get('dashboard/viewQuestions').'/search?page='.$question->last; ?>">Last</a>&nbsp;&nbsp;&nbsp;
+<?php echo "You are in page ", $question->current, " of ", $question->total_pages; ?>
+

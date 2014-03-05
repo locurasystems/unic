@@ -1,0 +1,95 @@
+<?php include('header.php'); ?>
+<style>
+body {
+    margin-top: 20px;
+}
+    </style>
+<body style="padding-top: 70px;">
+    <div class="container">
+        <?php include('navbar.php'); ?>
+        <div class="row-fluid">
+            <div class="col-xs-6 col-md-3">
+                <?php include('sidebar.php'); ?>
+            </div>
+
+            <div class="col-xs-6 col-md-9 well">
+                <div class="col-xs-6 col-sm-6 col-md-6">
+                    <address>
+                        <strong>Locura System</strong>
+                        <br>
+                        #1234 main road
+                        <br>
+                        Bamgalore 123456
+                        <br>
+                        <abbr title="Phone">P:</abbr> 080-1234323
+                    </address>
+                </div>
+                <div class="col-xs-6 col-sm-6 col-md-6 text-right">
+                    <p>
+                        <em>Date: 1st January, 2014</em>
+                    </p>
+                    <p>
+                        <em>Receipt #: 34522677W</em>
+                    </p>
+                </div>
+                <table class="table table-hover">
+                    <thead>
+                        <tr>
+                            <th>Product</th>
+                            <th>#</th>
+                            <th class="text-center">Price</th>
+                            <th class="text-center">Total</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><em>Baked Rodopa Sheep Feta</em></h4></td>
+                            <td> 2 </td>
+                            <td>$13</td>
+                            <td>$26</td>
+                        </tr>
+                        <tr>
+                            <td><em>Lebanese Cabbage Salad</em></h4></td>
+                            <td> 1 </td>
+                            <td>$8</td>
+                            <td>$8</td>
+                        </tr>
+                        <tr>
+                            <td><em>Baked Tart with Thyme and Garlic</em></h4></td>
+                            <td > 3 </td>
+                            <td>$16</td>
+                            <td>$48</td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td></td>
+                            <td class="text-right">
+                            <p>
+                                <strong>Subtotal:</strong>
+                            </p>
+                            <p>
+                                <strong>Tax:</strong>
+                            </p></td>
+                            <td class="text-center">
+                            <p>
+                                <strong>$6.94</strong>
+                            </p>
+                            <p>
+                                <strong>$6.94</strong>
+                            </p></td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td></td>
+                            <td class="text-right"><h4><strong>Total:</strong></h4></td>
+                            <td class="text-center text-danger"><h4><strong>$31.53</strong></h4></td>
+                        </tr>
+                    <tr><td colspan="4">   <a href="card_payment.php" class="btn btn-success btn-block">
+                                Pay Now<span class="glyphicon glyphicon-chevron-right"></span>
+                            </a></td></td></tr>
+                    </tbody>
+                </table>
+
+            </div>
+
+

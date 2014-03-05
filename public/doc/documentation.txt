@@ -1,0 +1,4 @@
+RouteName				-		Controller			-	Action					-		Descripton
+AddCreateTest			-		examination			-	AddCreateTest			-		post test data to test table
+AddQuestion				-		examination			-	AddQuestion				-		post questions data to questions table
+AddModule				-		examination			-	AddModule				-		post module data to module table

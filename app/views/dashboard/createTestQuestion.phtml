@@ -1,0 +1,57 @@
+<div class="row-fluid">
+<!--  --><?php //echo $module->moduleName;?>
+<!--    --><?php //echo "<pre>"; print_r($module); ?>
+    <form class="form-horizontal" action="<?php echo $this->url->get(array('for'=>'AddQuestions')); ?>" method="post" enctype="multipart/form-data">
+        <fieldset>
+
+            <!-- Form Name -->
+            <legend>Create Question</legend>
+
+            <!-- Select Basic -->
+            <div class="form-group">
+                <label class="col-md-2 control-label" for="questionModuleID">Module:</label>
+                <div class="col-md-9">
+                    <select id="questionModuleID" name="questionModuleID" class="form-control">
+                        <?php if(count($module)>0){ foreach($module as $value){ ?>
+                        <option value="<?php echo $value->module_id; ?>"><?php echo $value->moduleName; ?></option>
+                        <?php } } ?>
+                    </select>
+                </div>
+            </div>
+
+            <!-- Text input-->
+            <div class="form-group">
+                <label class="col-md-2 control-label" for="questionText">Question:</label>
+                <div class="col-md-9">
+                    <textarea class="ckeditor " id="questionText" name="questionText"></textarea>
+                </div>
+            </div>
+
+            <!-- option input-->
+            <?php $i = 1; $count = 5; for($i;$i<=$count;$i++){ ?>
+            <div class="form-group">
+                <label class="col-md-2 control-label" for="option">Option <?php echo $i; ?>:</label>
+                <div class="col-md-7">
+                    <input type="text" name="questionOptions[]" placeholder="Options" class="form-control input-md">
+                </div>
+                <div class="col-md-2">
+                    <input type="text" name="questionMarks[]" placeholder="Marks" class="form-control input-md">
+                </div>
+            </div>
+            <?php } ?>
+
+
+            <!-- Button (Double) -->
+            <div class="form-group">
+                <label class="col-md-2 control-label" for="submit"></label>
+                <div class="col-md-9">
+                    <button id="submit" name="submit" type="submit" class="btn btn-primary btn-block">Save</button>
+
+                </div>
+            </div>
+
+
+        </fieldset>
+    </form>
+</div>
+

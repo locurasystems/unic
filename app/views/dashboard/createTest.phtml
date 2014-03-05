@@ -1,0 +1,74 @@
+<?php //use Phalcon\Flash\Direct ;?>
+
+<div class="row-fluid">
+<!--    --><?php //  print_r($this->flashSession->output());  ?>
+    <form class="form-horizontal" action="<?php echo $this->url->get(array('for'=>'AddTest')); ?>" method="post">
+        <fieldset>
+
+            <!-- Form Name -->
+            <legend>Create Test</legend>
+
+            <!-- Text input-->
+            <div class="form-group">
+                <label class="col-md-2 control-label" for="testName">Test Name:</label>
+                <div class="col-md-6">
+                    <input id="testName" name="testName" placeholder="Test Name" class="form-control input-md" type="text">
+
+                </div>
+            </div>
+
+            <!-- Select Basic -->
+            <div class="form-group">
+                <label class="col-md-2 control-label" for="testCreatorID">Test Creater:</label>
+                <div class="col-md-6">
+                    <select id="testCreatorID" name="testCreatorID" class="form-control">
+                        <option value="1">Option one</option>
+                        <option value="2">Option two</option>
+                    </select>
+                </div>
+            </div>
+
+            <!-- Start Date-->
+            <div class="form-group">
+                <label class="col-md-2 control-label" for="testVideoID">Start Date:</label>
+                <div class="col-md-6">
+
+                 <input type="text" name="testStartDate" class="datepicker1" />
+                </div>
+            </div>
+
+            <!-- Test Active-->
+            <div class="form-group">
+                <label class="col-md-2 control-label" for="testIsActive">Active:</label>
+                <div class="col-md-6">
+                    <select id="testIsActive" name="testIsActive" class="form-control">
+                        <option value="1">Option one</option>
+                        <option value="2">Option two</option>
+                    </select>
+                </div>
+            </div>
+
+            <!-- Button (Double) -->
+            <div class="form-group">
+                <label class="col-md-2 control-label" for="submit"></label>
+                <div class="col-md-8">
+                    <button id="submit" name="submit" type="submit" class="btn btn-success col-md-4">Submit</button>
+                    <button id="reset" name="reset" type="reset" class="btn btn-danger col-md-4">Reset</button>
+                </div>
+            </div>
+
+
+        </fieldset>
+    </form>
+</div>
+
+
+<script>
+    $('.datepicker1').datepicker({
+        dateFormat:"dd/mm/yy",
+        changeMonth: true,
+        changeYear: true,
+        showOptions: { direction: "left" }
+
+    });
+</script>
