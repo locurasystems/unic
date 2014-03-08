@@ -1,25 +1,20 @@
 <?php
-
 namespace Unic\Controllers;
 use Phalcon\Mvc\Controller,
-    Unic\Models\Module,
     Phalcon\Mvc\View;
 
-use Unic\Video\Video;
+use UploadHandler;
 use Phalcon\Http\Response;
+use Aws;
+use Aws\Common\Enum\Size;
+use Aws\Common\Exception\MultipartUploadException;
+use Aws\S3\Model\MultipartUpload\UploadBuilder;
 
 class DashboardController extends ControllerBase {
 
 	public function indexAction()
 	{
-		$ou=array();
-		$input=realpath('/Library/WebServer/Documents/unic/public/videos').'/A.flv';
-		$output=realpath('/Library/WebServer/Documents/unic/public/videos').'/b.avi';
-		$pr=realpath('/Library/WebServer/Documents/unic/public/videos').'/prg.txt';		
-// 		echo exec("ffmpeg -i ".$input ." -r 24 ".$output);
-//		echo "<pre>";
-//		print_r(ini_get_all());
-//		$this->view->disable();
+
 
 	}
 
@@ -41,24 +36,32 @@ class DashboardController extends ControllerBase {
 
 	public function uploadMediaAction()
 	{
-		// Check if the user has uploaded files
-		if ($this->request->hasFiles() == true) {
-			 
-			// Print the real file names and sizes
-			foreach ($this->request->getUploadedFiles() as $file)
-			{
-				$data[]=(object) array('name'=>$file->getName(),'size'=>$file->getSize(),'url'=>$this->url->get('public/videos/').$file->getName(),'thumbnailUrl'=>$this->url->get('public/videos/').$file->getName(),'deleteUrl'=>$this->url->get('public/videos/').$file->getName(),'deleteType'=>'DELETE');
-				//Move the file into the application
-				$file->moveTo('videos/' . $file->getName());
-			}
-			$files=array('files'=>$data);
-			
-			$file=(object) $files;
-			
-			$response = new Response();
-			$response->setContent(json_encode($file));
-			return $response;
-		}
+        $bucket="unic-videos";
+        $client = Aws\S3\S3Client::factory(array(
+            'key' => 'AKIAIKTCZRJH4A4OKGQQ',
+            'secret' => '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'
+        ));
+        foreach ($this->request->getUploadedFiles() as $file)
+        {
+            $data[]=(object) array('name'=>$file->getName(),'size'=>$file->getSize(),'url'=>$this->url->get('public/videos/').$file->getName(),'thumbnailUrl'=>$this->url->get('public/videos/').$file->getName(),'deleteUrl'=>$this->url->get('public/videos/').$file->getName(),'deleteType'=>'DELETE');
+            //Move the file into the application
+            $result = $client->putObject(array(
+                'Bucket' => $bucket,
+                'Key' => $file->getName(),
+                'SourceFile' => $file->getTempName(),
+                'Metadata' => array(
+                    'Foo' => 'abc',
+                    'Baz' => '123'
+                )
+            ));
+        }
+
+        $files=array('files'=>$data);
+
+        $file=(object) $files;
+        $response = new Response();
+        $response->setContent(json_encode($file));
+        return $response;
 		 
 	}
 	public function createCourseAction()
@@ -136,6 +139,60 @@ class DashboardController extends ControllerBase {
     {
         $question=new ExaminationController();
         $this->view->setVar('question',$question->GetQuestions());
+    }
+
+    public function testAction()
+    {
+        $client = Aws\S3\S3Client::factory(array(
+            'key' => 'AKIAIKTCZRJH4A4OKGQQ',
+            'secret' => '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'
+        ));
+
+        $bucket = "unic-videosddd";
+        echo "Creating bucket named {$bucket}\n";
+        $result = $client->createBucket(array(
+            'Bucket' => $bucket
+        ));
+
+// Wait until the bucket is created
+        $client->waitUntilBucketExists(array('Bucket' => $bucket));
+
+        /*
+Files in Amazon S3 are called "objects" and are stored in buckets. A specific
+object is referred to by its key (i.e., name) and holds data. Here, we create
+a new object with the key "hello_world.txt" and content "Hello World!".
+
+For a detailed list of putObject's parameters, see:
+http://docs.aws.amazon.com/aws-sdk-php-2/latest/class-Aws.S3.S3Client.html#_putObject
+*/
+        $key = 'hello_world.txt';
+        echo "Creating a new object with key {$key}\n";
+        $result = $client->putObject(array(
+            'Bucket' => $bucket,
+            'Key' => $key,
+            'Body' => "Hello World!"
+        ));
+
+        /*
+Download the object and read the body directly.
+
+For more examples of downloading objects, see the developer guide:
+http://docs.aws.amazon.com/aws-sdk-php-2/guide/latest/service-s3.html#downloading-objects
+
+Or the API documentation:
+http://docs.aws.amazon.com/aws-sdk-php-2/latest/class-Aws.S3.S3Client.html#_getObject
+*/
+        echo "Downloading that same object:\n";
+        $result = $client->getObject(array(
+            'Bucket' => $bucket,
+            'Key' => $key
+        ));
+
+        echo "\n---BEGIN---\n";
+        echo $result['Body'];
+        echo "\n---END---\n\n";
+        $this->view->disable();
+
     }
 
 

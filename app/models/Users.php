@@ -1,6 +1,6 @@
 <?php
 
-
+namespace Unic\Models;
 
 
 class Users extends \Phalcon\Mvc\Model
@@ -10,7 +10,7 @@ class Users extends \Phalcon\Mvc\Model
      *
      * @var integer
      */
-    public $u_id;
+    public $id;
      
     /**
      *
@@ -88,16 +88,16 @@ class Users extends \Phalcon\Mvc\Model
     public function columnMap()
     {
         return array(
-            'u_id' => 'u_id', 
-            'userName' => 'userName', 
-            'userUsername' => 'userUsername', 
-            'userPassword' => 'userPassword', 
+            'id' => 'id',
+            'userName' => 'name',
+            'userUsername' => 'username',
+            'userPassword' => 'password',
             'mustChangePassword' => 'mustChangePassword', 
-            'userProfilesId' => 'userProfilesId', 
-            'userSecretKey' => 'userSecretKey', 
-            'userIsActive' => 'userIsActive', 
-            'userIsBanned' => 'userIsBanned', 
-            'userIsSuspended' => 'userIsSuspended'
+            'userProfilesId' => 'profilesId',
+            'userSecretKey' => 'SecretKey',
+            'userIsActive' => 'active',
+            'userIsBanned' => 'banned',
+            'userIsSuspended' => 'suspended'
         );
     }
 
