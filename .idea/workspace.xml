@@ -39,7 +39,7 @@
     <file path="/index.php" changelist="92e3122b-8e28-42bb-93a8-0e7ca0b744cd" time="1394200603647" ignored="false" />
     <file path="/HomeController.php" changelist="92e3122b-8e28-42bb-93a8-0e7ca0b744cd" time="1394257364359" ignored="false" />
     <file path="/Acl.php" changelist="92e3122b-8e28-42bb-93a8-0e7ca0b744cd" time="1394215015355" ignored="false" />
-    <file path="/index.volt" changelist="92e3122b-8e28-42bb-93a8-0e7ca0b744cd" time="1394276516546" ignored="false" />
+    <file path="/index.volt" changelist="92e3122b-8e28-42bb-93a8-0e7ca0b744cd" time="1394278886167" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -62,7 +62,7 @@
       <file leaf-file-name="index.volt" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/views/index.volt">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="21" column="37" selection-start="954" selection-end="954" vertical-scroll-proportion="0.5121951">
+            <state line="22" column="14" selection-start="969" selection-end="969" vertical-scroll-proportion="0.5365854">
               <folding />
             </state>
           </provider>
@@ -498,7 +498,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/views/index.volt">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="21" column="37" selection-start="954" selection-end="954" vertical-scroll-proportion="0.5121951">
+        <state line="22" column="14" selection-start="969" selection-end="969" vertical-scroll-proportion="0.5365854">
           <folding />
         </state>
       </provider>
