@@ -50,7 +50,7 @@
 
 
 
-	{{ content() }}
+	<?php echo $this->getContent(); ?>
 
 
 

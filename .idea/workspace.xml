@@ -23,67 +23,33 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="Questions.php" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/models/Questions.php">
+      <file leaf-file-name="Auth.php" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/library/Auth/Auth.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="65" column="27" selection-start="1240" selection-end="1240" vertical-scroll-proportion="-13.038462" vertical-offset="766" max-vertical-offset="1717">
+            <state line="252" column="31" selection-start="6667" selection-end="6667" vertical-scroll-proportion="-20.039215" vertical-offset="3262" max-vertical-offset="5406">
               <folding>
-                <element signature="e#30#52#0" expanded="true" />
-                <marker date="1394259005589" expanded="true" signature="1358:1469" placeholder="SELECT * FRO..questions..." />
+                <element signature="e#28#59#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Auth.php" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/app/library/Auth/Auth.php">
+      <file leaf-file-name="index.volt" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/views/index.volt">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="112" column="25" selection-start="3006" selection-end="3006" vertical-scroll-proportion="-5.141527" vertical-offset="4597" max-vertical-offset="5338">
+            <state line="11" column="86" selection-start="419" selection-end="419" vertical-scroll-proportion="-5.88" vertical-offset="40" max-vertical-offset="1870">
               <folding />
             </state>
           </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Examination.php" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/library/Examination/Examination.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="14" column="25" selection-start="247" selection-end="247" vertical-scroll-proportion="-9.153846" vertical-offset="0" max-vertical-offset="663">
-              <folding />
-            </state>
+          <provider editor-type-id="com.intellij.persistence.database.editor.CsvTableFileEditorProvider">
+            <state />
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="TryTest.phtml" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/views/examination/TryTest.phtml">
+      <file leaf-file-name="Users.php" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/app/models/Users.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="0" column="0" selection-start="0" selection-end="132" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1275">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="SelectTest.phtml" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/views/examination/SelectTest.phtml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="6" column="29" selection-start="158" selection-end="158" vertical-scroll-proportion="-3.9230769" vertical-offset="0" max-vertical-offset="357">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="ExaminationController.php" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/controllers/ExaminationController.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="146" column="44" selection-start="4254" selection-end="4254" vertical-scroll-proportion="0.0" vertical-offset="2482" max-vertical-offset="2890">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="HomeController.php" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/controllers/HomeController.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="31" column="6" selection-start="565" selection-end="565" vertical-scroll-proportion="0.0" vertical-offset="527" max-vertical-offset="799">
+            <state line="57" column="6" selection-start="677" selection-end="677" vertical-scroll-proportion="0.6272401" vertical-offset="619" max-vertical-offset="1870">
               <folding />
             </state>
           </provider>
@@ -92,16 +58,16 @@
       <file leaf-file-name="UserController.php" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/controllers/UserController.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="45" column="26" selection-start="1182" selection-end="1182" vertical-scroll-proportion="0.0" vertical-offset="581" max-vertical-offset="1156">
+            <state line="47" column="59" selection-start="1395" selection-end="1395" vertical-scroll-proportion="-14.384615" vertical-offset="357" max-vertical-offset="1071">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="routes.php" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/config/routes.php">
+      <file leaf-file-name="dashboard.volt" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/views/layouts/dashboard.volt">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="24" column="132" selection-start="1334" selection-end="1334" vertical-scroll-proportion="0.0" vertical-offset="102" max-vertical-offset="986">
+            <state line="41" column="30" selection-start="1797" selection-end="1797" vertical-scroll-proportion="0.0" vertical-offset="408" max-vertical-offset="1921">
               <folding />
             </state>
           </provider>
@@ -126,11 +92,9 @@
         <option value="$PROJECT_DIR$/multiple/public/index.php" />
         <option value="$PROJECT_DIR$/multiple/app/backend/controllers/ControllerBase.php" />
         <option value="$PROJECT_DIR$/multiple/app/backend/controllers/IndexController.php" />
-        <option value="$PROJECT_DIR$/app/config/config.php" />
         <option value="$PROJECT_DIR$/app/controllers/IndexController.php" />
         <option value="$PROJECT_DIR$/app/models/users.php" />
         <option value="$PROJECT_DIR$/public/routes.php" />
-        <option value="$PROJECT_DIR$/app/config/services.php" />
         <option value="$PROJECT_DIR$/public/index.php" />
         <option value="$PROJECT_DIR$/samp.php" />
         <option value="$PROJECT_DIR$/app/views/home/register.volt" />
@@ -144,20 +108,24 @@
         <option value="$PROJECT_DIR$/app/controllers/ExamController.php" />
         <option value="$PROJECT_DIR$/../phalcon-devtools/ide/1.2.4/Phalcon/Forms/Element/Select.php" />
         <option value="$PROJECT_DIR$/app/views/dashboard/createModule.phtml" />
-        <option value="$PROJECT_DIR$/app/logs/db.log" />
         <option value="$PROJECT_DIR$/app/models/TestHasModule.php" />
-        <option value="$PROJECT_DIR$/app/views/index.volt" />
         <option value="$PROJECT_DIR$/app/views/dashboard/createTestQuestion.phtml" />
         <option value="$PROJECT_DIR$/app/views/dashboard/viewQuestions.phtml" />
         <option value="$PROJECT_DIR$/app/controllers/SearchController.php" />
-        <option value="$PROJECT_DIR$/app/views/layouts/dashboard.volt" />
-        <option value="$PROJECT_DIR$/app/controllers/DashboardController.php" />
         <option value="$PROJECT_DIR$/app/library/Examination/Examination.php" />
         <option value="$PROJECT_DIR$/app/views/examination/TryTest.phtml" />
         <option value="$PROJECT_DIR$/app/config/routes.php" />
         <option value="$PROJECT_DIR$/app/controllers/ExaminationController.php" />
         <option value="$PROJECT_DIR$/app/views/examination/SelectTest.phtml" />
+        <option value="$PROJECT_DIR$/app/logs/db.log" />
+        <option value="$PROJECT_DIR$/app/config/services.php" />
+        <option value="$PROJECT_DIR$/app/config/config.php" />
         <option value="$PROJECT_DIR$/app/models/Questions.php" />
+        <option value="$PROJECT_DIR$/app/controllers/DashboardController.php" />
+        <option value="$PROJECT_DIR$/app/controllers/UserController.php" />
+        <option value="$PROJECT_DIR$/app/views/layouts/dashboard.volt" />
+        <option value="$PROJECT_DIR$/app/library/Auth/Auth.php" />
+        <option value="$PROJECT_DIR$/app/views/index.volt" />
       </list>
     </option>
   </component>
@@ -187,7 +155,7 @@
     <option name="STATE" value="0" />
   </component>
   <component name="ProjectView">
-    <navigator currentView="Scope" currentSubView="Project Files" proportions="" version="1" splitterProportion="0.5">
+    <navigator currentView="ProjectPane" proportions="" version="1" splitterProportion="0.5">
       <flattenPackages />
       <showMembers />
       <showModules />
@@ -220,6 +188,22 @@
               <option name="myItemId" value="unic" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
             </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="External Libraries" />
+              <option name="myItemType" value="com.jetbrains.php.config.PhpExternalLibrariesNodePatcher$PatchedExternalLibrariesNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="PHP" />
+              <option name="myItemType" value="com.jetbrains.php.config.PhpExternalLibrariesNodePatcher$PatchedLibraryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="1.2.4" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Phalcon" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
           </PATH>
           <PATH>
             <PATH_ELEMENT>
@@ -228,6 +212,20 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="unic" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="unic" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="unic" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -364,7 +362,7 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
-    <editor active="false" />
+    <editor active="true" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32992327" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
@@ -372,7 +370,7 @@
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Remote Host" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.22620791" sideWeight="0.6707317" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.22620791" sideWeight="0.6707317" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3295082" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -405,46 +403,6 @@
     <breakpoint-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="756" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/index/index.volt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="756" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/layouts/course.volt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1360" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/dashboard/mediaLibrary.volt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="756" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/dashboard/addMedia.phtml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="-1.980822" vertical-offset="1446" max-vertical-offset="2176" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/layouts/cart.volt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1224" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/composer.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="4" column="1" selection-start="67" selection-end="67" vertical-scroll-proportion="0.15077606" vertical-offset="0" max-vertical-offset="451" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/library/error.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="563" />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/models/FailedLogins.php">
       <provider selected="true" editor-type-id="text-editor">
         <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="-0.47486034" vertical-offset="255" max-vertical-offset="816" />
@@ -470,11 +428,6 @@
         <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="563" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/config/config.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="867" />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/models/SuccessLogins.php">
       <provider selected="true" editor-type-id="text-editor">
         <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="-0.43189964" vertical-offset="241" max-vertical-offset="799">
@@ -489,7 +442,9 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/../phalcon-devtools/ide/1.2.4/Phalcon/Tag.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="387" column="10" selection-start="7964" selection-end="7964" vertical-scroll-proportion="0.57347673" vertical-offset="6259" max-vertical-offset="10591" />
+        <state line="387" column="10" selection-start="7964" selection-end="7964" vertical-scroll-proportion="0.57347673" vertical-offset="6259" max-vertical-offset="10591">
+          <folding />
+        </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/../phalcon-devtools/ide/1.2.4/Phalcon/Tag/Exception.php">
@@ -526,14 +481,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/index.volt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="37" column="55" selection-start="1796" selection-end="1796" vertical-scroll-proportion="1.1252236" vertical-offset="0" max-vertical-offset="1870" />
-      </provider>
-      <provider editor-type-id="com.intellij.persistence.database.editor.CsvTableFileEditorProvider">
-        <state />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/controllers/admin/DashboardController.php">
       <provider selected="true" editor-type-id="text-editor">
         <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="584" />
@@ -542,18 +489,6 @@
     <entry file="file://$PROJECT_DIR$/app/controllers/admin/IndexController.php">
       <provider selected="true" editor-type-id="text-editor">
         <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="584" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/models/Users.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="2" column="0" selection-start="7" selection-end="7" vertical-scroll-proportion="0.0" vertical-offset="34" max-vertical-offset="1870">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/controllers/IndexController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="2" column="27" selection-start="61" selection-end="61" vertical-scroll-proportion="0.06331471" vertical-offset="0" max-vertical-offset="544" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/controllers/CourseController.php">
@@ -571,11 +506,6 @@
         <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="563" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/controllers/SearchController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="22" column="0" selection-start="425" selection-end="425" vertical-scroll-proportion="0.51792115" vertical-offset="0" max-vertical-offset="558" />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/views/dashboard/createTestQuestion.phtml">
       <provider selected="true" editor-type-id="text-editor">
         <state line="7" column="12" selection-start="335" selection-end="367" vertical-scroll-proportion="-4.576923" vertical-offset="0" max-vertical-offset="1938" />
@@ -584,14 +514,6 @@
     <entry file="file://$PROJECT_DIR$/app/views/dashboard/createModule.phtml">
       <provider selected="true" editor-type-id="text-editor">
         <state line="22" column="17" selection-start="821" selection-end="821" vertical-scroll-proportion="0.6702509" vertical-offset="0" max-vertical-offset="1139" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/layouts/dashboard.volt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="84" column="79" selection-start="3741" selection-end="3741" vertical-scroll-proportion="0.0" vertical-offset="952" max-vertical-offset="1853" />
-      </provider>
-      <provider editor-type-id="com.intellij.persistence.database.editor.CsvTableFileEditorProvider">
-        <state />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/views/dashboard/uploadVideo.phtml">
@@ -604,47 +526,9 @@
         <state line="34" column="32" selection-start="1097" selection-end="1097" vertical-scroll-proportion="0.7914339" vertical-offset="153" max-vertical-offset="935" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/config/services.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="14" column="27" selection-start="397" selection-end="445" vertical-scroll-proportion="0.4247312" vertical-offset="1" max-vertical-offset="2737" />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/controllers/HomeController.php">
       <provider selected="true" editor-type-id="text-editor">
         <state line="31" column="6" selection-start="565" selection-end="565" vertical-scroll-proportion="0.0" vertical-offset="527" max-vertical-offset="799">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/controllers/UserController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="45" column="26" selection-start="1182" selection-end="1182" vertical-scroll-proportion="0.0" vertical-offset="581" max-vertical-offset="1156">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/controllers/DashboardController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="19" column="21" selection-start="573" selection-end="573" vertical-scroll-proportion="-3.3148854" vertical-offset="1975" max-vertical-offset="2499" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/config/routes.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="24" column="132" selection-start="1334" selection-end="1334" vertical-scroll-proportion="0.0" vertical-offset="102" max-vertical-offset="986">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/controllers/ExaminationController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="146" column="44" selection-start="4254" selection-end="4254" vertical-scroll-proportion="0.0" vertical-offset="2482" max-vertical-offset="2890">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/examination/TryTest.phtml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="132" vertical-scroll-proportion="-0.0" vertical-offset="0" max-vertical-offset="1275">
           <folding />
         </state>
       </provider>
@@ -670,36 +554,188 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/logs/db.log">
-      <provider editor-type-id="text-editor">
-        <state line="457" column="29" selection-start="54183" selection-end="54183" vertical-scroll-proportion="0.0" vertical-offset="26981" max-vertical-offset="27506">
+    <entry file="file://$PROJECT_DIR$/app/controllers/ExaminationController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="146" column="44" selection-start="4254" selection-end="4254" vertical-scroll-proportion="-4.9615383" vertical-offset="2081" max-vertical-offset="2618">
           <folding />
         </state>
       </provider>
-      <provider selected="true" editor-type-id="com.intellij.persistence.database.editor.CsvTableFileEditorProvider">
-        <state />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/examination/TryTest.phtml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="132" vertical-scroll-proportion="-0.0" vertical-offset="0" max-vertical-offset="1275">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/index.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="30" column="54" selection-start="635" selection-end="635" vertical-scroll-proportion="0.7258065" vertical-offset="105" max-vertical-offset="663">
+          <folding />
+        </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/library/Examination/Examination.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="14" column="25" selection-start="247" selection-end="247" vertical-scroll-proportion="-9.153846" vertical-offset="0" max-vertical-offset="663">
+        <state line="3" column="6" selection-start="67" selection-end="67" vertical-scroll-proportion="-1.9615384" vertical-offset="0" max-vertical-offset="663">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/controllers/IndexController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="-0.0" vertical-offset="0" max-vertical-offset="544">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/controllers/SearchController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="-0.0" vertical-offset="0" max-vertical-offset="425">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/config/config.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="21" column="6" selection-start="876" selection-end="876" vertical-scroll-proportion="-13.730769" vertical-offset="0" max-vertical-offset="884">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/models/Questions.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="65" column="27" selection-start="1240" selection-end="1240" vertical-scroll-proportion="-13.038462" vertical-offset="766" max-vertical-offset="1717">
+        <state line="63" column="0" selection-start="1164" selection-end="1164" vertical-scroll-proportion="-7.8461537" vertical-offset="867" max-vertical-offset="1649">
           <folding>
             <element signature="e#30#52#0" expanded="true" />
-            <marker date="1394259005589" expanded="true" signature="1358:1469" placeholder="SELECT * FRO..questions..." />
+            <marker date="1394274016776" expanded="true" signature="-1:-1" placeholder="SELECT * FRO..questions..." />
           </folding>
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/app/logs/db.log">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="107" column="42" selection-start="1723" selection-end="1892" vertical-scroll-proportion="0.78205127" vertical-offset="1392" max-vertical-offset="1938">
+          <folding />
+        </state>
+      </provider>
+      <provider editor-type-id="com.intellij.persistence.database.editor.CsvTableFileEditorProvider">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/config/routes.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="8" column="100" selection-start="310" selection-end="311" vertical-scroll-proportion="-5.230769" vertical-offset="0" max-vertical-offset="986">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/home/login.phtml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="18.423077" vertical-offset="479" max-vertical-offset="1666">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/controllers/DashboardController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="141" column="0" selection-start="3416" selection-end="3416" vertical-scroll-proportion="-12.307693" vertical-offset="2077" max-vertical-offset="3621">
+          <folding>
+            <element signature="e#34#83#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/controllers/UserController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="47" column="59" selection-start="1395" selection-end="1395" vertical-scroll-proportion="-14.384615" vertical-offset="357" max-vertical-offset="1071">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/layouts/dashboard.volt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="41" column="30" selection-start="1797" selection-end="1797" vertical-scroll-proportion="0.0" vertical-offset="408" max-vertical-offset="1921">
+          <folding />
+        </state>
+      </provider>
+      <provider editor-type-id="com.intellij.persistence.database.editor.CsvTableFileEditorProvider">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/index.volt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="11" column="86" selection-start="419" selection-end="419" vertical-scroll-proportion="-5.88" vertical-offset="40" max-vertical-offset="1870">
+          <folding />
+        </state>
+      </provider>
+      <provider editor-type-id="com.intellij.persistence.database.editor.CsvTableFileEditorProvider">
+        <state />
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/app/library/Auth/Auth.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="112" column="25" selection-start="3006" selection-end="3006" vertical-scroll-proportion="-5.141527" vertical-offset="4597" max-vertical-offset="5338">
+        <state line="252" column="31" selection-start="6667" selection-end="6667" vertical-scroll-proportion="-20.039215" vertical-offset="3262" max-vertical-offset="5406">
+          <folding>
+            <element signature="e#28#59#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../phalcon-devtools/ide/1.2.4/Phalcon/Session/Bag.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="-4.856611" vertical-offset="2608" max-vertical-offset="3145">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../phalcon-devtools/ide/1.2.4/Phalcon/Session/BagInterface.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="-1.6592178" vertical-offset="891" max-vertical-offset="1428">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../phalcon-devtools/ide/1.2.4/Phalcon/Session/Exception.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="563">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../phalcon-devtools/ide/1.2.4/Phalcon/Session/AdapterInterface.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="-2.3207886" vertical-offset="1295" max-vertical-offset="1853">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../phalcon-devtools/ide/1.2.4/Phalcon/Session/Adapter.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="-2.6935484" vertical-offset="1503" max-vertical-offset="2499">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../phalcon-devtools/ide/1.2.4/Phalcon/Session/Adapter/Files.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="584">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/config/services.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="142" column="20" selection-start="3721" selection-end="3721" vertical-scroll-proportion="0.5430108" vertical-offset="2111" max-vertical-offset="2873">
+          <folding>
+            <element signature="e#8#38#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/models/Users.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="57" column="6" selection-start="677" selection-end="677" vertical-scroll-proportion="0.6272401" vertical-offset="619" max-vertical-offset="1870">
           <folding />
         </state>
       </provider>

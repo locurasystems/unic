@@ -3,6 +3,7 @@ namespace Unic\Controllers;
 use Phalcon\Mvc\Controller,
     Phalcon\Mvc\View;
 
+use Unic\Models\Questions;
 use UploadHandler;
 use Phalcon\Http\Response;
 use Aws;
@@ -137,7 +138,10 @@ class DashboardController extends ControllerBase {
 
     public function viewQuestionsAction()
     {
-        $question=new ExaminationController();
+        $uid=$this->auth->getID();
+
+        $this->view->disable();
+        $question=new Questions();
         $this->view->setVar('question',$question->GetQuestions());
     }
 

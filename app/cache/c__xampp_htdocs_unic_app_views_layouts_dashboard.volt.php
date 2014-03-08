@@ -39,7 +39,7 @@
                 <li><a href="#">Help</a>
                 </li>
                 <li>
-                {{auth.getName()}}
+                <?php echo $this->auth->getName(); ?>
                 </li>
 
                 <li><a href="login.php">Sign in</a>
@@ -71,7 +71,7 @@
             </a>
             <!-- Sub Menu -->
             <ul>
-                <li><a href="{{url("dashboard/createCourse")}}"><i class="glyphicon glyphicon-eye-open"></i> Create Course</a></li>
+                <li><a href="<?php echo $this->url->get('dashboard/createCourse'); ?>"><i class="glyphicon glyphicon-eye-open"></i> Create Course</a></li>
                 <li><a href="#">Approve Course</a></li>
             </ul>
         </li>
@@ -81,11 +81,11 @@
                 <span class="caret pull-right"></span>
             </a>
             <ul>
-                <li><a href="{{url("dashboard/createTest")}}"><i class="glyphicon glyphicon-pencil"></i> Create Test</a></li>
-                <li><a href="{{url("dashboard/createTestQuestion")}}"><i class="glyphicon glyphicon-pencil"></i> Create Questions</a></li>
-                <li><a href="{{url("dashboard/createModule")}}"><i class="glyphicon glyphicon-pencil"></i> Create Module</a></li>
-                <li><a href="{{url("dashboard/viewExam")}}"> <i class="glyphicon glyphicon-eye-open"></i>  View Exam</a></li>
-                <li><a href="{{url("dashboard/viewQuestions")}}"> <i class="glyphicon glyphicon-eye-open"></i>  View Questions</a></li>
+                <li><a href="<?php echo $this->url->get('dashboard/createTest'); ?>"><i class="glyphicon glyphicon-pencil"></i> Create Test</a></li>
+                <li><a href="<?php echo $this->url->get('dashboard/createTestQuestion'); ?>"><i class="glyphicon glyphicon-pencil"></i> Create Questions</a></li>
+                <li><a href="<?php echo $this->url->get('dashboard/createModule'); ?>"><i class="glyphicon glyphicon-pencil"></i> Create Module</a></li>
+                <li><a href="<?php echo $this->url->get('dashboard/viewExam'); ?>"> <i class="glyphicon glyphicon-eye-open"></i>  View Exam</a></li>
+                <li><a href="<?php echo $this->url->get('dashboard/viewQuestions'); ?>"> <i class="glyphicon glyphicon-eye-open"></i>  View Questions</a></li>
                 <li><a href="<?php echo $this->url->get(array("for"=>"TryTest")); ?>"> <i class="glyphicon glyphicon-pencil"></i>  Try Test</a></li>
                 <li><a href="#">Approve Course</a></li>
             </ul>

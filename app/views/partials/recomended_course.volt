@@ -88,7 +88,7 @@
 <div id="products" class="row-sm list-group">
     <div class="item  col-xs-12 col-lg-4">
         <div class="thumbnail">
-            <img class="group list-group-image" src="{{url('img/images.jpg')}}" alt="" style="width:250px;height:160px" />
+            <img class="group list-group-image" src="<?php echo $this->url->get('img/images.jpg'); ?>" alt="" style="width:250px;height:160px" />
             <div class="caption">
                 <h4 class="group inner list-group-item-heading">
                     <b>Product titles</b></h4>
@@ -110,7 +110,7 @@
     </div>
       <div class="item  col-xs-12 col-lg-4">
             <div class="thumbnail">
-                <img class="group list-group-image" src="{{url('img/images.jpg')}}" alt="" style="width:250px;height:160px" />
+                <img class="group list-group-image" src="<?php echo $this->url->get('img/images.jpg'); ?>" alt="" style="width:250px;height:160px" />
                 <div class="caption">
                     <h4 class="group inner list-group-item-heading">
                         <b>Product titles</b></h4>
@@ -132,7 +132,7 @@
         </div>
       <div class="item  col-xs-12 col-lg-4">
             <div class="thumbnail">
-                <img class="group list-group-image" src="{{url('img/images.jpg')}}" alt="" style="width:250px;height:160px" />
+                <img class="group list-group-image" src="<?php echo $this->url->get('img/images.jpg'); ?>" alt="" style="width:250px;height:160px" />
                 <div class="caption">
                     <h4 class="group inner list-group-item-heading">
                         <b>Product titles</b></h4>
@@ -154,7 +154,7 @@
         </div>
       <div class="item  col-xs-12 col-lg-4">
             <div class="thumbnail">
-                <img class="group list-group-image" src="{{url('img/images.jpg')}}" alt="" style="width:250px;height:160px" />
+                <img class="group list-group-image" src="<?php echo $this->url->get('img/images.jpg'); ?>" alt="" style="width:250px;height:160px" />
                 <div class="caption">
                     <h4 class="group inner list-group-item-heading">
                         <b>Product titles</b></h4>
@@ -176,7 +176,7 @@
         </div>
       <div class="item  col-xs-12 col-lg-4">
             <div class="thumbnail">
-                <img class="group list-group-image" src="{{url('img/images.jpg')}}" alt="" style="width:250px;height:160px" />
+                <img class="group list-group-image" src="<?php echo $this->url->get('img/images.jpg'); ?>" alt="" style="width:250px;height:160px" />
                 <div class="caption">
                     <h4 class="group inner list-group-item-heading">
                         <b>Product titles</b></h4>
@@ -198,7 +198,7 @@
         </div>
           <div class="item  col-xs-12 col-lg-4">
                 <div class="thumbnail">
-                    <img class="group list-group-image" src="{{url('img/images.jpg')}}" alt="" style="width:250px;height:160px" />
+                    <img class="group list-group-image" src="<?php echo $this->url->get('img/images.jpg'); ?>" alt="" style="width:250px;height:160px" />
                     <div class="caption">
                         <h4 class="group inner list-group-item-heading">
                             <b>Product titles</b></h4>
@@ -220,7 +220,7 @@
             </div>
           <div class="item  col-xs-12 col-lg-4">
                 <div class="thumbnail">
-                    <img class="group list-group-image" src="{{url('img/images.jpg')}}" alt="" style="width:250px;height:160px" />
+                    <img class="group list-group-image" src="<?php echo $this->url->get('img/images.jpg'); ?>" alt="" style="width:250px;height:160px" />
                     <div class="caption">
                         <h4 class="group inner list-group-item-heading">
                             <b>Product titles</b></h4>
@@ -242,7 +242,7 @@
             </div>
           <div class="item  col-xs-12 col-lg-4">
                 <div class="thumbnail">
-                    <img class="group list-group-image" src="{{url('img/images.jpg')}}" alt="" style="width:250px;height:160px" />
+                    <img class="group list-group-image" src="<?php echo $this->url->get('img/images.jpg'); ?>" alt="" style="width:250px;height:160px" />
                     <div class="caption">
                         <h4 class="group inner list-group-item-heading">
                             <b>Product titles</b></h4>
@@ -264,7 +264,7 @@
             </div>
           <div class="item  col-xs-12 col-lg-4">
                 <div class="thumbnail">
-                    <img class="group list-group-image" src="{{url('img/images.jpg')}}" alt="" style="width:250px;height:160px" />
+                    <img class="group list-group-image" src="<?php echo $this->url->get('img/images.jpg'); ?>" alt="" style="width:250px;height:160px" />
                     <div class="caption">
                         <h4 class="group inner list-group-item-heading">
                             <b>Product titles</b></h4>
@@ -286,7 +286,7 @@
             </div>
           <div class="item  col-xs-12 col-lg-4">
                 <div class="thumbnail">
-                    <img class="group list-group-image" src="{{url('img/images.jpg')}}" alt="" style="width:250px;height:160px" />
+                    <img class="group list-group-image" src="<?php echo $this->url->get('img/images.jpg'); ?>" alt="" style="width:250px;height:160px" />
                     <div class="caption">
                         <h4 class="group inner list-group-item-heading">
                             <b>Product titles</b></h4>
