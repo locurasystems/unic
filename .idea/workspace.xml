@@ -29,16 +29,17 @@
     <file path="/DashboardController.php" changelist="92e3122b-8e28-42bb-93a8-0e7ca0b744cd" time="1394086570228" ignored="false" />
     <file path="/loader.php" changelist="92e3122b-8e28-42bb-93a8-0e7ca0b744cd" time="1394088058665" ignored="false" />
     <file path="/Users.php" changelist="92e3122b-8e28-42bb-93a8-0e7ca0b744cd" time="1394090919886" ignored="false" />
-    <file path="/UserController.php" changelist="92e3122b-8e28-42bb-93a8-0e7ca0b744cd" time="1394258788157" ignored="false" />
+    <file path="/UserController.php" changelist="92e3122b-8e28-42bb-93a8-0e7ca0b744cd" time="1394259767726" ignored="false" />
     <file path="/services.php" changelist="92e3122b-8e28-42bb-93a8-0e7ca0b744cd" time="1394196204177" ignored="false" />
     <file path="/Profiles.php" changelist="92e3122b-8e28-42bb-93a8-0e7ca0b744cd" time="1394173129683" ignored="false" />
     <file path="/login.volt" changelist="92e3122b-8e28-42bb-93a8-0e7ca0b744cd" time="1394176117702" ignored="false" />
     <file path="/login.phtml" changelist="92e3122b-8e28-42bb-93a8-0e7ca0b744cd" time="1394191407151" ignored="false" />
-    <file path="/Auth.php" changelist="92e3122b-8e28-42bb-93a8-0e7ca0b744cd" time="1394258808806" ignored="false" />
+    <file path="/Auth.php" changelist="92e3122b-8e28-42bb-93a8-0e7ca0b744cd" time="1394259749943" ignored="false" />
     <file path="/Exception.php" changelist="92e3122b-8e28-42bb-93a8-0e7ca0b744cd" time="1394196328065" ignored="false" />
     <file path="/index.php" changelist="92e3122b-8e28-42bb-93a8-0e7ca0b744cd" time="1394200603647" ignored="false" />
     <file path="/HomeController.php" changelist="92e3122b-8e28-42bb-93a8-0e7ca0b744cd" time="1394257364359" ignored="false" />
     <file path="/Acl.php" changelist="92e3122b-8e28-42bb-93a8-0e7ca0b744cd" time="1394215015355" ignored="false" />
+    <file path="/index.volt" changelist="92e3122b-8e28-42bb-93a8-0e7ca0b744cd" time="1394276516546" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -58,62 +59,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="UserController.php" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/app/controllers/UserController.php">
+      <file leaf-file-name="index.volt" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/app/views/index.volt">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="22" column="8" selection-start="404" selection-end="404" vertical-scroll-proportion="-0.14213198">
-              <folding>
-                <element signature="e#36#57#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="HomeController.php" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/controllers/HomeController.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="33" column="35" selection-start="627" selection-end="627" vertical-scroll-proportion="-18.125">
+            <state line="21" column="37" selection-start="954" selection-end="954" vertical-scroll-proportion="0.5121951">
               <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="routes.php" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/config/routes.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="42" column="0" selection-start="1245" selection-end="1245" vertical-scroll-proportion="-26.25">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Acl.php" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/library/Acl/Acl.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="94" column="0" selection-start="2038" selection-end="2038" vertical-scroll-proportion="-34.541668">
-              <folding>
-                <element signature="e#27#58#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Auth.php" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/library/Auth/Auth.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="296" column="24" selection-start="7767" selection-end="7767" vertical-scroll-proportion="-18.291666">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="ControllerBase.php" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/controllers/ControllerBase.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="36" column="2" selection-start="1006" selection-end="1006" vertical-scroll-proportion="-22.5">
-              <folding>
-                <element signature="e#37#64#0" expanded="true" />
-              </folding>
             </state>
           </provider>
         </entry>
@@ -139,8 +89,6 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/app/views/home/login.volt" />
-        <option value="$PROJECT_DIR$/app/views/home/login.phtml" />
         <option value="$PROJECT_DIR$/app/library/Auth/Exception.php" />
         <option value="$PROJECT_DIR$/app/config/services.php" />
         <option value="$PROJECT_DIR$/app/controllers/DashboardController.php" />
@@ -155,6 +103,8 @@
         <option value="$PROJECT_DIR$/app/controllers/ControllerBase.php" />
         <option value="$PROJECT_DIR$/app/library/Auth/Auth.php" />
         <option value="$PROJECT_DIR$/app/controllers/UserController.php" />
+        <option value="$PROJECT_DIR$/public/js/angular.js" />
+        <option value="$PROJECT_DIR$/app/views/index.volt" />
       </list>
     </option>
   </component>
@@ -239,7 +189,11 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="public" />
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="views" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -254,42 +208,6 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="app" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="unic" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="unic" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="app" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="library" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="unic" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="unic" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="app" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="controllers" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -300,7 +218,7 @@
   <component name="PropertiesComponent">
     <property name="options.splitter.main.proportions" value="0.3" />
     <property name="WebServerToolWindowFactoryState" value="true" />
-    <property name="options.lastSelected" value="editor.preferences.appearance" />
+    <property name="options.lastSelected" value="settings.github" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/../phalcon-tools/ide/1.2.4/Phalcon" />
     <property name="FullScreen" value="false" />
     <property name="options.searchVisible" value="true" />
@@ -368,18 +286,18 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="22" width="1280" height="774" extended-state="0" />
-    <editor active="false" />
+    <editor active="true" />
     <layout>
       <window_info id="REST Client" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.56070286" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3292683" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.24959481" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Remote Host" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.2382496" sideWeight="0.6707317" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.2382496" sideWeight="0.6707317" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3295082" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3292683" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3292683" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
@@ -459,27 +377,6 @@
     <breakpoint-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/app/views/home/login.phtml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="45" column="111" selection-start="2100" selection-end="2100" vertical-scroll-proportion="0.5609756">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public/index.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="30" column="53" selection-start="634" selection-end="634" vertical-scroll-proportion="-18.75">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/models/SuccessLogins.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="37" column="59" selection-start="470" selection-end="470" vertical-scroll-proportion="-18.916666">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/config/config.php">
       <provider selected="true" editor-type-id="text-editor">
         <state line="17" column="57" selection-start="673" selection-end="702" vertical-scroll-proportion="0.42218542">
@@ -567,17 +464,42 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/library/Auth/Auth.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="296" column="24" selection-start="7767" selection-end="7767" vertical-scroll-proportion="-18.291666">
-          <folding />
+        <state line="259" column="28" selection-start="6825" selection-end="6825" vertical-scroll-proportion="-161.875">
+          <folding>
+            <element signature="e#28#59#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/js/angular.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="172" column="28" selection-start="93481" selection-end="93481" vertical-scroll-proportion="0.0699187">
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/controllers/UserController.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="22" column="8" selection-start="404" selection-end="404" vertical-scroll-proportion="-0.14213198">
+        <state line="48" column="56" selection-start="1333" selection-end="1396" vertical-scroll-proportion="0.5837563">
           <folding>
             <element signature="e#36#57#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/index.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="30" column="53" selection-start="634" selection-end="634" vertical-scroll-proportion="0.7450331">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/index.volt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="21" column="37" selection-start="954" selection-end="954" vertical-scroll-proportion="0.5121951">
+          <folding />
         </state>
       </provider>
     </entry>

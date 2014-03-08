@@ -46,7 +46,7 @@ class UserController extends ControllerBase {
                 $data = array('username' => $this->request->getPost('username'), 'password' => $this->request->getPost('password'));
                 $this->auth->check($data);
 
-                return $this->response->redirect('user/profile');
+                return $this->response->redirect('dashboard');
 
             }
 
