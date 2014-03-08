@@ -13,9 +13,9 @@
                     echo  Phalcon\Tag::select(
                         array("test_id",
                         \Unic\Models\Test::find(),
-                            "using"=>array("test_id","testName")
-                        )
-                    );
+                            "using"=>array("test_id","testName"),
+                            "class"=>"form-control"
+                        ));
                         ?>
                 </div>
             </div>

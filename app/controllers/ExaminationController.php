@@ -12,7 +12,9 @@ use Phalcon\Mvc\Controller,
     Unic\Models\Test,
     Unic\Models\Questions,
     Unic\Models\Module,
-    Phalcon\Mvc\View;
+    Unic\Models\TestHasModule,
+    Phalcon\Mvc\View,
+    Unic\Examination\Examination;
 use \Phalcon\Mvc\Model\Message;
 
 use Unic\Mail\Exception;
@@ -72,9 +74,10 @@ class ExaminationController extends  ControllerBase
     }
     public function AddModuleAction()
     {
-        $values=$_POST;
+        $values=$this->request->getPost();
         $moduleName=$values['moduleName'];
         $moduleType=$values['moduleType'];
+        $test_id=$values['test_id'];
         $module=new Module();
         $module->moduleName=$moduleName;
         $module->moduleType=$moduleType;
@@ -85,6 +88,13 @@ class ExaminationController extends  ControllerBase
                 echo $message->getMessage(), "<br/>";
             }
         }
+        $module_id=$module->module_id;
+       $test=new TestHasModule();
+        $test->test_id=$test_id;
+        $test->module_id=$module_id;
+        $test->save();
+
+
         return $this->response->redirect('dashboard/createModule');
     }
 
@@ -92,7 +102,64 @@ class ExaminationController extends  ControllerBase
     {
      $data=Questions::getQuestions();
        return $data;
+    }
+    public function GetModuleByTestIDAction()
+    {
+        $id=$this->request->getPost("id","int");
+        $data=TestHasModule::find(array(
+           "column"=>array("module_id"),
+            "conditions"=>"test_id=:id:",
+            "bind"=>array("id"=>$id)
+        ));
+        foreach($data as $value)
+        {
+            $module=Module::find(array(
+                "column"=>array("module_id","moduleName"),
+                "conditions"=>"module_id = :id:",
+                "bind"=>array("id"=>$value->module_id)
+            ));
+            foreach($module as $result)
+            {
+                $resData[]=array("id"=>$result->module_id,"name"=>$result->moduleName);
+            }
+        }
+        echo json_encode($resData);
+        $this->view->disable();
 
+    }
+
+    public function TryTestAction($start=0)
+    {
+//        $this->view->setRenderLevel(View::LEVEL_ACTION_VIEW);
+        $st=$this->request->getPost('start');
+        if(isset($st))
+        {
+            $start=$st;
+        }
+//        $data=Questions::;
+//         $this->view->setVar('question',$data);
+        $this->view->setLayout('dashboard');
+
+    }
+
+    public function SelectTestAction()
+    {
+        $this->view->setLayout('dashboard');
+    }
+
+    public function LoadNextQuestionSetAction()
+    {
+        $a=new Examination();
+        $c=$a->getNextQuestionSet('22');
+        echo json_encode($c);
+        $this->view->disable();
+    }
+    public function LoadQuestionSetAction()
+    {
+        $Quest=new Examination();
+        $Question=$Quest->getNextQuestionSet();
+        echo json_encode($Question);
+        $this->view->disable();
     }
 
 } 
