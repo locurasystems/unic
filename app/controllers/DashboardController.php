@@ -36,7 +36,7 @@ class DashboardController extends ControllerBase {
 	}
 	public function addMediaAction()
 	{
-		 
+
 	}
 
 	public function uploadMediaAction()

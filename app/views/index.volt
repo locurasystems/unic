@@ -35,9 +35,9 @@
   		<!-- Custom CSS -->
   		<link href="{{url("css/style.css")}}" rel="stylesheet">
   		<!-- jQuery -->
+  		<script src="{{url("js/jquery.js")}}"></script>
+ <script src="{{url("js/jquery-ui-1.10.2.custom.min.js")}}"></script>
 
-        		<script src="{{url("js/jquery.js")}}"></script>
-<script src="{{url("js/jquery-ui-1.10.2.custom.min.js")}}"></script>
 
 
 	<style>
@@ -58,6 +58,8 @@
 <!-- Javascript files -->
 
 		<!-- Bootstrap JS -->
+
+
 
 		<script src="{{url("js/bootstrap.min.js")}}"></script>
       <!-- jQuery UI -->

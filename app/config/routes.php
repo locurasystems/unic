@@ -18,6 +18,16 @@ $router->addPost("/examination/AddQuestions",array('controller' =>'examination',
 
 $router->addPost("/examination/AddModule",array('controller' =>'examination','action'=>'AddModule'))->setName('AddModule');
 
+$router->addPost("/examination/AddQuestion/getModuleID",array('controller'=>'examination','action'=>'GetModuleByTestID'))->setName('GetModuleByTestID');
+
+$router->addGet("/dashboard/Exam/TryTest",array('controller'=>'examination','action'=>'TryTest'))->setName('TryTest');
+
+$router->addGet("/dashboard/Exam/TryTest/SelectTest",array('controller'=>'examination','action'=>'SelectTest'))->setName('SelectTest');
+
+$router->addPost("/dashboard/Exam/TryTest/QuestionSet",array('controller'=>'examination','action'=>'LoadQuestionSet'))->setName('QuestionSet');
+
+$router->addPost("/dashboard/Exam/TryTest/Next",array('controller'=>'examination','action'=>'TryTest'))->setName('TryTestNext');
+
 
 
 

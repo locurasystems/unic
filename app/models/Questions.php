@@ -3,7 +3,8 @@ namespace Unic\Models;
 
 use Phalcon\Mvc\Model;
 use Phalcon\Mvc\Model\Message,
-    Phalcon\Mvc\Model\Query;
+    Phalcon\Mvc\Model\Query,
+    Unic\Models\Module;
 
 use Phalcon\Mvc\Model\Resultset\Simple as Resultset;
 
@@ -60,20 +61,33 @@ class Questions extends \Phalcon\Mvc\Model
     }
     public static function getQuestions()
     {
-        $sql="SELECT * FROM questions q
-                JOIN module m
-                ON q.questionModuleID = m.module_id";
-        $question=new Questions();
-        $data= new Resultset(null,$question,$question->getReadConnection()->query($sql));
+        $module=new Module();
+        $sql=Questions::query()
+            ->join('module','questions.questionModuleID=module.module_id','p')
+            ->execute()
+            ->toArray();
+
+//        $sql="SELECT * FROM questions q
+//                JOIN module m
+//                ON q.questionModuleID = m.module_id";
+//        $question=new Questions();
+//        $data= new Resultset(null,$question,$question->getReadConnection()->query($sql));
+
         $currentPage=(int)$_GET["page"];
+        if($currentPage==''){ $currentPage =1; };
         $paginator = new \Phalcon\Paginator\Adapter\Model(
             array(
-                "data"  => $data,
+                "data"  => $sql,
                 "limit" => 15,
                 "page"  => $currentPage
             ));
         $page=$paginator->getPaginate();
         return $page;
+    }
+
+    public static  function getQuestionLimit($moduleID,$start,$perPage)
+    {
+
 
 
     }

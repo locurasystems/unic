@@ -82,6 +82,7 @@
                 <li><a href="{{url("dashboard/createModule")}}"><i class="glyphicon glyphicon-pencil"></i> Create Module</a></li>
                 <li><a href="{{url("dashboard/viewExam")}}"> <i class="glyphicon glyphicon-eye-open"></i>  View Exam</a></li>
                 <li><a href="{{url("dashboard/viewQuestions")}}"> <i class="glyphicon glyphicon-eye-open"></i>  View Questions</a></li>
+                <li><a href="<?php echo $this->url->get(array("for"=>"TryTest")); ?>"> <i class="glyphicon glyphicon-pencil"></i>  Try Test</a></li>
                 <li><a href="#">Approve Course</a></li>
             </ul>
         </li>

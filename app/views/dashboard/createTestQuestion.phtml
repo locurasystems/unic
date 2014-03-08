@@ -6,16 +6,38 @@
 
             <!-- Form Name -->
             <legend>Create Question</legend>
+            <!--   Select Test  -->
 
-            <!-- Select Basic -->
+            <div class="form-group">
+                <label class="col-md-2 control-label" for="test_id">Test:</label>
+                <div class="col-md-9">
+                    <?php
+                    echo Phalcon\Tag::select(
+                      array(
+                          "test_id",
+                          \Unic\Models\Test::find(),
+                          'useEmpty'  =>  true,
+                          'emptyText' =>  'Select Test',
+                          "using"=>array("test_id","testName"),
+                          "class"=>"form-control"
+                      )
+                    );
+                    ?>
+                    </div>
+                </div>
+            <!-- End Select test-->
+            <!-- Select Module -->
             <div class="form-group">
                 <label class="col-md-2 control-label" for="questionModuleID">Module:</label>
                 <div class="col-md-9">
-                    <select id="questionModuleID" name="questionModuleID" class="form-control">
-                        <?php if(count($module)>0){ foreach($module as $value){ ?>
-                        <option value="<?php echo $value->module_id; ?>"><?php echo $value->moduleName; ?></option>
-                        <?php } } ?>
-                    </select>
+                    <?php
+                    echo Phalcon\Tag::select(
+                            array(
+                                "questionModuleID",
+                                array(null=>'Select Module'),
+                                "class"=>"form-control"
+                            ));
+                     ?>
                 </div>
             </div>
 
@@ -54,4 +76,33 @@
         </fieldset>
     </form>
 </div>
+<script type="application/javascript">
+    var getResultUrl="<?php echo $this->url->get(array("for"=>"GetModuleByTestID")); ?>";
+    </script>
+<script type="text/javascript">
+$('#test_id').change(function(){
+    var value=$(this).val();
 
+    $.ajax({
+        type:"POST",
+        url:getResultUrl,
+        data:{"id":value},
+
+        success:function(response){
+
+            $("#questionModuleID option")
+                .not(":first").remove();
+
+             var parsed= $.parseJSON(response);
+
+            $.each(parsed,function(key,value){
+                $("#questionModuleID")
+                    .append($("<option></option>")
+                    .attr("value",value.id)
+                    .text(value.name));
+
+            });
+        }
+    });
+});
+</script>
