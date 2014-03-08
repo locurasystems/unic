@@ -32,7 +32,7 @@ class Auth extends Component
 
         // Check the password
         if (!$this->security->checkHash($credentials['password'], $user->password)) {
-            $this->registerUserThrottling($user->u_id);
+            $this->registerUserThrottling($user->id);
             throw new \Exception('Wrong email/password combination\nPassword1:');
         }
 
@@ -50,7 +50,15 @@ class Auth extends Component
         $this->session->set('auth-identity', array(
             'id' => $user->id,
             'name' => $user->username,
+            'time'=>time(),
+            'logged'=>'true',
         ));
+
+        if($user==true)
+        {
+            $user->first_name;
+        }
+
     }
 
     /**
@@ -215,10 +223,10 @@ class Auth extends Component
     }
 
     /**
-* Returns the current identity
-*
-* @return array
-*/
+    * Returns the current identity
+    *
+    * @return array
+    */
     public function getIdentity()
     {
         return $this->session->get('auth-identity');

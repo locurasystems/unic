@@ -16,6 +16,9 @@ $loader->registerNamespaces(array(
     'Unic\Models' => $config->application->modelsDir,
     'Unic\Controllers' => $config->application->controllersDir,
     'Unic' => $config->application->libraryDir,
+    'Aws'=>$config->application->libraryDir.'Aws',
+    'Guzzle'=>$config->application->libraryDir.'Guzzle',
+    'Symfony' =>$config->application->libraryDir.'symfony',
 
 ));
 

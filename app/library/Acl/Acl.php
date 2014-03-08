@@ -5,7 +5,7 @@ use Phalcon\Mvc\User\Component;
 use Phalcon\Acl\Adapter\Memory as AclMemory;
 use Phalcon\Acl\Role as AclRole;
 use Phalcon\Acl\Resource as AclResource;
-use User\Models\Profiles;
+use Unic\Models\Profiles;
 
 /**
 * Unic\Acl\Acl
@@ -25,7 +25,7 @@ class Acl extends Component
 *
 * @var string
 */
-    private $filePath = '/cache/acl/data.txt';
+    private $filePath = '/Applications/MAMP/htdocs/unic/app/cache/acl/data.txt';
 
     /**
 * Define the resources that are considered "private". These controller => actions require authentication.
@@ -37,7 +37,7 @@ class Acl extends Component
             'index',
             'search',
             'edit',
-            'create',
+            'register',
             'delete',
             'changePassword'
         ),
@@ -48,8 +48,11 @@ class Acl extends Component
             'create',
             'delete'
         ),
-        'permissions' => array(
+        'dashboard' => array(
             'index'
+        ),
+        'user'=>array(
+            'profile'
         )
     );
 
@@ -78,24 +81,20 @@ class Acl extends Component
         return isset($this->privateResources[$controllerName]);
     }
 
-    /**
-* Checks if the current profile is allowed to access a resource
-*
-* @param string $profile
-* @param string $controller
-* @param string $action
-* @return boolean
-*/
+        /**
+    * Checks if the current profile is allowed to access a resource
+    *
+    * @param string $profile
+    * @param string $controller
+    * @param string $action
+    * @return boolean
+    */
     public function isAllowed($profile, $controller, $action)
     {
         return $this->getAcl()->isAllowed($profile, $controller, $action);
     }
 
-    /**
-* Returns the ACL list
-*
-* @return Phalcon\Acl\Adapter\Memory
-*/
+
     public function getAcl()
     {
         // Check if the ACL is already created
@@ -113,13 +112,13 @@ class Acl extends Component
         }
 
         // Check if the ACL is already generated
-        if (!file_exists(APP_DIR . $this->filePath)) {
+        if (!file_exists($this->filePath)) {
             $this->acl = $this->rebuild();
             return $this->acl;
         }
 
         // Get the ACL from the data file
-        $data = file_get_contents(APP_DIR . $this->filePath);
+        $data = file_get_contents($this->filePath);
         $this->acl = unserialize($data);
 
         // Store the ACL in APC
@@ -204,9 +203,9 @@ class Acl extends Component
             $acl->allow($profile->name, 'users', 'changePassword');
         }
 
-        if (touch(APP_DIR . $this->filePath) && is_writable(APP_DIR . $this->filePath)) {
+        if (touch($this->filePath) && is_writable($this->filePath)) {
 
-            file_put_contents(APP_DIR . $this->filePath, serialize($acl));
+            file_put_contents($this->filePath, serialize($acl));
 
             // Store the ACL in APC
             if (function_exists('apc_store')) {
@@ -214,7 +213,7 @@ class Acl extends Component
             }
         } else {
             $this->flash->error(
-                'The user does not have write permissions to create the ACL list at ' . APP_DIR . $this->filePath
+                'The user does not have write permissions to create the ACL list at ' .  $this->filePath
             );
         }
 

@@ -17,10 +17,10 @@
     <orderEntry type="module-library">
       <library name="PHP">
         <CLASSES>
-          <root url="file://$MODULE_DIR$/../phalcon-devtools/ide/1.2.4" />
+          <root url="file://$MODULE_DIR$/../phalcon-tools/ide/1.2.4/Phalcon" />
         </CLASSES>
         <SOURCES>
-          <root url="file://$MODULE_DIR$/../phalcon-devtools/ide/1.2.4" />
+          <root url="file://$MODULE_DIR$/../phalcon-tools/ide/1.2.4/Phalcon" />
         </SOURCES>
       </library>
     </orderEntry>

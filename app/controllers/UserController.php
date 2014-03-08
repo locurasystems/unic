@@ -19,35 +19,42 @@ class UserController extends ControllerBase {
     public function registerAction() {
 
         // Check CSRF security token
-        if ($this->security->checkToken()) {
+        if ($this->security->checkToken())
+        {
 
-            $password = $this->security->hash($this->request->getPost('password'));
+            $password = $this->security->hash($this->request->getPost('password','string'));
 
             // Inserting user data 
             $user = new Users();
-            $user->username = $this->request->getPost('username');
+            $user->name=$this->request->getPost('first_name','string').' '. $this->request->getPost('last_name','string');
+            $user->username = $this->request->getPost('username','string');
             $user->password = $password;
+            $user->profilesId=$this->request->getPost('module');
             $user->active='N';
             $user->suspended='N';
             $user->banned='N';
             $user->save();
-            
-            $dispatcher->forward(array(
-                    'controller' => 'index',
-                    'action' => 'index'
-                )
-                    );
-                return false;
+
+            echo $user->getMessages();
         }
     }
 
-    public function loginAction() {
+    public function loginAction()
+    {
+            if ($this->security->checkToken())
+            {
+                $data = array('username' => $this->request->getPost('username'), 'password' => $this->request->getPost('password'));
+                $this->auth->check($data);
 
-        if ($this->security->checkToken()) {
-            $data = array('username' => $this->request->getPost('username'), 'password' => $this->request->getPost('password'));
+                return $this->response->redirect('user/profile');
 
-            $this->auth->check($data);
-        }
+            }
+
+    }
+
+    public function profileAction()
+    {
+
     }
 
 }

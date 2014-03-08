@@ -14,8 +14,7 @@ use Unic\Auth\Auth,
 	Phalcon\Logger\Adapter\File as Logger,
     Phalcon\Db\Adapter\Pdo\Mysql as Connection,
     Phalcon\Events\Manager as EventManager,
-Unic\Acl\Acl;
-
+    Unic\Acl\Acl;
 /**
  * The FactoryDefault Dependency Injector automatically register the right services providing a full stack framework
  */
@@ -67,13 +66,6 @@ $di->set('dispatcher', function () {
     return $dispatcher;
 });
 
-$di->set('auth',function(){
-	return new Auth();
-});
-
-$di->set('acl',function(){
-    return new Acl();
-});
 /**
  * Database connection is created based in the parameters defined in the configuration file
  */
@@ -136,9 +128,10 @@ $di->set('router', function(){
 /**
  * If the configuration specify the use of metadata adapter use it or use memory otherwise
  */
-$di->set('modelsMetadata', function () {
-    return new MetaDataAdapter();
-});
+$di->set('modelsMetadata', function () use($config) {
+    return new MetaDataAdapter(array(
+        'metaDataDir' => $config->application->cacheDir . 'metaData/'
+    ));});
 
 $di->set('modelsManager', function() {
       return new Phalcon\Mvc\Model\Manager();
@@ -152,4 +145,19 @@ $di->set('session', function () {
 
     return $session;
 });
+
+/**
+ * Custom authentication component
+ */
+$di->set('auth', function () {
+    return new Auth();
+});
+
+/**
+ * Access Control List
+ */
+$di->set('acl', function () {
+    return new Acl();
+});
+
 

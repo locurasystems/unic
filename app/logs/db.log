@@ -453,3 +453,247 @@
 [Wed, 05 Mar 14 13:03:37 -0800][DEBUG] SELECT `module`.`module_id`, `module`.`moduleName`, `module`.`moduleType` FROM `module` WHERE `module`.`module_id`
 [Wed, 05 Mar 14 13:22:56 -0800][DEBUG] SELECT `module`.`module_id`, `module`.`moduleName`, `module`.`moduleType` FROM `module` WHERE `module`.`module_id`
 [Wed, 05 Mar 14 13:23:12 -0800][DEBUG] SELECT `test`.`test_id`, `test`.`testCreaterID`, `test`.`testName`, `test`.`testStartDate`, `test`.`testCreatedAt`, `test`.`testIsActive` FROM `test`
+[Wed, 05 Mar 14 23:29:02 -0800][DEBUG] SELECT IF(COUNT(*)>0, 1 , 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME`='users'
+[Wed, 05 Mar 14 23:29:02 -0800][DEBUG] DESCRIBE `users`
+[Wed, 05 Mar 14 23:29:03 -0800][DEBUG] INSERT INTO `users` (`userName`, `userUsername`, `userPassword`, `mustChangePassword`, `userProfilesId`, `userSecretKey`, `userIsActive`, `userIsBanned`, `userIsSuspended`) VALUES (null, null, null, null, null, null, null, null, null)
+[Wed, 05 Mar 14 23:30:29 -0800][DEBUG] INSERT INTO `users` (`userName`, `userUsername`, `userPassword`, `mustChangePassword`, `userProfilesId`, `userSecretKey`, `userIsActive`, `userIsBanned`, `userIsSuspended`) VALUES (null, null, null, null, null, null, null, null, null)
+[Wed, 05 Mar 14 23:30:56 -0800][DEBUG] INSERT INTO `users` (`userName`, `userUsername`, `userPassword`, `mustChangePassword`, `userProfilesId`, `userSecretKey`, `userIsActive`, `userIsBanned`, `userIsSuspended`) VALUES (null, null, null, null, null, null, null, null, null)
+[Wed, 05 Mar 14 23:31:20 -0800][DEBUG] INSERT INTO `users` (`userName`, `userUsername`, `userPassword`, `mustChangePassword`, `userProfilesId`, `userSecretKey`, `userIsActive`, `userIsBanned`, `userIsSuspended`) VALUES (null, null, null, null, null, null, null, null, null)
+[Wed, 05 Mar 14 23:33:20 -0800][DEBUG] INSERT INTO `users` (`userName`, `userUsername`, `userPassword`, `mustChangePassword`, `userProfilesId`, `userSecretKey`, `userIsActive`, `userIsBanned`, `userIsSuspended`) VALUES (null, null, null, null, null, null, null, null, null)
+[Thu, 06 Mar 14 21:26:51 -0800][DEBUG] INSERT INTO `users` (`userName`, `userUsername`, `userPassword`, `mustChangePassword`, `userProfilesId`, `userSecretKey`, `userIsActive`, `userIsBanned`, `userIsSuspended`) VALUES (null, null, null, null, null, null, null, null, null)
+[Thu, 06 Mar 14 21:28:41 -0800][DEBUG] INSERT INTO `users` (`userName`, `userUsername`, `userPassword`, `mustChangePassword`, `userProfilesId`, `userSecretKey`, `userIsActive`, `userIsBanned`, `userIsSuspended`) VALUES (null, null, null, null, null, null, null, null, null)
+[Thu, 06 Mar 14 21:30:03 -0800][DEBUG] INSERT INTO `users` (`userName`, `userUsername`, `userPassword`, `mustChangePassword`, `userProfilesId`, `userSecretKey`, `userIsActive`, `userIsBanned`, `userIsSuspended`) VALUES (null, null, null, null, null, null, null, null, null)
+[Thu, 06 Mar 14 21:31:02 -0800][DEBUG] SELECT IF(COUNT(*)>0, 1 , 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME`='users'
+[Thu, 06 Mar 14 21:31:02 -0800][DEBUG] DESCRIBE `users`
+[Thu, 06 Mar 14 21:31:02 -0800][DEBUG] INSERT INTO `users` (`userName`, `userUsername`, `userPassword`, `mustChangePassword`, `userProfilesId`, `userSecretKey`, `userIsActive`, `userIsBanned`, `userIsSuspended`) VALUES (null, ?, ?, null, null, null, ?, ?, ?)
+[Thu, 06 Mar 14 21:31:39 -0800][DEBUG] SELECT IF(COUNT(*)>0, 1 , 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME`='users'
+[Thu, 06 Mar 14 21:34:34 -0800][DEBUG] INSERT INTO `users` (`userName`, `userUsername`, `userPassword`, `mustChangePassword`, `userProfilesId`, `userSecretKey`, `userIsActive`, `userIsBanned`, `userIsSuspended`) VALUES (null, ?, ?, null, null, null, ?, ?, ?)
+[Thu, 06 Mar 14 21:35:07 -0800][DEBUG] INSERT INTO `users` (`userName`, `userUsername`, `userPassword`, `mustChangePassword`, `userProfilesId`, `userSecretKey`, `userIsActive`, `userIsBanned`, `userIsSuspended`) VALUES (null, ?, ?, null, null, null, ?, ?, ?)
+[Thu, 06 Mar 14 22:52:09 -0800][DEBUG] SELECT IF(COUNT(*)>0, 1 , 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME`='users'
+[Thu, 06 Mar 14 22:52:09 -0800][DEBUG] DESCRIBE `users`
+[Thu, 06 Mar 14 22:52:41 -0800][DEBUG] SELECT IF(COUNT(*)>0, 1 , 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME`='users'
+[Thu, 06 Mar 14 22:52:41 -0800][DEBUG] DESCRIBE `users`
+[Thu, 06 Mar 14 22:53:06 -0800][DEBUG] SELECT IF(COUNT(*)>0, 1 , 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME`='users'
+[Thu, 06 Mar 14 22:53:06 -0800][DEBUG] DESCRIBE `users`
+[Thu, 06 Mar 14 22:53:51 -0800][DEBUG] SELECT IF(COUNT(*)>0, 1 , 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME`='users'
+[Thu, 06 Mar 14 22:53:51 -0800][DEBUG] DESCRIBE `users`
+[Thu, 06 Mar 14 22:55:12 -0800][DEBUG] SELECT IF(COUNT(*)>0, 1 , 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME`='users'
+[Thu, 06 Mar 14 22:55:12 -0800][DEBUG] DESCRIBE `users`
+[Thu, 06 Mar 14 22:55:12 -0800][DEBUG] INSERT INTO `users` (`userName`, `userUsername`, `userPassword`, `mustChangePassword`, `userProfilesId`, `userSecretKey`, `userIsActive`, `userIsBanned`, `userIsSuspended`) VALUES (null, ?, ?, null, null, null, null, null, null)
+[Thu, 06 Mar 14 22:57:31 -0800][DEBUG] INSERT INTO `users` (`userName`, `userUsername`, `userPassword`, `mustChangePassword`, `userProfilesId`, `userSecretKey`, `userIsActive`, `userIsBanned`, `userIsSuspended`) VALUES (?, ?, ?, null, ?, null, ?, ?, ?)
+[Thu, 06 Mar 14 22:58:08 -0800][DEBUG] SELECT `users`.`u_id`, `users`.`userName`, `users`.`userUsername`, `users`.`userPassword`, `users`.`mustChangePassword`, `users`.`userProfilesId`, `users`.`userSecretKey`, `users`.`userIsActive`, `users`.`userIsBanned`, `users`.`userIsSuspended` FROM `users` WHERE `users`.`userUsername` = :0 LIMIT 1
+[Thu, 06 Mar 14 22:58:22 -0800][DEBUG] SELECT `users`.`u_id`, `users`.`userName`, `users`.`userUsername`, `users`.`userPassword`, `users`.`mustChangePassword`, `users`.`userProfilesId`, `users`.`userSecretKey`, `users`.`userIsActive`, `users`.`userIsBanned`, `users`.`userIsSuspended` FROM `users` WHERE `users`.`userUsername` = :0 LIMIT 1
+[Thu, 06 Mar 14 22:58:22 -0800][DEBUG] SELECT IF(COUNT(*)>0, 1 , 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME`='success_logins'
+[Thu, 06 Mar 14 22:58:22 -0800][DEBUG] DESCRIBE `success_logins`
+[Fri, 07 Mar 14 03:20:58 -0800][DEBUG] SELECT IF(COUNT(*)>0, 1 , 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME`='users'
+[Fri, 07 Mar 14 03:20:58 -0800][DEBUG] DESCRIBE `users`
+[Fri, 07 Mar 14 03:20:58 -0800][DEBUG] SELECT `users`.`u_id`, `users`.`userName`, `users`.`userUsername`, `users`.`userPassword`, `users`.`mustChangePassword`, `users`.`userProfilesId`, `users`.`userSecretKey`, `users`.`userIsActive`, `users`.`userIsBanned`, `users`.`userIsSuspended` FROM `users` WHERE `users`.`userUsername` = :0 LIMIT 1
+[Fri, 07 Mar 14 03:20:59 -0800][DEBUG] SELECT IF(COUNT(*)>0, 1 , 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME`='success_logins'
+[Fri, 07 Mar 14 03:20:59 -0800][DEBUG] DESCRIBE `success_logins`
+[Fri, 07 Mar 14 03:22:12 -0800][DEBUG] SELECT `users`.`u_id`, `users`.`userName`, `users`.`userUsername`, `users`.`userPassword`, `users`.`mustChangePassword`, `users`.`userProfilesId`, `users`.`userSecretKey`, `users`.`userIsActive`, `users`.`userIsBanned`, `users`.`userIsSuspended` FROM `users` WHERE `users`.`userUsername` = :0 LIMIT 1
+[Fri, 07 Mar 14 03:22:23 -0800][DEBUG] SELECT `users`.`u_id`, `users`.`userName`, `users`.`userUsername`, `users`.`userPassword`, `users`.`mustChangePassword`, `users`.`userProfilesId`, `users`.`userSecretKey`, `users`.`userIsActive`, `users`.`userIsBanned`, `users`.`userIsSuspended` FROM `users` WHERE `users`.`userUsername` = :0 LIMIT 1
+[Fri, 07 Mar 14 03:22:34 -0800][DEBUG] SELECT `users`.`u_id`, `users`.`userName`, `users`.`userUsername`, `users`.`userPassword`, `users`.`mustChangePassword`, `users`.`userProfilesId`, `users`.`userSecretKey`, `users`.`userIsActive`, `users`.`userIsBanned`, `users`.`userIsSuspended` FROM `users` WHERE `users`.`userUsername` = :0 LIMIT 1
+[Fri, 07 Mar 14 03:24:39 -0800][DEBUG] SELECT `users`.`u_id`, `users`.`userName`, `users`.`userUsername`, `users`.`userPassword`, `users`.`mustChangePassword`, `users`.`userProfilesId`, `users`.`userSecretKey`, `users`.`userIsActive`, `users`.`userIsBanned`, `users`.`userIsSuspended` FROM `users` WHERE `users`.`userUsername` = :0 LIMIT 1
+[Fri, 07 Mar 14 03:24:39 -0800][DEBUG] SELECT IF(COUNT(*)>0, 1 , 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME`='failed_logins'
+[Fri, 07 Mar 14 03:24:39 -0800][DEBUG] DESCRIBE `failed_logins`
+[Fri, 07 Mar 14 03:24:39 -0800][DEBUG] INSERT INTO `failed_logins` (`usersId`, `ipAddress`, `attempted`) VALUES (?, ?, ?)
+[Fri, 07 Mar 14 03:24:39 -0800][DEBUG] SELECT COUNT(*) AS `rowcount` FROM `failed_logins` WHERE `failed_logins`.`ipAddress` = :0 AND `failed_logins`.`attempted` >= :1
+[Fri, 07 Mar 14 03:25:08 -0800][DEBUG] SELECT `users`.`u_id`, `users`.`userName`, `users`.`userUsername`, `users`.`userPassword`, `users`.`mustChangePassword`, `users`.`userProfilesId`, `users`.`userSecretKey`, `users`.`userIsActive`, `users`.`userIsBanned`, `users`.`userIsSuspended` FROM `users` WHERE `users`.`userUsername` = :0 LIMIT 1
+[Fri, 07 Mar 14 03:26:12 -0800][DEBUG] SELECT `users`.`u_id`, `users`.`userName`, `users`.`userUsername`, `users`.`userPassword`, `users`.`mustChangePassword`, `users`.`userProfilesId`, `users`.`userSecretKey`, `users`.`userIsActive`, `users`.`userIsBanned`, `users`.`userIsSuspended` FROM `users` WHERE `users`.`userUsername` = :0 LIMIT 1
+[Fri, 07 Mar 14 03:26:16 -0800][DEBUG] SELECT `users`.`u_id`, `users`.`userName`, `users`.`userUsername`, `users`.`userPassword`, `users`.`mustChangePassword`, `users`.`userProfilesId`, `users`.`userSecretKey`, `users`.`userIsActive`, `users`.`userIsBanned`, `users`.`userIsSuspended` FROM `users` WHERE `users`.`userUsername` = :0 LIMIT 1
+[Fri, 07 Mar 14 03:27:00 -0800][DEBUG] SELECT IF(COUNT(*)>0, 1 , 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME`='users'
+[Fri, 07 Mar 14 03:27:00 -0800][DEBUG] DESCRIBE `users`
+[Fri, 07 Mar 14 03:27:00 -0800][DEBUG] SELECT `users`.`u_id`, `users`.`userName`, `users`.`userUsername`, `users`.`userPassword`, `users`.`mustChangePassword`, `users`.`userProfilesId`, `users`.`userSecretKey`, `users`.`userIsActive`, `users`.`userIsBanned`, `users`.`userIsSuspended` FROM `users` WHERE `users`.`userUsername` = :0 LIMIT 1
+[Fri, 07 Mar 14 03:27:00 -0800][DEBUG] SELECT IF(COUNT(*)>0, 1 , 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME`='success_logins'
+[Fri, 07 Mar 14 03:27:00 -0800][DEBUG] DESCRIBE `success_logins`
+[Fri, 07 Mar 14 04:00:15 -0800][DEBUG] SELECT `users`.`u_id`, `users`.`userName`, `users`.`userUsername`, `users`.`userPassword`, `users`.`mustChangePassword`, `users`.`userProfilesId`, `users`.`userSecretKey`, `users`.`userIsActive`, `users`.`userIsBanned`, `users`.`userIsSuspended` FROM `users` WHERE `users`.`userUsername` = :0 LIMIT 1
+[Fri, 07 Mar 14 04:00:28 -0800][DEBUG] SELECT `users`.`u_id`, `users`.`userName`, `users`.`userUsername`, `users`.`userPassword`, `users`.`mustChangePassword`, `users`.`userProfilesId`, `users`.`userSecretKey`, `users`.`userIsActive`, `users`.`userIsBanned`, `users`.`userIsSuspended` FROM `users` WHERE `users`.`userUsername` = :0 LIMIT 1
+[Fri, 07 Mar 14 04:46:03 -0800][DEBUG] SELECT `users`.`u_id`, `users`.`userName`, `users`.`userUsername`, `users`.`userPassword`, `users`.`mustChangePassword`, `users`.`userProfilesId`, `users`.`userSecretKey`, `users`.`userIsActive`, `users`.`userIsBanned`, `users`.`userIsSuspended` FROM `users` WHERE `users`.`userUsername` = :0 LIMIT 1
+[Fri, 07 Mar 14 04:46:34 -0800][DEBUG] SELECT `users`.`u_id`, `users`.`userName`, `users`.`userUsername`, `users`.`userPassword`, `users`.`mustChangePassword`, `users`.`userProfilesId`, `users`.`userSecretKey`, `users`.`userIsActive`, `users`.`userIsBanned`, `users`.`userIsSuspended` FROM `users` WHERE `users`.`userUsername` = :0 LIMIT 1
+[Fri, 07 Mar 14 04:46:43 -0800][DEBUG] SELECT IF(COUNT(*)>0, 1 , 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME`='users'
+[Fri, 07 Mar 14 04:46:43 -0800][DEBUG] DESCRIBE `users`
+[Fri, 07 Mar 14 04:46:43 -0800][DEBUG] SELECT `users`.`u_id`, `users`.`userName`, `users`.`userUsername`, `users`.`userPassword`, `users`.`mustChangePassword`, `users`.`userProfilesId`, `users`.`userSecretKey`, `users`.`userIsActive`, `users`.`userIsBanned`, `users`.`userIsSuspended` FROM `users` WHERE `users`.`userUsername` = :0 LIMIT 1
+[Fri, 07 Mar 14 04:46:43 -0800][DEBUG] SELECT IF(COUNT(*)>0, 1 , 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME`='success_logins'
+[Fri, 07 Mar 14 04:46:43 -0800][DEBUG] DESCRIBE `success_logins`
+[Fri, 07 Mar 14 04:46:43 -0800][DEBUG] INSERT INTO `success_logins` (`usersId`, `ipAddress`, `userAgent`) VALUES (?, ?, ?)
+[Fri, 07 Mar 14 04:51:14 -0800][DEBUG] SELECT `users`.`u_id`, `users`.`userName`, `users`.`userUsername`, `users`.`userPassword`, `users`.`mustChangePassword`, `users`.`userProfilesId`, `users`.`userSecretKey`, `users`.`userIsActive`, `users`.`userIsBanned`, `users`.`userIsSuspended` FROM `users` WHERE `users`.`userUsername` = :0 LIMIT 1
+[Fri, 07 Mar 14 04:51:14 -0800][DEBUG] INSERT INTO `success_logins` (`usersId`, `ipAddress`, `userAgent`) VALUES (?, ?, ?)
+[Fri, 07 Mar 14 04:51:24 -0800][DEBUG] SELECT `users`.`u_id`, `users`.`userName`, `users`.`userUsername`, `users`.`userPassword`, `users`.`mustChangePassword`, `users`.`userProfilesId`, `users`.`userSecretKey`, `users`.`userIsActive`, `users`.`userIsBanned`, `users`.`userIsSuspended` FROM `users` WHERE `users`.`userUsername` = :0 LIMIT 1
+[Fri, 07 Mar 14 04:51:24 -0800][DEBUG] INSERT INTO `success_logins` (`usersId`, `ipAddress`, `userAgent`) VALUES (?, ?, ?)
+[Fri, 07 Mar 14 04:51:44 -0800][DEBUG] SELECT `users`.`u_id`, `users`.`userName`, `users`.`userUsername`, `users`.`userPassword`, `users`.`mustChangePassword`, `users`.`userProfilesId`, `users`.`userSecretKey`, `users`.`userIsActive`, `users`.`userIsBanned`, `users`.`userIsSuspended` FROM `users` WHERE `users`.`userUsername` = :0 LIMIT 1
+[Fri, 07 Mar 14 04:51:44 -0800][DEBUG] INSERT INTO `success_logins` (`usersId`, `ipAddress`, `userAgent`) VALUES (?, ?, ?)
+[Fri, 07 Mar 14 04:52:03 -0800][DEBUG] SELECT `users`.`u_id`, `users`.`userName`, `users`.`userUsername`, `users`.`userPassword`, `users`.`mustChangePassword`, `users`.`userProfilesId`, `users`.`userSecretKey`, `users`.`userIsActive`, `users`.`userIsBanned`, `users`.`userIsSuspended` FROM `users` WHERE `users`.`userUsername` = :0 LIMIT 1
+[Fri, 07 Mar 14 04:52:03 -0800][DEBUG] INSERT INTO `success_logins` (`usersId`, `ipAddress`, `userAgent`) VALUES (?, ?, ?)
+[Fri, 07 Mar 14 05:40:23 -0800][DEBUG] SELECT `users`.`u_id`, `users`.`userName`, `users`.`userUsername`, `users`.`userPassword`, `users`.`mustChangePassword`, `users`.`userProfilesId`, `users`.`userSecretKey`, `users`.`userIsActive`, `users`.`userIsBanned`, `users`.`userIsSuspended` FROM `users` WHERE `users`.`userUsername` = :0 LIMIT 1
+[Fri, 07 Mar 14 05:40:23 -0800][DEBUG] SELECT IF(COUNT(*)>0, 1 , 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME`='failed_logins'
+[Fri, 07 Mar 14 05:40:23 -0800][DEBUG] DESCRIBE `failed_logins`
+[Fri, 07 Mar 14 05:40:23 -0800][DEBUG] INSERT INTO `failed_logins` (`usersId`, `ipAddress`, `attempted`) VALUES (?, ?, ?)
+[Fri, 07 Mar 14 05:40:23 -0800][DEBUG] SELECT COUNT(*) AS `rowcount` FROM `failed_logins` WHERE `failed_logins`.`ipAddress` = :0 AND `failed_logins`.`attempted` >= :1
+[Fri, 07 Mar 14 05:40:34 -0800][DEBUG] SELECT `users`.`u_id`, `users`.`userName`, `users`.`userUsername`, `users`.`userPassword`, `users`.`mustChangePassword`, `users`.`userProfilesId`, `users`.`userSecretKey`, `users`.`userIsActive`, `users`.`userIsBanned`, `users`.`userIsSuspended` FROM `users` WHERE `users`.`userUsername` = :0 LIMIT 1
+[Fri, 07 Mar 14 05:40:34 -0800][DEBUG] INSERT INTO `success_logins` (`usersId`, `ipAddress`, `userAgent`) VALUES (?, ?, ?)
+[Fri, 07 Mar 14 05:41:46 -0800][DEBUG] SELECT `users`.`u_id`, `users`.`userName`, `users`.`userUsername`, `users`.`userPassword`, `users`.`mustChangePassword`, `users`.`userProfilesId`, `users`.`userSecretKey`, `users`.`userIsActive`, `users`.`userIsBanned`, `users`.`userIsSuspended` FROM `users` WHERE `users`.`userUsername` = :0 LIMIT 1
+[Fri, 07 Mar 14 05:41:46 -0800][DEBUG] INSERT INTO `success_logins` (`usersId`, `ipAddress`, `userAgent`) VALUES (?, ?, ?)
+[Fri, 07 Mar 14 05:42:42 -0800][DEBUG] SELECT `users`.`u_id`, `users`.`userName`, `users`.`userUsername`, `users`.`userPassword`, `users`.`mustChangePassword`, `users`.`userProfilesId`, `users`.`userSecretKey`, `users`.`userIsActive`, `users`.`userIsBanned`, `users`.`userIsSuspended` FROM `users` WHERE `users`.`userUsername` = :0 LIMIT 1
+[Fri, 07 Mar 14 05:42:42 -0800][DEBUG] INSERT INTO `success_logins` (`usersId`, `ipAddress`, `userAgent`) VALUES (?, ?, ?)
+[Fri, 07 Mar 14 05:45:56 -0800][DEBUG] SELECT IF(COUNT(*)>0, 1 , 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME`='users'
+[Fri, 07 Mar 14 05:45:56 -0800][DEBUG] DESCRIBE `users`
+[Fri, 07 Mar 14 05:45:56 -0800][DEBUG] SELECT `users`.`u_id`, `users`.`userName`, `users`.`userUsername`, `users`.`userPassword`, `users`.`mustChangePassword`, `users`.`userProfilesId`, `users`.`userSecretKey`, `users`.`userIsActive`, `users`.`userIsBanned`, `users`.`userIsSuspended` FROM `users` WHERE `users`.`userUsername` = :0 LIMIT 1
+[Fri, 07 Mar 14 05:45:56 -0800][DEBUG] SELECT IF(COUNT(*)>0, 1 , 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME`='success_logins'
+[Fri, 07 Mar 14 05:45:56 -0800][DEBUG] DESCRIBE `success_logins`
+[Fri, 07 Mar 14 05:45:56 -0800][DEBUG] INSERT INTO `success_logins` (`usersId`, `ipAddress`, `userAgent`) VALUES (?, ?, ?)
+[Fri, 07 Mar 14 05:52:51 -0800][DEBUG] SELECT `users`.`u_id`, `users`.`userName`, `users`.`userUsername`, `users`.`userPassword`, `users`.`mustChangePassword`, `users`.`userProfilesId`, `users`.`userSecretKey`, `users`.`userIsActive`, `users`.`userIsBanned`, `users`.`userIsSuspended` FROM `users` WHERE `users`.`userUsername` = :0 LIMIT 1
+[Fri, 07 Mar 14 05:52:52 -0800][DEBUG] INSERT INTO `success_logins` (`usersId`, `ipAddress`, `userAgent`) VALUES (?, ?, ?)
+[Fri, 07 Mar 14 05:54:37 -0800][DEBUG] SELECT `users`.`u_id`, `users`.`userName`, `users`.`userUsername`, `users`.`userPassword`, `users`.`mustChangePassword`, `users`.`userProfilesId`, `users`.`userSecretKey`, `users`.`userIsActive`, `users`.`userIsBanned`, `users`.`userIsSuspended` FROM `users` WHERE `users`.`userUsername` = :0 LIMIT 1
+[Fri, 07 Mar 14 05:54:37 -0800][DEBUG] INSERT INTO `success_logins` (`usersId`, `ipAddress`, `userAgent`) VALUES (?, ?, ?)
+[Fri, 07 Mar 14 05:55:42 -0800][DEBUG] SELECT `users`.`u_id`, `users`.`userName`, `users`.`userUsername`, `users`.`userPassword`, `users`.`mustChangePassword`, `users`.`userProfilesId`, `users`.`userSecretKey`, `users`.`userIsActive`, `users`.`userIsBanned`, `users`.`userIsSuspended` FROM `users` WHERE `users`.`userUsername` = :0 LIMIT 1
+[Fri, 07 Mar 14 05:56:49 -0800][DEBUG] SELECT `users`.`u_id`, `users`.`userName`, `users`.`userUsername`, `users`.`userPassword`, `users`.`mustChangePassword`, `users`.`userProfilesId`, `users`.`userSecretKey`, `users`.`userIsActive`, `users`.`userIsBanned`, `users`.`userIsSuspended` FROM `users` WHERE `users`.`userUsername` = :0 LIMIT 1
+[Fri, 07 Mar 14 05:57:53 -0800][DEBUG] SELECT IF(COUNT(*)>0, 1 , 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME`='users'
+[Fri, 07 Mar 14 05:57:53 -0800][DEBUG] DESCRIBE `users`
+[Fri, 07 Mar 14 05:57:53 -0800][DEBUG] SELECT `users`.`u_id`, `users`.`userName`, `users`.`userUsername`, `users`.`userPassword`, `users`.`mustChangePassword`, `users`.`userProfilesId`, `users`.`userSecretKey`, `users`.`userIsActive`, `users`.`userIsBanned`, `users`.`userIsSuspended` FROM `users` WHERE `users`.`userUsername` = :0 LIMIT 1
+[Fri, 07 Mar 14 05:57:53 -0800][DEBUG] SELECT IF(COUNT(*)>0, 1 , 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME`='success_logins'
+[Fri, 07 Mar 14 05:57:53 -0800][DEBUG] DESCRIBE `success_logins`
+[Fri, 07 Mar 14 05:57:53 -0800][DEBUG] INSERT INTO `success_logins` (`usersId`, `ipAddress`, `userAgent`) VALUES (?, ?, ?)
+[Fri, 07 Mar 14 05:58:29 -0800][DEBUG] SELECT `users`.`u_id`, `users`.`userName`, `users`.`userUsername`, `users`.`userPassword`, `users`.`mustChangePassword`, `users`.`userProfilesId`, `users`.`userSecretKey`, `users`.`userIsActive`, `users`.`userIsBanned`, `users`.`userIsSuspended` FROM `users` WHERE `users`.`userUsername` = :0 LIMIT 1
+[Fri, 07 Mar 14 06:01:10 -0800][DEBUG] SELECT `users`.`u_id`, `users`.`userName`, `users`.`userUsername`, `users`.`userPassword`, `users`.`mustChangePassword`, `users`.`userProfilesId`, `users`.`userSecretKey`, `users`.`userIsActive`, `users`.`userIsBanned`, `users`.`userIsSuspended` FROM `users` WHERE `users`.`userUsername` = :0 LIMIT 1
+[Fri, 07 Mar 14 06:01:49 -0800][DEBUG] SELECT `users`.`u_id`, `users`.`userName`, `users`.`userUsername`, `users`.`userPassword`, `users`.`mustChangePassword`, `users`.`userProfilesId`, `users`.`userSecretKey`, `users`.`userIsActive`, `users`.`userIsBanned`, `users`.`userIsSuspended` FROM `users` WHERE `users`.`userUsername` = :0 LIMIT 1
+[Fri, 07 Mar 14 06:01:55 -0800][DEBUG] SELECT `users`.`u_id`, `users`.`userName`, `users`.`userUsername`, `users`.`userPassword`, `users`.`mustChangePassword`, `users`.`userProfilesId`, `users`.`userSecretKey`, `users`.`userIsActive`, `users`.`userIsBanned`, `users`.`userIsSuspended` FROM `users` WHERE `users`.`userUsername` = :0 LIMIT 1
+[Fri, 07 Mar 14 06:02:04 -0800][DEBUG] SELECT `users`.`u_id`, `users`.`userName`, `users`.`userUsername`, `users`.`userPassword`, `users`.`mustChangePassword`, `users`.`userProfilesId`, `users`.`userSecretKey`, `users`.`userIsActive`, `users`.`userIsBanned`, `users`.`userIsSuspended` FROM `users` WHERE `users`.`userUsername` = :0 LIMIT 1
+[Fri, 07 Mar 14 06:02:31 -0800][DEBUG] SELECT IF(COUNT(*)>0, 1 , 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME`='users'
+[Fri, 07 Mar 14 06:02:31 -0800][DEBUG] DESCRIBE `users`
+[Fri, 07 Mar 14 06:02:31 -0800][DEBUG] SELECT `users`.`id`, `users`.`userName`, `users`.`userUsername`, `users`.`userPassword`, `users`.`mustChangePassword`, `users`.`userProfilesId`, `users`.`userSecretKey`, `users`.`userIsActive`, `users`.`userIsBanned`, `users`.`userIsSuspended` FROM `users` WHERE `users`.`userUsername` = :0 LIMIT 1
+[Fri, 07 Mar 14 06:02:31 -0800][DEBUG] SELECT IF(COUNT(*)>0, 1 , 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME`='success_logins'
+[Fri, 07 Mar 14 06:02:31 -0800][DEBUG] DESCRIBE `success_logins`
+[Fri, 07 Mar 14 06:02:31 -0800][DEBUG] INSERT INTO `success_logins` (`usersId`, `ipAddress`, `userAgent`) VALUES (?, ?, ?)
+[Fri, 07 Mar 14 06:03:00 -0800][DEBUG] SELECT `users`.`id`, `users`.`userName`, `users`.`userUsername`, `users`.`userPassword`, `users`.`mustChangePassword`, `users`.`userProfilesId`, `users`.`userSecretKey`, `users`.`userIsActive`, `users`.`userIsBanned`, `users`.`userIsSuspended` FROM `users` WHERE `users`.`userUsername` = :0 LIMIT 1
+[Fri, 07 Mar 14 06:03:00 -0800][DEBUG] INSERT INTO `success_logins` (`usersId`, `ipAddress`, `userAgent`) VALUES (?, ?, ?)
+[Fri, 07 Mar 14 06:07:51 -0800][DEBUG] SELECT `users`.`id`, `users`.`userName`, `users`.`userUsername`, `users`.`userPassword`, `users`.`mustChangePassword`, `users`.`userProfilesId`, `users`.`userSecretKey`, `users`.`userIsActive`, `users`.`userIsBanned`, `users`.`userIsSuspended` FROM `users` WHERE `users`.`userUsername` = :0 LIMIT 1
+[Fri, 07 Mar 14 06:07:51 -0800][DEBUG] INSERT INTO `success_logins` (`usersId`, `ipAddress`, `userAgent`) VALUES (?, ?, ?)
+[Fri, 07 Mar 14 06:10:07 -0800][DEBUG] SELECT `users`.`id`, `users`.`userName`, `users`.`userUsername`, `users`.`userPassword`, `users`.`mustChangePassword`, `users`.`userProfilesId`, `users`.`userSecretKey`, `users`.`userIsActive`, `users`.`userIsBanned`, `users`.`userIsSuspended` FROM `users` WHERE `users`.`userUsername` = :0 LIMIT 1
+[Fri, 07 Mar 14 06:10:07 -0800][DEBUG] INSERT INTO `success_logins` (`usersId`, `ipAddress`, `userAgent`) VALUES (?, ?, ?)
+[Fri, 07 Mar 14 06:10:43 -0800][DEBUG] SELECT `users`.`id`, `users`.`userName`, `users`.`userUsername`, `users`.`userPassword`, `users`.`mustChangePassword`, `users`.`userProfilesId`, `users`.`userSecretKey`, `users`.`userIsActive`, `users`.`userIsBanned`, `users`.`userIsSuspended` FROM `users` WHERE `users`.`userUsername` = :0 LIMIT 1
+[Fri, 07 Mar 14 06:10:43 -0800][DEBUG] INSERT INTO `success_logins` (`usersId`, `ipAddress`, `userAgent`) VALUES (?, ?, ?)
+[Fri, 07 Mar 14 06:12:18 -0800][DEBUG] SELECT `users`.`id`, `users`.`userName`, `users`.`userUsername`, `users`.`userPassword`, `users`.`mustChangePassword`, `users`.`userProfilesId`, `users`.`userSecretKey`, `users`.`userIsActive`, `users`.`userIsBanned`, `users`.`userIsSuspended` FROM `users` WHERE `users`.`userUsername` = :0 LIMIT 1
+[Fri, 07 Mar 14 06:12:18 -0800][DEBUG] INSERT INTO `success_logins` (`usersId`, `ipAddress`, `userAgent`) VALUES (?, ?, ?)
+[Fri, 07 Mar 14 06:13:07 -0800][DEBUG] SELECT `users`.`id`, `users`.`userName`, `users`.`userUsername`, `users`.`userPassword`, `users`.`mustChangePassword`, `users`.`userProfilesId`, `users`.`userSecretKey`, `users`.`userIsActive`, `users`.`userIsBanned`, `users`.`userIsSuspended` FROM `users` WHERE `users`.`userUsername` = :0 LIMIT 1
+[Fri, 07 Mar 14 06:13:07 -0800][DEBUG] INSERT INTO `success_logins` (`usersId`, `ipAddress`, `userAgent`) VALUES (?, ?, ?)
+[Fri, 07 Mar 14 06:13:35 -0800][DEBUG] SELECT `users`.`id`, `users`.`userName`, `users`.`userUsername`, `users`.`userPassword`, `users`.`mustChangePassword`, `users`.`userProfilesId`, `users`.`userSecretKey`, `users`.`userIsActive`, `users`.`userIsBanned`, `users`.`userIsSuspended` FROM `users` WHERE `users`.`userUsername` = :0 LIMIT 1
+[Fri, 07 Mar 14 06:13:35 -0800][DEBUG] INSERT INTO `success_logins` (`usersId`, `ipAddress`, `userAgent`) VALUES (?, ?, ?)
+[Fri, 07 Mar 14 06:13:59 -0800][DEBUG] SELECT `users`.`id`, `users`.`userName`, `users`.`userUsername`, `users`.`userPassword`, `users`.`mustChangePassword`, `users`.`userProfilesId`, `users`.`userSecretKey`, `users`.`userIsActive`, `users`.`userIsBanned`, `users`.`userIsSuspended` FROM `users` WHERE `users`.`userUsername` = :0 LIMIT 1
+[Fri, 07 Mar 14 06:13:59 -0800][DEBUG] INSERT INTO `success_logins` (`usersId`, `ipAddress`, `userAgent`) VALUES (?, ?, ?)
+[Fri, 07 Mar 14 06:16:11 -0800][DEBUG] SELECT `users`.`id`, `users`.`userName`, `users`.`userUsername`, `users`.`userPassword`, `users`.`mustChangePassword`, `users`.`userProfilesId`, `users`.`userSecretKey`, `users`.`userIsActive`, `users`.`userIsBanned`, `users`.`userIsSuspended` FROM `users` WHERE `users`.`userUsername` = :0 LIMIT 1
+[Fri, 07 Mar 14 06:16:11 -0800][DEBUG] INSERT INTO `success_logins` (`usersId`, `ipAddress`, `userAgent`) VALUES (?, ?, ?)
+[Fri, 07 Mar 14 06:16:31 -0800][DEBUG] SELECT `users`.`id`, `users`.`userName`, `users`.`userUsername`, `users`.`userPassword`, `users`.`mustChangePassword`, `users`.`userProfilesId`, `users`.`userSecretKey`, `users`.`userIsActive`, `users`.`userIsBanned`, `users`.`userIsSuspended` FROM `users` WHERE `users`.`userUsername` = :0 LIMIT 1
+[Fri, 07 Mar 14 06:16:31 -0800][DEBUG] INSERT INTO `success_logins` (`usersId`, `ipAddress`, `userAgent`) VALUES (?, ?, ?)
+[Fri, 07 Mar 14 06:31:16 -0800][DEBUG] SELECT `users`.`id`, `users`.`userName`, `users`.`userUsername`, `users`.`userPassword`, `users`.`mustChangePassword`, `users`.`userProfilesId`, `users`.`userSecretKey`, `users`.`userIsActive`, `users`.`userIsBanned`, `users`.`userIsSuspended` FROM `users` WHERE `users`.`userUsername` = :0 LIMIT 1
+[Fri, 07 Mar 14 06:31:17 -0800][DEBUG] INSERT INTO `success_logins` (`usersId`, `ipAddress`, `userAgent`) VALUES (?, ?, ?)
+[Fri, 07 Mar 14 06:32:17 -0800][DEBUG] SELECT `users`.`id`, `users`.`userName`, `users`.`userUsername`, `users`.`userPassword`, `users`.`mustChangePassword`, `users`.`userProfilesId`, `users`.`userSecretKey`, `users`.`userIsActive`, `users`.`userIsBanned`, `users`.`userIsSuspended` FROM `users` WHERE `users`.`userUsername` = :0 LIMIT 1
+[Fri, 07 Mar 14 06:32:17 -0800][DEBUG] INSERT INTO `success_logins` (`usersId`, `ipAddress`, `userAgent`) VALUES (?, ?, ?)
+[Fri, 07 Mar 14 06:34:47 -0800][DEBUG] SELECT `users`.`id`, `users`.`userName`, `users`.`userUsername`, `users`.`userPassword`, `users`.`mustChangePassword`, `users`.`userProfilesId`, `users`.`userSecretKey`, `users`.`userIsActive`, `users`.`userIsBanned`, `users`.`userIsSuspended` FROM `users` WHERE `users`.`userUsername` = :0 LIMIT 1
+[Fri, 07 Mar 14 06:34:47 -0800][DEBUG] INSERT INTO `success_logins` (`usersId`, `ipAddress`, `userAgent`) VALUES (?, ?, ?)
+[Fri, 07 Mar 14 06:41:11 -0800][DEBUG] SELECT `users`.`id`, `users`.`userName`, `users`.`userUsername`, `users`.`userPassword`, `users`.`mustChangePassword`, `users`.`userProfilesId`, `users`.`userSecretKey`, `users`.`userIsActive`, `users`.`userIsBanned`, `users`.`userIsSuspended` FROM `users` WHERE `users`.`userUsername` = :0 LIMIT 1
+[Fri, 07 Mar 14 06:41:11 -0800][DEBUG] INSERT INTO `success_logins` (`usersId`, `ipAddress`, `userAgent`) VALUES (?, ?, ?)
+[Fri, 07 Mar 14 07:17:07 -0800][DEBUG] SELECT `users`.`id`, `users`.`userName`, `users`.`userUsername`, `users`.`userPassword`, `users`.`mustChangePassword`, `users`.`userProfilesId`, `users`.`userSecretKey`, `users`.`userIsActive`, `users`.`userIsBanned`, `users`.`userIsSuspended` FROM `users` WHERE `users`.`userUsername` = :0 LIMIT 1
+[Fri, 07 Mar 14 07:17:07 -0800][DEBUG] INSERT INTO `success_logins` (`usersId`, `ipAddress`, `userAgent`) VALUES (?, ?, ?)
+[Fri, 07 Mar 14 07:19:58 -0800][DEBUG] SELECT IF(COUNT(*)>0, 1 , 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME`='profiles'
+[Fri, 07 Mar 14 07:19:58 -0800][DEBUG] DESCRIBE `profiles`
+[Fri, 07 Mar 14 07:22:23 -0800][DEBUG] SELECT IF(COUNT(*)>0, 1 , 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME`='profiles'
+[Fri, 07 Mar 14 07:22:23 -0800][DEBUG] DESCRIBE `profiles`
+[Fri, 07 Mar 14 07:22:23 -0800][DEBUG] SELECT `profiles`.`id`, `profiles`.`profileName`, `profiles`.`profileIsActive` FROM `profiles` WHERE `profiles`.`profileIsActive` = 'Y'
+[Fri, 07 Mar 14 07:22:23 -0800][DEBUG] SELECT IF(COUNT(*)>0, 1 , 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME`='permissions'
+[Fri, 07 Mar 14 07:22:23 -0800][DEBUG] DESCRIBE `permissions`
+[Fri, 07 Mar 14 07:22:23 -0800][DEBUG] SELECT `permissions`.`id`, `permissions`.`profilesId`, `permissions`.`resource`, `permissions`.`action` FROM `permissions` WHERE `permissions`.`profilesId` = :0
+[Fri, 07 Mar 14 07:23:35 -0800][DEBUG] SELECT `profiles`.`id`, `profiles`.`profileName`, `profiles`.`profileIsActive` FROM `profiles` WHERE `profiles`.`profileIsActive` = 'Y'
+[Fri, 07 Mar 14 07:23:35 -0800][DEBUG] SELECT `permissions`.`id`, `permissions`.`profilesId`, `permissions`.`resource`, `permissions`.`action` FROM `permissions` WHERE `permissions`.`profilesId` = :0
+[Fri, 07 Mar 14 07:23:35 -0800][DEBUG] SELECT `permissions`.`id`, `permissions`.`profilesId`, `permissions`.`resource`, `permissions`.`action` FROM `permissions` WHERE `permissions`.`profilesId` = :0
+[Fri, 07 Mar 14 07:23:35 -0800][DEBUG] SELECT `permissions`.`id`, `permissions`.`profilesId`, `permissions`.`resource`, `permissions`.`action` FROM `permissions` WHERE `permissions`.`profilesId` = :0
+[Fri, 07 Mar 14 07:23:54 -0800][DEBUG] SELECT IF(COUNT(*)>0, 1 , 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME`='users'
+[Fri, 07 Mar 14 07:23:54 -0800][DEBUG] DESCRIBE `users`
+[Fri, 07 Mar 14 07:23:54 -0800][DEBUG] SELECT `users`.`id`, `users`.`userName`, `users`.`userUsername`, `users`.`userPassword`, `users`.`mustChangePassword`, `users`.`userProfilesId`, `users`.`userSecretKey`, `users`.`userIsActive`, `users`.`userIsBanned`, `users`.`userIsSuspended` FROM `users` WHERE `users`.`userUsername` = :0 LIMIT 1
+[Fri, 07 Mar 14 07:23:54 -0800][DEBUG] SELECT IF(COUNT(*)>0, 1 , 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME`='success_logins'
+[Fri, 07 Mar 14 07:23:54 -0800][DEBUG] DESCRIBE `success_logins`
+[Fri, 07 Mar 14 07:23:54 -0800][DEBUG] INSERT INTO `success_logins` (`usersId`, `ipAddress`, `userAgent`) VALUES (?, ?, ?)
+[Fri, 07 Mar 14 07:23:54 -0800][DEBUG] SELECT `profiles`.`id`, `profiles`.`profileName`, `profiles`.`profileIsActive` FROM `profiles` WHERE `profiles`.`profileIsActive` = 'Y'
+[Fri, 07 Mar 14 07:23:54 -0800][DEBUG] SELECT `permissions`.`id`, `permissions`.`profilesId`, `permissions`.`resource`, `permissions`.`action` FROM `permissions` WHERE `permissions`.`profilesId` = :0
+[Fri, 07 Mar 14 07:23:54 -0800][DEBUG] SELECT `permissions`.`id`, `permissions`.`profilesId`, `permissions`.`resource`, `permissions`.`action` FROM `permissions` WHERE `permissions`.`profilesId` = :0
+[Fri, 07 Mar 14 07:23:54 -0800][DEBUG] SELECT `permissions`.`id`, `permissions`.`profilesId`, `permissions`.`resource`, `permissions`.`action` FROM `permissions` WHERE `permissions`.`profilesId` = :0
+[Fri, 07 Mar 14 08:11:13 -0800][DEBUG] SELECT `users`.`id`, `users`.`userName`, `users`.`userUsername`, `users`.`userPassword`, `users`.`mustChangePassword`, `users`.`userProfilesId`, `users`.`userSecretKey`, `users`.`userIsActive`, `users`.`userIsBanned`, `users`.`userIsSuspended` FROM `users` WHERE `users`.`userUsername` = :0 LIMIT 1
+[Fri, 07 Mar 14 08:11:13 -0800][DEBUG] INSERT INTO `success_logins` (`usersId`, `ipAddress`, `userAgent`) VALUES (?, ?, ?)
+[Fri, 07 Mar 14 08:11:13 -0800][DEBUG] SELECT `profiles`.`id`, `profiles`.`profileName`, `profiles`.`profileIsActive` FROM `profiles` WHERE `profiles`.`profileIsActive` = 'Y'
+[Fri, 07 Mar 14 08:11:13 -0800][DEBUG] SELECT `permissions`.`id`, `permissions`.`profilesId`, `permissions`.`resource`, `permissions`.`action` FROM `permissions` WHERE `permissions`.`profilesId` = :0
+[Fri, 07 Mar 14 08:11:13 -0800][DEBUG] SELECT `permissions`.`id`, `permissions`.`profilesId`, `permissions`.`resource`, `permissions`.`action` FROM `permissions` WHERE `permissions`.`profilesId` = :0
+[Fri, 07 Mar 14 08:11:13 -0800][DEBUG] SELECT `permissions`.`id`, `permissions`.`profilesId`, `permissions`.`resource`, `permissions`.`action` FROM `permissions` WHERE `permissions`.`profilesId` = :0
+[Fri, 07 Mar 14 09:11:40 -0800][DEBUG] SELECT IF(COUNT(*)>0, 1 , 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME`='users'
+[Fri, 07 Mar 14 09:11:40 -0800][DEBUG] DESCRIBE `users`
+[Fri, 07 Mar 14 09:11:40 -0800][DEBUG] SELECT `users`.`id`, `users`.`userName`, `users`.`userUsername`, `users`.`userPassword`, `users`.`mustChangePassword`, `users`.`userProfilesId`, `users`.`userSecretKey`, `users`.`userIsActive`, `users`.`userIsBanned`, `users`.`userIsSuspended` FROM `users` WHERE `users`.`userUsername` = :0 LIMIT 1
+[Fri, 07 Mar 14 09:11:40 -0800][DEBUG] SELECT IF(COUNT(*)>0, 1 , 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME`='success_logins'
+[Fri, 07 Mar 14 09:11:40 -0800][DEBUG] DESCRIBE `success_logins`
+[Fri, 07 Mar 14 09:11:40 -0800][DEBUG] INSERT INTO `success_logins` (`usersId`, `ipAddress`, `userAgent`) VALUES (?, ?, ?)
+[Fri, 07 Mar 14 09:11:41 -0800][DEBUG] SELECT IF(COUNT(*)>0, 1 , 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME`='profiles'
+[Fri, 07 Mar 14 09:11:41 -0800][DEBUG] DESCRIBE `profiles`
+[Fri, 07 Mar 14 09:11:41 -0800][DEBUG] SELECT `profiles`.`id`, `profiles`.`profileName`, `profiles`.`profileIsActive` FROM `profiles` WHERE `profiles`.`profileIsActive` = 'Y'
+[Fri, 07 Mar 14 09:11:41 -0800][DEBUG] SELECT IF(COUNT(*)>0, 1 , 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME`='permissions'
+[Fri, 07 Mar 14 09:11:41 -0800][DEBUG] DESCRIBE `permissions`
+[Fri, 07 Mar 14 09:11:41 -0800][DEBUG] SELECT `permissions`.`id`, `permissions`.`profilesId`, `permissions`.`resource`, `permissions`.`action` FROM `permissions` WHERE `permissions`.`profilesId` = :0
+[Fri, 07 Mar 14 09:11:41 -0800][DEBUG] SELECT `permissions`.`id`, `permissions`.`profilesId`, `permissions`.`resource`, `permissions`.`action` FROM `permissions` WHERE `permissions`.`profilesId` = :0
+[Fri, 07 Mar 14 09:14:06 -0800][DEBUG] SELECT `profiles`.`id`, `profiles`.`profileName`, `profiles`.`profileIsActive` FROM `profiles` WHERE `profiles`.`profileIsActive` = 'Y'
+[Fri, 07 Mar 14 09:14:06 -0800][DEBUG] SELECT `permissions`.`id`, `permissions`.`profilesId`, `permissions`.`resource`, `permissions`.`action` FROM `permissions` WHERE `permissions`.`profilesId` = :0
+[Fri, 07 Mar 14 09:14:06 -0800][DEBUG] SELECT `permissions`.`id`, `permissions`.`profilesId`, `permissions`.`resource`, `permissions`.`action` FROM `permissions` WHERE `permissions`.`profilesId` = :0
+[Fri, 07 Mar 14 09:16:02 -0800][DEBUG] SELECT `users`.`id`, `users`.`userName`, `users`.`userUsername`, `users`.`userPassword`, `users`.`mustChangePassword`, `users`.`userProfilesId`, `users`.`userSecretKey`, `users`.`userIsActive`, `users`.`userIsBanned`, `users`.`userIsSuspended` FROM `users` WHERE `users`.`userUsername` = :0 LIMIT 1
+[Fri, 07 Mar 14 09:16:02 -0800][DEBUG] INSERT INTO `success_logins` (`usersId`, `ipAddress`, `userAgent`) VALUES (?, ?, ?)
+[Fri, 07 Mar 14 09:17:43 -0800][DEBUG] SELECT IF(COUNT(*)>0, 1 , 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME`='users'
+[Fri, 07 Mar 14 09:17:43 -0800][DEBUG] DESCRIBE `users`
+[Fri, 07 Mar 14 09:17:43 -0800][DEBUG] SELECT `users`.`id`, `users`.`userName`, `users`.`userUsername`, `users`.`userPassword`, `users`.`mustChangePassword`, `users`.`userProfilesId`, `users`.`userSecretKey`, `users`.`userIsActive`, `users`.`userIsBanned`, `users`.`userIsSuspended` FROM `users` WHERE `users`.`userUsername` = :0 LIMIT 1
+[Fri, 07 Mar 14 09:17:43 -0800][DEBUG] SELECT IF(COUNT(*)>0, 1 , 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME`='success_logins'
+[Fri, 07 Mar 14 09:17:43 -0800][DEBUG] DESCRIBE `success_logins`
+[Fri, 07 Mar 14 09:17:43 -0800][DEBUG] INSERT INTO `success_logins` (`usersId`, `ipAddress`, `userAgent`) VALUES (?, ?, ?)
+[Fri, 07 Mar 14 09:18:49 -0800][DEBUG] SELECT `users`.`id`, `users`.`userName`, `users`.`userUsername`, `users`.`userPassword`, `users`.`mustChangePassword`, `users`.`userProfilesId`, `users`.`userSecretKey`, `users`.`userIsActive`, `users`.`userIsBanned`, `users`.`userIsSuspended` FROM `users` WHERE `users`.`userUsername` = :0 LIMIT 1
+[Fri, 07 Mar 14 09:18:49 -0800][DEBUG] INSERT INTO `success_logins` (`usersId`, `ipAddress`, `userAgent`) VALUES (?, ?, ?)
+[Fri, 07 Mar 14 09:26:02 -0800][DEBUG] SELECT `users`.`id`, `users`.`userName`, `users`.`userUsername`, `users`.`userPassword`, `users`.`mustChangePassword`, `users`.`userProfilesId`, `users`.`userSecretKey`, `users`.`userIsActive`, `users`.`userIsBanned`, `users`.`userIsSuspended` FROM `users` WHERE `users`.`userUsername` = :0 LIMIT 1
+[Fri, 07 Mar 14 09:26:02 -0800][DEBUG] INSERT INTO `success_logins` (`usersId`, `ipAddress`, `userAgent`) VALUES (?, ?, ?)
+[Fri, 07 Mar 14 09:27:22 -0800][DEBUG] SELECT `users`.`id`, `users`.`userName`, `users`.`userUsername`, `users`.`userPassword`, `users`.`mustChangePassword`, `users`.`userProfilesId`, `users`.`userSecretKey`, `users`.`userIsActive`, `users`.`userIsBanned`, `users`.`userIsSuspended` FROM `users` WHERE `users`.`userUsername` = :0 LIMIT 1
+[Fri, 07 Mar 14 09:27:22 -0800][DEBUG] INSERT INTO `success_logins` (`usersId`, `ipAddress`, `userAgent`) VALUES (?, ?, ?)
+[Fri, 07 Mar 14 09:38:13 -0800][DEBUG] SELECT IF(COUNT(*)>0, 1 , 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME`='profiles'
+[Fri, 07 Mar 14 09:38:13 -0800][DEBUG] DESCRIBE `profiles`
+[Fri, 07 Mar 14 09:38:13 -0800][DEBUG] SELECT `profiles`.`id`, `profiles`.`profileName`, `profiles`.`profileIsActive` FROM `profiles` WHERE `profiles`.`profileIsActive` = 'Y'
+[Fri, 07 Mar 14 09:38:13 -0800][DEBUG] SELECT IF(COUNT(*)>0, 1 , 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME`='permissions'
+[Fri, 07 Mar 14 09:38:13 -0800][DEBUG] DESCRIBE `permissions`
+[Fri, 07 Mar 14 09:38:13 -0800][DEBUG] SELECT `permissions`.`id`, `permissions`.`profilesId`, `permissions`.`resource`, `permissions`.`action` FROM `permissions` WHERE `permissions`.`profilesId` = :0
+[Fri, 07 Mar 14 09:38:13 -0800][DEBUG] SELECT `permissions`.`id`, `permissions`.`profilesId`, `permissions`.`resource`, `permissions`.`action` FROM `permissions` WHERE `permissions`.`profilesId` = :0
+[Fri, 07 Mar 14 09:38:35 -0800][DEBUG] SELECT `profiles`.`id`, `profiles`.`profileName`, `profiles`.`profileIsActive` FROM `profiles` WHERE `profiles`.`profileIsActive` = 'Y'
+[Fri, 07 Mar 14 09:38:35 -0800][DEBUG] SELECT `permissions`.`id`, `permissions`.`profilesId`, `permissions`.`resource`, `permissions`.`action` FROM `permissions` WHERE `permissions`.`profilesId` = :0
+[Fri, 07 Mar 14 09:38:35 -0800][DEBUG] SELECT `permissions`.`id`, `permissions`.`profilesId`, `permissions`.`resource`, `permissions`.`action` FROM `permissions` WHERE `permissions`.`profilesId` = :0
+[Fri, 07 Mar 14 09:39:24 -0800][DEBUG] SELECT `profiles`.`id`, `profiles`.`profileName`, `profiles`.`profileIsActive` FROM `profiles` WHERE `profiles`.`profileIsActive` = 'Y'
+[Fri, 07 Mar 14 09:39:24 -0800][DEBUG] SELECT `permissions`.`id`, `permissions`.`profilesId`, `permissions`.`resource`, `permissions`.`action` FROM `permissions` WHERE `permissions`.`profilesId` = :0
+[Fri, 07 Mar 14 09:39:24 -0800][DEBUG] SELECT `permissions`.`id`, `permissions`.`profilesId`, `permissions`.`resource`, `permissions`.`action` FROM `permissions` WHERE `permissions`.`profilesId` = :0
+[Fri, 07 Mar 14 09:40:02 -0800][DEBUG] SELECT `profiles`.`id`, `profiles`.`profileName`, `profiles`.`profileIsActive` FROM `profiles` WHERE `profiles`.`profileIsActive` = 'Y'
+[Fri, 07 Mar 14 09:40:02 -0800][DEBUG] SELECT `permissions`.`id`, `permissions`.`profilesId`, `permissions`.`resource`, `permissions`.`action` FROM `permissions` WHERE `permissions`.`profilesId` = :0
+[Fri, 07 Mar 14 09:40:02 -0800][DEBUG] SELECT `permissions`.`id`, `permissions`.`profilesId`, `permissions`.`resource`, `permissions`.`action` FROM `permissions` WHERE `permissions`.`profilesId` = :0
+[Fri, 07 Mar 14 09:40:02 -0800][DEBUG] SELECT `permissions`.`id`, `permissions`.`profilesId`, `permissions`.`resource`, `permissions`.`action` FROM `permissions` WHERE `permissions`.`profilesId` = :0
+[Fri, 07 Mar 14 09:40:02 -0800][DEBUG] SELECT `profiles`.`id`, `profiles`.`profileName`, `profiles`.`profileIsActive` FROM `profiles` WHERE `profiles`.`profileIsActive` = 'Y'
+[Fri, 07 Mar 14 09:40:02 -0800][DEBUG] SELECT `permissions`.`id`, `permissions`.`profilesId`, `permissions`.`resource`, `permissions`.`action` FROM `permissions` WHERE `permissions`.`profilesId` = :0
+[Fri, 07 Mar 14 09:40:02 -0800][DEBUG] SELECT `permissions`.`id`, `permissions`.`profilesId`, `permissions`.`resource`, `permissions`.`action` FROM `permissions` WHERE `permissions`.`profilesId` = :0
+[Fri, 07 Mar 14 09:40:02 -0800][DEBUG] SELECT `permissions`.`id`, `permissions`.`profilesId`, `permissions`.`resource`, `permissions`.`action` FROM `permissions` WHERE `permissions`.`profilesId` = :0
+[Fri, 07 Mar 14 21:34:12 -0800][DEBUG] SELECT IF(COUNT(*)>0, 1 , 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME`='profiles'
+[Fri, 07 Mar 14 21:34:12 -0800][DEBUG] DESCRIBE `profiles`
+[Fri, 07 Mar 14 21:34:12 -0800][DEBUG] SELECT `profiles`.`id`, `profiles`.`profileName`, `profiles`.`profileIsActive` FROM `profiles` WHERE `profiles`.`profileIsActive` = 'Y'
+[Fri, 07 Mar 14 21:34:12 -0800][DEBUG] SELECT IF(COUNT(*)>0, 1 , 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME`='permissions'
+[Fri, 07 Mar 14 21:34:12 -0800][DEBUG] DESCRIBE `permissions`
+[Fri, 07 Mar 14 21:34:12 -0800][DEBUG] SELECT `permissions`.`id`, `permissions`.`profilesId`, `permissions`.`resource`, `permissions`.`action` FROM `permissions` WHERE `permissions`.`profilesId` = :0
+[Fri, 07 Mar 14 21:34:12 -0800][DEBUG] SELECT `permissions`.`id`, `permissions`.`profilesId`, `permissions`.`resource`, `permissions`.`action` FROM `permissions` WHERE `permissions`.`profilesId` = :0
+[Fri, 07 Mar 14 21:34:12 -0800][DEBUG] SELECT `permissions`.`id`, `permissions`.`profilesId`, `permissions`.`resource`, `permissions`.`action` FROM `permissions` WHERE `permissions`.`profilesId` = :0
+[Fri, 07 Mar 14 21:45:38 -0800][DEBUG] SELECT IF(COUNT(*)>0, 1 , 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME`='users'
+[Fri, 07 Mar 14 21:45:38 -0800][DEBUG] DESCRIBE `users`
+[Fri, 07 Mar 14 21:45:38 -0800][DEBUG] SELECT `users`.`id`, `users`.`userName`, `users`.`userUsername`, `users`.`userPassword`, `users`.`mustChangePassword`, `users`.`userProfilesId`, `users`.`userSecretKey`, `users`.`userIsActive`, `users`.`userIsBanned`, `users`.`userIsSuspended` FROM `users` WHERE `users`.`userUsername` = :0 LIMIT 1
+[Fri, 07 Mar 14 21:45:38 -0800][DEBUG] SELECT IF(COUNT(*)>0, 1 , 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME`='success_logins'
+[Fri, 07 Mar 14 21:45:38 -0800][DEBUG] DESCRIBE `success_logins`
+[Fri, 07 Mar 14 21:45:38 -0800][DEBUG] INSERT INTO `success_logins` (`usersId`, `ipAddress`, `userAgent`) VALUES (?, ?, ?)
+[Fri, 07 Mar 14 21:48:18 -0800][DEBUG] SELECT IF(COUNT(*)>0, 1 , 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME`='users'
+[Fri, 07 Mar 14 21:48:18 -0800][DEBUG] DESCRIBE `users`
+[Fri, 07 Mar 14 21:48:18 -0800][DEBUG] SELECT `users`.`id`, `users`.`userName`, `users`.`userUsername`, `users`.`userPassword`, `users`.`mustChangePassword`, `users`.`userProfilesId`, `users`.`userSecretKey`, `users`.`userIsActive`, `users`.`userIsBanned`, `users`.`userIsSuspended` FROM `users` WHERE `users`.`userUsername` = :0 LIMIT 1
+[Fri, 07 Mar 14 21:48:18 -0800][DEBUG] SELECT IF(COUNT(*)>0, 1 , 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME`='success_logins'
+[Fri, 07 Mar 14 21:48:18 -0800][DEBUG] DESCRIBE `success_logins`
+[Fri, 07 Mar 14 21:48:18 -0800][DEBUG] INSERT INTO `success_logins` (`usersId`, `ipAddress`, `userAgent`) VALUES (?, ?, ?)
+[Fri, 07 Mar 14 21:52:24 -0800][DEBUG] SELECT `users`.`id`, `users`.`userName`, `users`.`userUsername`, `users`.`userPassword`, `users`.`mustChangePassword`, `users`.`userProfilesId`, `users`.`userSecretKey`, `users`.`userIsActive`, `users`.`userIsBanned`, `users`.`userIsSuspended` FROM `users` WHERE `users`.`userUsername` = :0 LIMIT 1
+[Fri, 07 Mar 14 21:52:24 -0800][DEBUG] INSERT INTO `success_logins` (`usersId`, `ipAddress`, `userAgent`) VALUES (?, ?, ?)
+[Fri, 07 Mar 14 22:06:36 -0800][DEBUG] SELECT `users`.`id`, `users`.`userName`, `users`.`userUsername`, `users`.`userPassword`, `users`.`mustChangePassword`, `users`.`userProfilesId`, `users`.`userSecretKey`, `users`.`userIsActive`, `users`.`userIsBanned`, `users`.`userIsSuspended` FROM `users` WHERE `users`.`id` = :0 LIMIT 1
+[Fri, 07 Mar 14 22:06:51 -0800][DEBUG] SELECT `users`.`id`, `users`.`userName`, `users`.`userUsername`, `users`.`userPassword`, `users`.`mustChangePassword`, `users`.`userProfilesId`, `users`.`userSecretKey`, `users`.`userIsActive`, `users`.`userIsBanned`, `users`.`userIsSuspended` FROM `users` WHERE `users`.`id` = :0 LIMIT 1

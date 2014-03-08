@@ -2,7 +2,7 @@
 
 $router = new \Phalcon\Mvc\Router;
 
-$router->addGet("/register", "home::register")->setName("register");
+$router->addGet("/login", "home::login")->setName("login");
 
 $router->addGet("/register", array('controller' => 'home','action' => 'register'))->setName("register");
 

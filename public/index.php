@@ -28,6 +28,6 @@ try {
     echo $application->handle()->getContent();
 
 } catch (\Exception $e) {
-    echo $e->getMessage();
+    echo $e->getMessage().$e->getLine().$e->getFile();
 }
 
