@@ -1,42 +1,54 @@
 <div class="col-lg-12 col-md-12 col-sm-12">
     <div class="page-title">
-        <legend>Sample Test</legend>
+        <legend>Sample Test </legend>
+
     </div>
     
 </div>
-<form id="form1">
+<form id="form1" method="post">
  <div id="test-container">
 
  </div>
-        <legend>&nbsp;
-        <span style="float: right;cursor: pointer" id="next">next</span>
-            <input type="submit" value="submit">
+    <div id="total">
+
+    </div>
+        <legend style="display: none"  id="next">&nbsp;
+        <span style="float: right;cursor: pointer;" >next</span>
+    </legend>
+    <legend style="display: none"  id="finish">&nbsp;
+        <span style="float: right;cursor: pointer;" >Finish</span>
     </legend>
 </form>
 <?php  ?>
 <script>
     $(document).ready(function(){
-        $.post("<?php echo $this->url->get(array("for"=>"QuestionSet")); ?>")
+             $.post("<?php echo $this->url->get(array("for"=>"QuestionSet")); ?>",{TestID:"<?php echo $Test; ?>"})
 
             .success(function(data)
             {
+
                 da= $.parseJSON(data);
                 var tag="";
                 var num="";
-                $.each(da,function(key,value)
+                var globalvar="";
+                $.each(da.quest,function(key,value)
                 {
+                    globalvar=key;
                     var marks= $.parseJSON(value.questionMarks);
                     options= $.parseJSON(value.questionOptions);
                     $("#test-container").append(" <div class='col-sm-1 col-md-1 col-lg-1'>Q."+(key+1) +"</div> <div class='questions col-sm-11 col-md-11 col-lg-11' id='ques"+key + "'>"
                         + '<p>'
                         + value.questionText
                         + "</p>");
+
                     $.each(options,function(key1,value1)
                     {
                         var container='ques'+key;
                         $("#"+container).append("<div class='options'>"
 
                             +'<p><input type="radio" value="'
+                            +value.questionModuleID
+                            +','
                             +marks[key1]
                             +'" name="options'
                             +key
@@ -51,20 +63,90 @@
                             +'</p>'
                             + "</div>");
                     });
+
+                    $("#total").html('<input id="total1" type="hidden" name="total" value="'+(key+1)+'" ><input type="hidden" name="test_id" value="<?php echo $Test; ?>" >');
+
                 });
 
 
+                if((globalvar+1) == da.count)
+                {
+                   $('#finish').show();
+                }
+                else
+                {
+                    $('#next').show();
+                }
+
     });
+
     });
 $("#next").on('click',function()
 {
-    $.post("<?php echo $this->url->get(array("for"=>"TryTestNext")); ?>","start=3")
+    var tot=document.getElementById('total1').value;
+    var opt=$('#form1').serializeArray();
+    var option=opt.length;
+    var total=parseInt(tot)+3;
+    $.post("<?php echo $this->url->get(array("for"=>"TryTestNext")); ?>",$('#form1').serializeArray())
         .success(function(data)
         {
-            $.each(data,function(key,value)
+            $("#next").hide();
+            $("#finish").hide();
+            da= $.parseJSON(data);
+            var current=(da.current + 1);
+            $('#test-container').empty();
+            var tag="";
+            var num="";
+//            alert(data);
+            var globalvar="";
+            $.each(da.data,function(key,value)
             {
-                $("#questiond").html("")
+                globalvar=key;
+                var marks= $.parseJSON(value.questionMarks);
+                options= $.parseJSON(value.questionOptions);
+                $("#test-container").append(" <div class='col-sm-1 col-md-1 col-lg-1'>Q."+(current+key) +"</div> <div class='questions col-sm-11 col-md-11 col-lg-11' id='ques"+key + "'>"
+                    + '<p>'
+                    + value.questionText
+                    + "</p>");
+                $.each(options,function(key1,value1)
+                {
+                    var container='ques'+key;
+                    $("#"+container).append("<div class='options'>"
+
+                        +'<p><input type="radio" value="'
+                        +value.questionModuleID
+                        +','
+                        +marks[key1]
+                        +'" name="options'
+                        +key
+                        +'" id="opt'
+                        +key+key1
+                        +'" >'
+                        +'<label for="opt'
+                        +key+key1
+                        +'">'
+                        +value1
+                        + '</label>'
+                        +'</p>'
+                        + "</div>");
+                });
+                $("#total").html('<input id="total1" type="hidden" name="total" value="'+(current+key)+'" ><input type="hidden" name="test_id" value="<?php echo $Test; ?>" >');
             });
+            if((globalvar+current) == da.count)
+            {
+                $('#finish').show();
+            }
+            else
+            {
+                $('#next').show();
+            }
+
         });
-})
+});
+    $('#finish').click(function(){
+        $.post("<?php echo $this->url->get(array("for"=>"TryTestNext")); ?>",$('#form1').serializeArray())
+            .success(function(data){
+                window.location="<?php echo $this->url->get(array("for"=>"TryTestResult")); ?>"
+            });
+    });
 </script>

@@ -139,7 +139,6 @@ class DashboardController extends ControllerBase {
     public function viewQuestionsAction()
     {
         $uid=$this->auth->getID();
-
         $this->view->disable();
         $question=new Questions();
         $this->view->setVar('question',$question->GetQuestions());

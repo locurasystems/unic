@@ -68,9 +68,18 @@ class Questions extends \Phalcon\Mvc\Model
                 WHERE q.questionModuleID IN (1)";
         $question=new Questions();
         $data= new Resultset(null,$question,$question->getReadConnection()->query($sql));
-
-        $currentPage=(int)$_GET["page"];
-        if($currentPage==''){ $currentPage =1; };
+        if(isset($_GET["page"]))
+        {
+            $currentPage=(int)$_GET["page"];
+            if($currentPage=='')
+            {
+                $currentPage = 1;
+            }
+        }
+        else
+        {
+            $currentPage=1;
+        }
         $paginator = new \Phalcon\Paginator\Adapter\Model(
             array(
                 "data"  => $data,
@@ -83,8 +92,6 @@ class Questions extends \Phalcon\Mvc\Model
 
     public static  function getQuestionLimit($moduleID,$start,$perPage)
     {
-
-
 
     }
 

@@ -1,0 +1,45 @@
+<div class="col-lg-12 col-md-12 col-sm-12">
+    <div class="page-title">
+        <legend>Test Results </legend>
+    </div>
+</div>
+<div class="col-lg-12 col-md-12 col-sm-12">
+    <div class="col-lg-4 col-md-4 col-sm-12">
+        <?php
+        $testName1 =new Unic\Examination\Examination();
+        $testName=$testName1->getTestNameByID($test);
+        $module1=new \Unic\Models\Module();
+
+        ?>
+        <legend>Test Name : <b><?php echo ucfirst($testName['testName']); ?></b></legend>
+    </div>
+     </div>
+<div class="col-lg-12 col-md-12 col-sm-12">
+<div class="col-lg-4 col-md-4 col-sm-12">
+ <table class="table table-responsive">
+     <thead>
+     <tr>
+         <th>S.no</th>
+         <th>Module</th>
+         <th>Marks</th>
+     </tr>
+     </thead>
+     <tbody>
+     <?php if ($module){ $i=1;
+     foreach ($module as $key => $value){ ?>
+     <tr>
+         <td><?php echo $i;$i++; ?></td>
+         <td><?php $ModuleName=$module1->findFirst($key)->toArray(); echo ucfirst($ModuleName['moduleName']); ?></td>
+         <td><?php echo $value; ?></td>
+
+     </tr>
+     <?php }} ?>
+     <tr>
+         <td></td>
+         <td>Total</td>
+         <td><?php echo array_sum($module); ?></td>
+     </tr>
+     </tbody>
+ </table>
+</div>
+</div>

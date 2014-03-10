@@ -50,8 +50,7 @@
 
 
 
-	<?php echo $this->getContent(); ?>
-
+	 <?php echo $this->getContent(); ?>
 
 
 

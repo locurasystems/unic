@@ -1,24 +1,32 @@
 <?php
+/**
+ * Created by PhpStorm.
+ * User: bhoo
+ * Date: 3/9/14
+ * Time: 11:48 PM
+ */
+
 namespace Unic;
 
-class Functions
-{
-	/**
-	 * Generates cryptographically strong random key
-	 *
-	 * generate_secret_key function
-	 * @param integer
-	 * @return mixed
-	 * @author Ashes Vats
-	 **/
-	
-	public static function generate_secret_key($key='12')
-	{
-		$c=true;
-		return bin2hex(openssl_random_pseudo_bytes($key,$c));
-	}
+if (!function_exists('array_column')) {
 
-
+    /**
+     * Returns the values from a single column of the input array, identified by
+     * the $columnKey.
+     *
+     * Optionally, you may provide an $indexKey to index the values in the returned
+     * array by the values from the $indexKey column in the input array.
+     *
+     * @param array $input A multi-dimensional array (record set) from which to pull
+     * a column of values.
+     * @param mixed $columnKey The column of values to return. This value may be the
+     * integer key of the column you wish to retrieve, or it
+     * may be the string key name for an associative array.
+     * @param mixed $indexKey (Optional.) The column to use as the index/keys for
+     * the returned array. This value may be the integer key
+     * of the column, or it may be the string key name.
+     * @return array
+     */
     function array_column($input = null, $columnKey = null, $indexKey = null)
     {
         // Using func_get_args() in order to check for proper number of
@@ -101,7 +109,5 @@ class Functions
 
         return $resultArray;
     }
-		
+
 }
-	
-?>

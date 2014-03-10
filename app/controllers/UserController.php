@@ -34,7 +34,6 @@ class UserController extends ControllerBase {
             $user->suspended='N';
             $user->banned='N';
             $user->save();
-
             print_r($user->getMessages());
         }
     }

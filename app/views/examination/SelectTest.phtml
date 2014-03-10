@@ -8,9 +8,17 @@
     Test:
 </div>
 <div class="col-lg-5 col-md-5 col-sm-6">
- <form class="form-horizontal">
-    <select class="form-control">
-        <option>sadasj</option>
+ <form id="testForm" class="form-horizontal" action="<?php echo $this->url->get(array("for"=>"TryTest")); ?>" method="post">
+    <select class="form-control" id="selectTest" name="test">
+        <option value="">Select Test</option>
+        <?php foreach ($test as $value){ ?>
+        <option value="<?php echo $value['test_id']; ?>"><?php echo $value['testName']; ?></option>
+        <?php } ?>
     </select>
   </form>
 </div>
+<script>
+    $('#selectTest').change(function(){
+        $('#testForm').submit();
+    });
+</script>

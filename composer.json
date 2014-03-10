@@ -1,5 +1,7 @@
 {
     "require": {
-        "phalcon/incubator": "v1.2.4"
+        "phalcon/incubator": "v1.2.4",
+        "rhumsaa/array_column": "~1.1"
     }
+
 }
