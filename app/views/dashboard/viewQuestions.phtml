@@ -28,7 +28,7 @@
     </tr>
     </thead>
     <tbody>
-    <?php $i=1; if(count($question)>0){ foreach($question->items as $value){ ?>
+    <?php $i=1; if($question){ foreach($question->items as $value){ ?>
     <tr>
         <td><?php echo $i; $i++; ?></td>
         <td><?php echo $value->questionText; ?></td>
