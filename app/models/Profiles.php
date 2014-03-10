@@ -33,7 +33,7 @@ class Profiles extends Model
      */
     public function initialize()
     {
-        $this->hasMany('id', 'Unic\Models\Users', 'profilesId', array(
+        $this->hasMany('id', 'Unic\Models\Users', 'userProfilesId', array(
             'alias' => 'users',
             'foreignKey' => array(
                 'message' => 'Profile cannot be deleted because it\'s used on Users'
@@ -49,7 +49,7 @@ class Profiles extends Model
     {
         return array(
             'id' => 'id',
-            'profileName' => 'name',
+            'profileName' => 'profileName',
             'profileIsActive' => 'active'
         );
     }

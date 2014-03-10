@@ -1,6 +1,6 @@
 <?php
 
-
+namespace Unic\Models;
 
 
 class Videos extends \Phalcon\Mvc\Model
@@ -35,7 +35,19 @@ class Videos extends \Phalcon\Mvc\Model
      * @var string
      */
     public $videoFilename;
-     
+
+    /**
+     *
+     * @var integer
+     */
+    public $videoIsVerified;
+
+    /**
+     *
+     * @var date
+     */
+    public $videoUploadedAt;
+
     /**
      * @return Videos[]
      */
@@ -58,11 +70,13 @@ class Videos extends \Phalcon\Mvc\Model
     public function columnMap()
     {
         return array(
-            'video_id' => 'video_id', 
-            'videoUploader' => 'videoUploader', 
-            'videoLength' => 'videoLength', 
-            'videoThumb' => 'videoThumb', 
-            'videoFilename' => 'videoFilename'
+            'video_id'            => 'id',
+            'videoUploader'       => 'uploader',
+            'videoLength'         => 'length',
+            'videoThumb'          => 'thumb',
+            'videoFilename'       => 'filename',
+            'videoIsVerified'     =>'verified',
+            'videoUploadedAt'     =>'uploadedAt'
         );
     }
 

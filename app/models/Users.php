@@ -93,12 +93,22 @@ class Users extends \Phalcon\Mvc\Model
             'userUsername' => 'username',
             'userPassword' => 'password',
             'mustChangePassword' => 'mustChangePassword', 
-            'userProfilesId' => 'profilesId',
+            'userProfilesId' => 'userProfilesId',
             'userSecretKey' => 'SecretKey',
             'userIsActive' => 'active',
             'userIsBanned' => 'banned',
             'userIsSuspended' => 'suspended'
         );
+    }
+
+    public function initialize()
+    {
+        $this->belongsTo('userProfilesId', 'Unic\Models\Profiles', 'id', array(
+            'alias' => 'profile',
+            'reusable' => true
+        ));
+
+
     }
 
 }
