@@ -38,10 +38,6 @@
                 </li>
                 <li><a href="#">Help</a>
                 </li>
-                <li>
-                <?php echo $this->auth->getName(); ?>
-                </li>
-
                 <li><a href="login.php">Sign in</a>
                 </li>
             </ul>
@@ -71,7 +67,7 @@
             </a>
             <!-- Sub Menu -->
             <ul>
-                <li><a href="<?php echo $this->url->get("dashboard/createCourse"); ?>"><i class="glyphicon glyphicon-eye-open"></i> Create Course</a></li>
+                <li><a href="<?php echo $this->url->get("dashboard/createCourse")?>"><i class="glyphicon glyphicon-eye-open"></i> Create Course</a></li>
                 <li><a href="#">Approve Course</a></li>
             </ul>
         </li>
@@ -81,15 +77,24 @@
                 <span class="caret pull-right"></span>
             </a>
             <ul>
-                <li><a href="<?php echo $this->url->get("dashboard/createTest"); ?>"><i class="glyphicon glyphicon-pencil"></i> Create Test</a></li>
-                <li><a href="<?php echo $this->url->get("dashboard/createTestQuestion"); ?>"><i class="glyphicon glyphicon-pencil"></i> Create Questions</a></li>
-                <li><a href="<?php echo $this->url->get("dashboard/createModule"); ?>"><i class="glyphicon glyphicon-pencil"></i> Create Module</a></li>
-                <li><a href="<?php echo $this->url->get("dashboard/viewExam"); ?>"> <i class="glyphicon glyphicon-eye-open"></i>  View Exam</a></li>
-                <li><a href="<?php echo $this->url->get("dashboard/viewQuestions"); ?>"> <i class="glyphicon glyphicon-eye-open"></i>  View Questions</a></li>
-                <li><a href="<?php echo $this->url->get(array("for"=>"SelectTest")); ?>"> <i class="glyphicon glyphicon-pencil"></i>  Try Test</a></li>
+                <li><a href="<?php echo $this->url->get("dashboard/createTest")?>"><i class="glyphicon glyphicon-pencil"></i> Create Test</a></li>
+                <li><a href="<?php echo $this->url->get("dashboard/createTestQuestion")?>"><i class="glyphicon glyphicon-pencil"></i> Create Questions</a></li>
+                <li><a href="<?php echo $this->url->get("dashboard/createModule")?>"><i class="glyphicon glyphicon-pencil"></i> Create Module</a></li>
+                <li><a href="<?php echo $this->url->get("dashboard/viewExam")?>"> <i class="glyphicon glyphicon-eye-open"></i>  View Exam</a></li>
+                <li><a href="<?php echo $this->url->get("dashboard/viewQuestions")?>"> <i class="glyphicon glyphicon-eye-open"></i>  View Questions</a></li>
+                <li><a href="<?php echo $this->url->get(array("for"=>"TryTest"))?>"> <i class="glyphicon glyphicon-pencil"></i>  Try Test</a></li>
                 <li><a href="#">Approve Course</a></li>
             </ul>
         </li>
+        <li class="has_submenu">
+                    <a href="#">
+                        <i class="glyphicon glyphicon-play"></i> Media
+                        <span class="caret pull-right"></span>
+                    </a>
+                    <ul>
+                        <li><a href="<?php echo  $this->url->get("dashboard/listMedia")?>"><i class="glyphicon glyphicon-play"></i>List Media</a></li>
+                        <li><a href="<?php echo $this->url->get("dashboard/uploadMedia")?>"><i class="glyphicon glyphicon-pencil"></i>Upload Media</a></li>                    </ul>
+                </li>
         <li><a href="#"><i class="glyphicon glyphicon-user"></i>Accounts</a></li>
         <li><a href="#"><i class="glyphicon glyphicon-file"></i>Reports</a></li>
     </ul>

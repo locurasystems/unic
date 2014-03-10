@@ -29,7 +29,7 @@ padding-top: 50px;">
 
         <!-- The file input field used as target for the file upload widget -->
         <!-- <input id="fileupload" type="file" class="pull-right" name="files[]" multiple> -->
-        <input type="file" class="filestyle pull-right" data-classButton="btn btn-primary" id="fileupload" name="files[]" data-input="false">
+        <input type="file" class="filestyle pull-right" data-classButton="btn btn-primary" id="fileupload" name="files[]" data-input="false" multiple="multiple">
         <div style="clear:both">&nbsp</div>
 
 
@@ -60,7 +60,7 @@ padding-top: 50px;">
         'use strict';
         // Change this to the location of your server-side upload handler:
         var url = window.location.hostname === 'blueimp.github.io' ?
-            '//jquery-file-upload.appspot.com/' : 'http://localhost/unic/dashboard/uploadMedia';
+            '//jquery-file-upload.appspot.com/' : 'http://localhost/unic/dashboard/saveMedia';
         $('#fileupload').fileupload({
             url: url,
             dataType: 'json',

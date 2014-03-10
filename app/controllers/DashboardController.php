@@ -30,41 +30,41 @@ class DashboardController extends ControllerBase {
 		 	$this->view->setRenderLevel(View::LEVEL_ACTION_VIEW);
 		 }
 	}
-	public function addMediaAction()
-	{
-
-	}
-
 	public function uploadMediaAction()
 	{
-        $bucket="unic-videos";
-        $client = Aws\S3\S3Client::factory(array(
-            'key' => 'AKIAIKTCZRJH4A4OKGQQ',
-            'secret' => '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'
-        ));
-        foreach ($this->request->getUploadedFiles() as $file)
+
+	}
+
+    public function listMediaAction()
+    {
+
+    }
+
+	public function saveMediaAction()
+	{
+
+        // Check if the user has uploaded files
+        if ($this->request->hasFiles() == true)
         {
-            $data[]=(object) array('name'=>$file->getName(),'size'=>$file->getSize(),'url'=>$this->url->get('public/videos/').$file->getName(),'thumbnailUrl'=>$this->url->get('public/videos/').$file->getName(),'deleteUrl'=>$this->url->get('public/videos/').$file->getName(),'deleteType'=>'DELETE');
-            //Move the file into the application
-            $result = $client->putObject(array(
-                'Bucket' => $bucket,
-                'Key' => $file->getName(),
-                'SourceFile' => $file->getTempName(),
-                'Metadata' => array(
-                    'Foo' => 'abc',
-                    'Baz' => '123'
-                )
-            ));
+
+            // Print the real file names and sizes
+            foreach ($this->request->getUploadedFiles() as $file)
+            {
+                $data[]=(object) array('name'=>$file->getName(),'size'=>$file->getSize(),'url'=>$this->url->get('public/videos/').$file->getName(),'thumbnailUrl'=>$this->url->get('public/videos/').$file->getName(),'deleteUrl'=>$this->url->get('public/videos/').$file->getName(),'deleteType'=>'DELETE');
+                //Move the file into the application
+                $file->moveTo('videos/' . $file->getName());
+            }
+            $files=array('files'=>$data);
+
+            $file=(object) $files;
+
+            $response = new Response();
+            $response->setContent(json_encode($file));
+            return $response;
         }
 
-        $files=array('files'=>$data);
 
-        $file=(object) $files;
-        $response = new Response();
-        $response->setContent(json_encode($file));
-        return $response;
-		 
-	}
+    }
 	public function createCourseAction()
 	{
 
@@ -84,33 +84,7 @@ class DashboardController extends ControllerBase {
 
 	}
 
-	public function saveVideoAction() 
-	{
-		//        $a = new Video($this->url->get('public/videos'));
-		$ou=array();
-		$input=realpath('/Library/WebServer/Documents/unic/public/videos').'/A.flv';
-		$output=realpath('/Library/WebServer/Documents/unic/public/videos').'/b3.avi';
-		$pr=realpath('/Library/WebServer/Documents/unic/public/videos').'/prg.txt';
 
-		$pr2=realpath('videos').'/pr2.txt';
-
-		foreach ($this->request->getUploadedFiles() as $file)
-		{
-
-			$f=  $file->getTempName();
-			$a=exec("/usr/local/bin/ffmpeg -i ". $f. " -r 24 ". $output .' -progress '.$pr.'&',$ou);
-
-			file_put_contents('videos/pr2.txt', $a,FILE_APPEND);
-
-		}
-
-
-		       $files = array('files' => $data);
-		       $file = (object) $files;
-		       $response = new Response();
-		       $response->setContent(json_encode($file));
-		       return $response;
-    }
 
     public function createTestAction()
     {

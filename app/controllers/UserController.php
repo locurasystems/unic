@@ -44,6 +44,10 @@ class UserController extends ControllerBase {
             {
                 $data = array('username' => $this->request->getPost('username'), 'password' => $this->request->getPost('password'));
                 $this->auth->check($data);
+<<<<<<< HEAD
+=======
+
+>>>>>>> 484682b487b1bc396cfba5f631cfdd97539e179c
                 return $this->response->redirect('dashboard');
 
             }
