@@ -2,3 +2,4 @@ app/cache/*
 app/logs/*
 .settings/
 .idea/
+.DS_Store
