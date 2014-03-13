@@ -62,11 +62,11 @@
         public function __construct(array $options=array())
         {
             $default_options = array(
-                'ffmpeg'         => 'ffmpeg',
-                'ffprobe'        => 'ffprobe',
+                'ffmpeg'         => '/usr/local/bin/ffmpeg',
+                'ffprobe'        => '/usr/local/bin/ffprobe',
                 'yamdi'          => null, //'yamdi', // http://yamdi.sourceforge.net/ for flv meta injection
                 'qtfaststart'    => null, //'qt-faststart', // https://ffmpeg.org/trac/ffmpeg/wiki/UbuntuCompilationGuide#qt-faststart for fast streaming of mp4/h264 files.
-                'temp_directory' => sys_get_temp_dir(),
+                'temp_directory' => '/Applications/MAMP/htdocs/unic/public/temp/',
                 'gif_transcoder' => null,
                 'gifsicle'       => null,
                 'convert'        => null,
