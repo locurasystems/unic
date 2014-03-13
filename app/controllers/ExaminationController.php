@@ -14,6 +14,7 @@ use Phalcon\Mvc\Controller,
     Unic\Models\Module,
     Unic\Models\TestHasModule,
     Phalcon\Mvc\View,
+    Unic\Functions,
     Unic\Examination\Examination;
 use \Phalcon\Mvc\Model\Message;
 
@@ -100,6 +101,7 @@ class ExaminationController extends  ControllerBase
 
     public function GetQuestions()
     {
+//        $uid=$this->auth->getID;
      $data=Questions::getQuestions();
        return $data;
     }
@@ -130,36 +132,89 @@ class ExaminationController extends  ControllerBase
 
     public function TryTestAction($start=0)
     {
-//        $this->view->setRenderLevel(View::LEVEL_ACTION_VIEW);
-        $st=$this->request->getPost('start');
-        if(isset($st))
-        {
-            $start=$st;
-        }
-//        $data=Questions::;
-//         $this->view->setVar('question',$data);
-        $this->view->setLayout('dashboard');
 
+         $test=$this->request->getPost('test');
+        $this->view->setVar('Test',$test);
     }
 
     public function SelectTestAction()
     {
+        $uid=$this->auth->getID();
+        $test=Test::find(array(
+            "columns"=>array("test_id","testName"),
+            "conditions"=>"testCreaterID = $uid",
+            "order"=>"testName"
+             ))->toArray();
+        $this->view->setVar('test',$test);
         $this->view->setLayout('dashboard');
     }
-
     public function LoadNextQuestionSetAction()
     {
         $a=new Examination();
-        $c=$a->getNextQuestionSet('22');
-        echo json_encode($c);
+        $options=$this->request->getPost();
+
+        /* Getting all options and module id */
+        $total=$options['total'];
+        /* total number of options */
+        $test_id=$options['test_id'];
+        /* Get test id*/
+        unset($options['test_id'],$options['total']);/*remove total and test_id in the $option*/
+        /* Condition for $option has any values */
+        $arr_conv=new Functions();
+        if($options)
+        {
+            foreach($options as $value)
+            {
+                $opts=explode(',',$value);
+                $Opt=$arr_conv->array_column(array($opts),'1','0');
+                $key=array_keys($Opt);
+                $key[0];
+                if(array_key_exists($key[0],$this->session->get('module')))
+                {
+                    $_SESSION['module'][$key[0]] += $Opt[$key[0]];
+                }
+            }
+        }
+        $session=json_encode($this->session->get('module'));
+        $moduleIds=$a->getModuleIDByTestID($test_id);
+        $question=$a->getNextQuestionSet($moduleIds,$total);
+        $data1=json_encode($question);
+        $count=Questions::query()
+            ->where("questionModuleID IN($moduleIds)")
+             ->execute()
+             ->count();
+       $data='{"data":'.$data1.',"current":'.$total.',"session":'.$session.',"count":'.$count.'}';
+        echo $data;
         $this->view->disable();
     }
     public function LoadQuestionSetAction()
     {
+        $Test=$this->request->getPost('TestID');
         $Quest=new Examination();
-        $Question=$Quest->getNextQuestionSet();
-        echo json_encode($Question);
+        /* Save Test under Session */
+        $Module= $Quest->getModuleIDByTestID($Test);/*Getting module Ids in format of 1,2,3,.. */
+        $arr=explode(',',$Module);/*convert string module IDs to array */
+        $arr=array_flip($arr);/* Flip values to key*/
+        $arr=array_fill_keys(array_keys($arr),0);/* Setting all values initial 0*/
+        $this->session->set('module',$arr);/*To load module in to session*/
+        $this->session->set('Test',$Test);
+        $Question=$Quest->getNextQuestionSet($Module,0);
+        $count=Questions::query()
+            ->where("questionModuleID IN($Module)")
+            ->execute()
+            ->count();
+        $Question='{"quest":'.json_encode($Question).',"count":'.$count.'}';
+        echo $Question;
         $this->view->disable();
     }
+    public function TryTestResultAction()
+    {
+        $result=$this->session->get('module');
+        $test=$this->session->get('Test');
+        $this->view->setVar('module',$result);
+        $this->view->setVar('test',$test);
+        $this->view->setLayout('dashboard');
+    }
+
 
 } 

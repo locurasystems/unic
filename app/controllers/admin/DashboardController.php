@@ -30,4 +30,9 @@ class DashboardController extends ControllerBase
 
     }
 
+    public function addPermissionAction()
+    {
+
+    }
+
 } 

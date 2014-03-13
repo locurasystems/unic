@@ -12,6 +12,8 @@ use Aws\Common\Enum\Size;
 use Aws\Common\Exception\MultipartUploadException;
 use Aws\S3\Model\MultipartUpload\UploadBuilder;
 use Unic\Models\Videos;
+use Unic\Models\Module;
+use PHPVideoToolkit\Video as VideoTool;
 
 class DashboardController extends ControllerBase {
 
@@ -37,19 +39,23 @@ class DashboardController extends ControllerBase {
 
 	}
 
+    public function previewMediaAction()
+    {
+
+        $file='/Applications/MAMP/htdocs/unic/public/vi.MP4';
+        $a=new VideoTool($file);
+        $this->view->disable();
+    }
+
     public function listMediaAction()
     {
         $media=Videos::find()->toArray();
         $this->view->setVar('media',$media);
 
-
-
-
     }
 
 	public function saveMediaAction()
 	{
-
         // Check if the user has uploaded files
         if ($this->request->hasFiles() == true)
         {
@@ -60,7 +66,7 @@ class DashboardController extends ControllerBase {
                 $data[]=(object) array('name'=>$file->getName(),'size'=>$file->getSize(),'url'=>$this->url->get('public/videos/').$file->getName(),'thumbnailUrl'=>$this->url->get('public/videos/').$file->getName(),'deleteUrl'=>$this->url->get('public/videos/').$file->getName(),'deleteType'=>'DELETE');
                 //Move the file into the application
                 $file->moveTo('videos/' . $file->getName());
-
+                $media->id='0';
                 $media->filename=$file->getName();
                 $media->uploader=$this->auth->getID();
                 $media->verified='0';
@@ -74,6 +80,13 @@ class DashboardController extends ControllerBase {
             $response->setContent(json_encode($file));
             return $response;
         }
+
+    }
+
+// Course Menu
+
+    public function listCourseAction()
+    {
 
 
     }
@@ -138,6 +151,3 @@ class DashboardController extends ControllerBase {
 
 }
 ?>
-
-
-
