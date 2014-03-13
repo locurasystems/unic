@@ -28,6 +28,6 @@ try {
     echo $application->handle()->getContent();
 
 } catch (\Exception $e) {
-    echo $e->getMessage().$e->getLine().$e->getFile();
+    echo $e->getMessage().$e->getLine().$e->getFile().$e->getCode().$e->getTraceAsString();
 }
 

@@ -79,6 +79,16 @@
                 <li><a href="#">Approve Course</a></li>
             </ul>
         </li>
+        <li class="has_submenu">
+            <a href="#">
+                <i class="glyphicon glyphicon-flag"></i> Permissions
+                <span class="caret pull-right"></span>
+            </a>
+            <ul>
+                <li><a href="{{url("admin/dashboard/viewExam")}}"> <i class="glyphicon glyphicon-eye-open"></i>  View Permissions</a></li>
+                <li><a href="<?php echo $this->url->get('admin/dashboard/addPermission');?>"><i class="glyphicon glyphicon-plus"></i>Add Permissions</a></li>
+            </ul>
+        </li>
         <li><a href="#"><i class="glyphicon glyphicon-user"></i>Accounts</a></li>
         <li><a href="#"><i class="glyphicon glyphicon-file"></i>Reports</a></li>
     </ul>

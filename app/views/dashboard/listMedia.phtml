@@ -1,3 +1,32 @@
+<script src="http://jwpsrv.com/library/YuU5OKRYEeO34yIACrqE1A.js" ></script>
+
+<div class="modal fade" id="preview-modal">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                <h4 class="modal-title">Modal title</h4>
+            </div>
+            <div class="modal-body" >
+                <div class="col-md-6" id="video-body">
+
+                </div>
+
+                <script type="text/javascript">
+                    jwplayer("video-body").setup({
+                        file: "rtmp://192.168.1.4:1935/unic/mp4:sample.mp4",
+                        height: 300,
+                        width: 550
+                    });
+                </script>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                <button type="button" class="btn btn-primary" onclick="jwplayer().play();"><i class="glyphicon glyphicon-play-circle"></i>Play</button>
+            </div>
+        </div><!-- /.modal-content -->
+    </div><!-- /.modal-dialog -->
+</div><!-- /.modal -->
 
 <div class="page-title col-md-6 col-sm-6">
     <h2><i class="color" style=""></i> Uploaded Videos </h2>
@@ -21,6 +50,7 @@
         <th>Filename</th>
         <th>Date</th>
         <th>Status</th>
+        <th></th>
     </tr>
     </thead>
     <tbody>
@@ -30,7 +60,22 @@
             <td><?php echo $key['filename'];?></td>
             <td><?php echo $key['uploadedAt'];?></td>
             <td><?php  echo $key['verified']==0 ? 'Processing' : 'Verified' ;?></td>
+            <th><a class="btn btn-success media-preview-btn" href="#" data-toggle="modal"
+                   data-target="#preview-modal" data-filename="<?php echo $key['filename']; ?>">Preview</a></th>
         </tr>
     <?php } }?>
     </tbody>
 </table>
+
+
+<script>
+    $(document).ready(function($) {
+        $(".clickableRow").click(function()
+        {
+            window.document.location = $(this).attr("href");
+        });
+    });
+
+
+</script>
+
