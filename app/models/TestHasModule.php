@@ -12,6 +12,12 @@ class TestHasModule extends \Phalcon\Mvc\Model
      * @var integer
      */
     public $test_id;
+
+    /**
+     *
+     * @var integer
+     */
+    public $test_has_module_id;
      
     /**
      *
@@ -42,7 +48,8 @@ class TestHasModule extends \Phalcon\Mvc\Model
     {
         return array(
             'test_id' => 'test_id', 
-            'module_id' => 'module_id'
+            'module_id' => 'module_id',
+            'test_has_module_id' =>'test_has_module_id'
         );
     }
 

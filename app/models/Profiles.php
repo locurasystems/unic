@@ -49,7 +49,7 @@ class Profiles extends Model
     {
         return array(
             'id' => 'id',
-            'profileName' => 'profileName',
+            'profileName' => 'name',
             'profileIsActive' => 'active'
         );
     }
