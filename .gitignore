@@ -1,5 +1,6 @@
+.idea/workspace.xml
 app/cache/*
 app/logs/*
-.settings/
-.idea/
+.settings/*
+.idea/*
 *.DS_Store
