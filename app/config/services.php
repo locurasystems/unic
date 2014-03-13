@@ -79,7 +79,7 @@ $di->set('db', function () use ($config)
 	    $eventsManager->attach('db', function($event, $connection) use ($logger) {
 	        if ($event->getType() == 'beforeQuery') {
 	            $logger->log($connection->getSQLStatement());
-				
+
 	        }
 	    });
 
@@ -159,5 +159,10 @@ $di->set('auth', function () {
 $di->set('acl', function () {
     return new Acl();
 });
-
+/**
+ * Assign Array_column
+ */
+$di->set('array_column',function(){
+   return new Functions();
+});
 
