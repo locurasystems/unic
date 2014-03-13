@@ -2,11 +2,19 @@
 
 return new \Phalcon\Config(array(
     'database' => array(
+<<<<<<< HEAD
+        'adapter'     => 'Mysql',
+        'host'        => 'localhost',
+        'username'    => 'root',
+        'password'    => '',
+        'dbname'      => 'unic',
+=======
         'adapter' => 'Mysql',
         'host' => 'localhost',
         'username' => 'root',
         'password' => 'zodiac',
         'dbname' => 'unic',
+>>>>>>> 484682b487b1bc396cfba5f631cfdd97539e179c
     ),
     'application' => array(
         'controllersDir' => __DIR__ . '/../../app/controllers/',
