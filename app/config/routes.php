@@ -20,13 +20,23 @@
 
     $router->addPost("/examination/AddQuestion/getModuleID",array('controller'=>'examination','action'=>'GetModuleByTestID'))->setName('GetModuleByTestID');
 
+<<<<<<< HEAD
     $router->addPost("/dashboard/Exam/TryTest",array('controller'=>'examination','action'=>'TryTest'))->setName('TryTest');
+=======
+$router->addPost("/dashboard/Exam/TryTest",array('controller'=>'examination','action'=>'TryTest'))->setName('TryTest');
+>>>>>>> f796fb0dd556580fabb94240168374a07db114ee
 
     $router->addGet("/dashboard/Exam/TryTest/SelectTest",array('controller'=>'examination','action'=>'SelectTest'))->setName('SelectTest');
 
     $router->addPost("/dashboard/Exam/TryTest/QuestionSet",array('controller'=>'examination','action'=>'LoadQuestionSet'))->setName('QuestionSet');
 
+<<<<<<< HEAD
     $router->addPost("/dashboard/Exam/TryTest/Next",array('controller'=>'examination','action'=>'LoadNextQuestionSet'))->setName('TryTestNext');
+=======
+$router->addPost("/dashboard/Exam/TryTest/Next",array('controller'=>'examination','action'=>'LoadNextQuestionSet'))->setName('TryTestNext');
+
+$router->addGet("/dashboard/Exam/TryTest/Results",array('controller'=>'examination','action'=>'TryTestResult'))->setName('TryTestResult');
+>>>>>>> f796fb0dd556580fabb94240168374a07db114ee
 
     $router->addGet("/dashboard/Exam/TryTest/Results",array('controller'=>'examination','action'=>'TryTestResult'))->setName('TryTestResult');
 

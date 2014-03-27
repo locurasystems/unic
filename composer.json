@@ -12,6 +12,7 @@
         }
     ],
     "require": {
+<<<<<<< HEAD
         "php": ">=5.2.0",
         "ext-curl": "*",
         "ext-json": "*"
@@ -23,3 +24,10 @@
         "classmap": ["src"]
     }
 }
+=======
+        "phalcon/incubator": "v1.2.4",
+        "rhumsaa/array_column": "~1.1"
+    }
+
+}
+>>>>>>> f796fb0dd556580fabb94240168374a07db114ee

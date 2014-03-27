@@ -54,6 +54,7 @@ class Examination
 
     }
 
+<<<<<<< HEAD
     public function saveMarks()
     {
         $request=new \Phalcon\Http\Request();
@@ -67,4 +68,6 @@ class Examination
         throw new \Exception('Invalid Request');
     }
 
+=======
+>>>>>>> f796fb0dd556580fabb94240168374a07db114ee
 }

@@ -62,11 +62,18 @@ class Questions extends \Phalcon\Mvc\Model
     public static function getQuestions()
     {
 
+<<<<<<< HEAD
 
         $sql="SELECT * FROM questions q
                 JOIN module m
                 ON q.questionModuleID = m.module_id
                 WHERE q.questionModuleID IN (1,2,3)";
+=======
+        $sql="SELECT * FROM questions q
+                JOIN module m
+                ON q.questionModuleID = m.module_id
+                WHERE q.questionModuleID IN (1)";
+>>>>>>> f796fb0dd556580fabb94240168374a07db114ee
         $question=new Questions();
         $data= new Resultset(null,$question,$question->getReadConnection()->query($sql));
         if(isset($_GET["page"]))

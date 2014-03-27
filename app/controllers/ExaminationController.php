@@ -151,6 +151,7 @@ class ExaminationController extends  ControllerBase
     public function LoadNextQuestionSetAction()
     {
         $a=new Examination();
+<<<<<<< HEAD
         $options=$this->request->getPost();
 
         /* Getting all options and module id */
@@ -158,6 +159,11 @@ class ExaminationController extends  ControllerBase
         /* total number of options */
         $test_id=$options['test_id'];
         /* Get test id*/
+=======
+        $options=$this->request->getPost();/* Getting all options and module id */
+        $total=$options['total'];/* total number of options */
+        $test_id=$options['test_id'];/* Get test id*/
+>>>>>>> f796fb0dd556580fabb94240168374a07db114ee
         unset($options['test_id'],$options['total']);/*remove total and test_id in the $option*/
         /* Condition for $option has any values */
         $arr_conv=new Functions();

@@ -3,9 +3,13 @@ namespace Unic\Controllers;
 use Phalcon\Mvc\Controller,
     Phalcon\Mvc\View;
 
+<<<<<<< HEAD
 use Unic\Models\CourseCategory;
 use Unic\Models\Profiles;
 use Unic\Models\Users;
+=======
+use Unic\Models\Questions;
+>>>>>>> f796fb0dd556580fabb94240168374a07db114ee
 use UploadHandler;
 use Phalcon\Http\Response;
 use Aws;
@@ -187,12 +191,18 @@ class DashboardController extends ControllerBase {
 
     public function viewQuestionsAction()
     {
+<<<<<<< HEAD
         $q=false;
         if($_GET['q'])
         {
             $q=$_GET['q'];
         }
         $question=new ExaminationController();
+=======
+        $uid=$this->auth->getID();
+        $this->view->disable();
+        $question=new Questions();
+>>>>>>> f796fb0dd556580fabb94240168374a07db114ee
         $this->view->setVar('question',$question->GetQuestions());
 
     }
