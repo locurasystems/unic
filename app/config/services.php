@@ -39,6 +39,8 @@ $di->set('view', function () use ($config) {
 
     $view->setViewsDir($config->application->viewsDir);
 
+
+
     $view->registerEngines(array(
         '.volt' => function ($view, $di) use ($config) {
 
@@ -46,9 +48,11 @@ $di->set('view', function () use ($config) {
 
             $volt->setOptions(array(
                 'compiledPath' => $config->application->cacheDir,
-                'compiledSeparator' => '_'
+                'compiledSeparator' => '-'
             ));
-
+            $volt->getCompiler()->addFunction('ng', function($input) {
+                return '"{{".' . $input . '."}}"';
+            });
             return $volt;
         },
         '.phtml' => 'Phalcon\Mvc\View\Engine\Php'
@@ -71,6 +75,10 @@ $di->set('dispatcher', function () {
  */
 $di->set('db', function () use ($config) 
 {
+    \Phalcon\Mvc\Model::setup(array(
+        'events' => true,
+        'notNullValidations' => false
+    ));
 	$eventsManager = new \Phalcon\Events\Manager();
 
 	    $logger = new Logger($config->application->logDir.'db.log');

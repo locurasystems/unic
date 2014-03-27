@@ -1,7 +1,7 @@
 <?php
 
 namespace Unic\Models;
-
+use Phalcon\Mvc\Model\Behavior\Timestampable;
 
 class Videos extends \Phalcon\Mvc\Model
 {
@@ -57,7 +57,10 @@ class Videos extends \Phalcon\Mvc\Model
     }
 
     /**
-     * @return Videos
+     * Find the first matched row from videos table
+     *
+     * @param array $parameter
+     * @return array videos
      */
     public static function findFirst($parameters = array())
     {
@@ -65,7 +68,9 @@ class Videos extends \Phalcon\Mvc\Model
     }
 
     /**
-     * Independent Column Mapping.
+     * Map existing database column name with given name
+     *
+     * @return array
      */
     public function columnMap()
     {
@@ -78,6 +83,31 @@ class Videos extends \Phalcon\Mvc\Model
             'videoIsVerified'     =>'verified',
             'videoUploadedAt'     =>'uploadedAt'
         );
+    }
+
+    public function initialize()
+    {
+        $this->hasMany("id",'Unic\Models\CourseVideos', "videoID");
+
+        $this->addBehavior(new Timestampable(
+            array(
+                'beforeCreate' => array(
+                    'field' => 'uploadedAt',
+                    'format' => 'Y-m-d'
+                )
+            )
+        ));
+    }
+
+    public function notSave()
+    {
+        //Obtain the flash service from the DI container
+        $flash = $this->getDI()->getFlash();
+
+        //Show validation messages
+        foreach ($this->getMessages() as $message) {
+            $flash->error($message);
+        }
     }
 
 }

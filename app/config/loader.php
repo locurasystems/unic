@@ -11,7 +11,7 @@ $loader = new \Phalcon\Loader();
 // 		$config->application->libraryDir
 //     )
 // );
-		
+
 $loader->registerNamespaces(array(
     'Unic\Models'           => $config->application->modelsDir,
     'Unic\Controllers'      => $config->application->controllersDir,
@@ -19,7 +19,11 @@ $loader->registerNamespaces(array(
     'Aws'                   =>$config->application->libraryDir.'Aws',
     'Guzzle'                =>$config->application->libraryDir.'Guzzle',
     'Symfony'               =>$config->application->libraryDir.'symfony',
-    'PHPVideoToolkit'       =>$config->application->libraryDir.'PHPVideoToolkit'
+    'PHPVideoToolkit'       =>$config->application->libraryDir.'PHPVideoToolkit',
+    'Database'              =>$config->application->libraryDir.'Database',
+    'facebook'              =>$config->application->libraryDir.'facebook',
+    'Google'                =>$config->application->libraryDir.'Google',
+
 
 ));
 

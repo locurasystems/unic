@@ -1,0 +1,26 @@
+<div class="row-fluid">
+    <div class="col-md-12">
+        <div class="page-title">
+            <h2><i class="color" style=""></i> Manage Course Category </h2>
+            <hr />
+        </div>
+    </div>
+</div>
+
+<div class="row-fluid" ng-controller="CourseCategoryCtrl">
+    <div class="col-md-12">
+        <form class="form-inline" action="" ng-init="list('all');" role="form">
+                <div class="form-group">
+                        <select name="" id="" ng-model="categoryId" class="form-control" ng-options="c.name for c in categories">
+                            <option value="">Choose Category</option>
+                        </select>
+                </div>
+
+                <div class="form-group">
+                        <input id="childCategory"  placeholder="Name of child category" class="form-control input-md" type="text" ng-model="categoryName">
+                </div>
+            <a class="btn btn-success" href="#" ng-click="addCategory(categoryId.id);">Add Category</a>
+        </form>
+
+    </div>
+</div>

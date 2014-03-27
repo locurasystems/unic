@@ -95,10 +95,10 @@
 	            </a>
 	        </div> <!-- END CAROUSAL -->
 			<?php $this->partial("partials/recomended_course"); ?>
-			
+
 		<?php $this->partial("partials/featured_course"); ?>
 	    </div> <!-- END MAIN -->
-		
-		
+
+
 	</div>
 

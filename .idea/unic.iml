@@ -4,22 +4,6 @@
     <content url="file://$MODULE_DIR$" />
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
-    <orderEntry type="module-library">
-      <library name="PHP">
-        <CLASSES>
-          <root url="file://$MODULE_DIR$/../phalcon-tools/ide/1.2.4/Phalcon" />
-        </CLASSES>
-        <SOURCES>
-          <root url="file://$MODULE_DIR$/../phalcon-tools/ide/1.2.4/Phalcon" />
-        </SOURCES>
-      </library>
-    </orderEntry>
-    <orderEntry type="module-library">
-      <library name="PHARS">
-        <CLASSES />
-        <SOURCES />
-      </library>
-    </orderEntry>
   </component>
 </module>
 

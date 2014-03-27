@@ -45,6 +45,11 @@ class Profiles extends Model
         ));
     }
 
+    /**
+     * Map existing database column name with given name
+     *
+     * @return array
+     */
     public function columnMap()
     {
         return array(

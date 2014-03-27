@@ -52,12 +52,10 @@ class Auth extends Component
             'name' => $user->username,
             'time'=>time(),
             'logged'=>'true',
+            'profile'=>'school'
         ));
 
-        if($user==true)
-        {
-            $user->first_name;
-        }
+
 
     }
 

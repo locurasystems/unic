@@ -2,19 +2,12 @@
 
 return new \Phalcon\Config(array(
     'database' => array(
-<<<<<<< HEAD
-        'adapter'     => 'Mysql',
-        'host'        => 'localhost',
-        'username'    => 'root',
-        'password'    => '',
-        'dbname'      => 'unic',
-=======
+
         'adapter' => 'Mysql',
         'host' => 'localhost',
         'username' => 'root',
-        'password' => 'zodiac',
+        'password' => '',
         'dbname' => 'unic',
->>>>>>> 484682b487b1bc396cfba5f631cfdd97539e179c
     ),
     'application' => array(
         'controllersDir' => __DIR__ . '/../../app/controllers/',
@@ -46,9 +39,4 @@ return new \Phalcon\Config(array(
 
 ));
 
-// 
-// 'error' => [
-//     'logger' => new \Phalcon\Logger\Adapter\File(__DIR__ . '/../../public/log/dev/a.log'),
-//     'controller' => 'error',
-//     'action' => 'index',
-// ]
+

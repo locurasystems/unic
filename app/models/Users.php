@@ -107,8 +107,17 @@ class Users extends \Phalcon\Mvc\Model
             'alias' => 'profile',
             'reusable' => true
         ));
+        $this->hasMany('id', 'Unic\Models\Course', 'creatorID', array(
+            'alias' => 'course',
+            'reusable' => true
+        ));
 
 
+    }
+
+    public function test()
+    {
+        return 'aaa';
     }
 
 }

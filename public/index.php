@@ -1,7 +1,7 @@
 <?php
 
 error_reporting(E_ALL);
-
+(new Phalcon\Debug)->listen();
 try {
 	date_default_timezone_set('America/Los_Angeles');
 

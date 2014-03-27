@@ -1,4 +1,5 @@
 <!DOCTYPE html>
+<html  xmlns:fb="http://www.facebook.com/2008/fbml">
 <head>
     <title>Welcome</title>
     <link rel="stylesheet" href="../css/fuelux.min.css">
@@ -72,11 +73,22 @@
                         </div>
                         <div class="form-group last">
                             <div class="col-sm-offset-3 col-sm-9">
-                                <button type="submit" class="btn btn-success btn-sm">
+                                <button type="submit" class="btn btn-success">
                                     Sign in</button>
-                                <button type="reset" class="btn btn-default btn-sm">
-                                    Reset</button>
+
+                               </div>
+                            <br>
+                            <div class="col-sm-offset-3 col-sm-9">
+
+                                <a href="<?php echo $this->url->get('home/facebookLogin'); ?>" class="btn btn-facebook btn-primary"><i class="icon-facebook"></i> | Sign in with Facebook </a>
                             </div>
+                            <br>
+                            <div class="col-sm-offset-3 col-sm-9">
+
+                                <a href="<?php echo $this->url->get('home/googleLogin'); ?>" class="btn btn-danger btn-google-plus btn-primary"><i class="icon-google-plus"></i> | Sign in with Google </a>
+                            </div>
+
+
                         </div>
                     </form>
                 </div>
@@ -90,3 +102,4 @@
 
 
 </body>
+</html>

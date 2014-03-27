@@ -50,13 +50,18 @@ class CourseSpec extends Model
     public function columnMap()
     {
         return array(
-            'cspec_id' => 'cspec_id', 
-            'courseDescription' => 'courseDescription', 
-            'courseAbout' => 'courseAbout', 
-            'courseInstructors' => 'courseInstructors', 
-            'courseLength' => 'courseLength', 
-            'courseEffort' => 'courseEffort'
+            'cspec_id' => 'specID',
+            'courseDescription' => 'description',
+            'courseAbout' => 'about',
+            'courseInstructors' => 'instructors',
+            'courseLength' => 'length',
+            'courseEffort' => 'effort'
         );
+    }
+
+    public function initialize()
+    {
+        $this->belongsTo("specID",'Unic\Models\Course','id');
     }
     public function getCourseDetail()
     {

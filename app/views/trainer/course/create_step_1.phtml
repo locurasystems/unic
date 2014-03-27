@@ -1,0 +1,81 @@
+<style type="text/css">
+
+
+    .animate-show {
+        -webkit-transition:all linear 0.5s;
+        transition:all linear 0.5s;
+        line-height:20px;
+        opacity:1;
+        padding:10px;
+        border:1px solid black;
+    }
+
+    .animate-show.ng-hide-add,
+    .animate-show.ng-hide-remove {
+        display:block!important;
+    }
+
+    .animate-show.ng-hide {
+        line-height:0;
+        opacity:0;
+        padding:0 10px;
+    }
+
+    .check-element {
+        padding:10px;
+        border:1px solid black;
+        background:white;
+    }
+
+
+</style>
+<div class="row-fluid">
+    <div class="col-md-12 col-sm-12">
+        <!--Page Title-->
+        <div class="page-title">
+            <h2><i class="color" style=""></i>Create Courses</h2>
+            <hr />
+        </div>
+        <!-- /Page title -->
+
+    </div>
+</div>
+
+<div class="row-fluid" ng-app="unic-trainer">
+    <div class="col-md-10" ng-controller="CourseCtrl">
+        <form class="from-horizontal" action=""  ng-submit="create('/course/save/1');">
+            <div class="form-group">
+                <label class="col-md-2" for="">Course Name</label>
+                <input type="text" class="form-control input-sm" ng-model="form.name" ng-required="true"/>
+            </div>
+            <div class="form-group">
+                <label  class="col-md-2" for="">Course Code</label>
+                <input type="text" class="form-control input-sm" ng-model="form.code" ng-required="true"/>
+            </div>
+            <div class="form-group">
+                <label  class="col-md-2" for="">Course Price</label>
+                <input type="text" class="form-control input-sm" ng-model="form.price"/>
+            </div>
+
+            <div class="form-group" ng-init="getLeafs();" ng-controller="CourseCategoryCtrl">
+                <label  class="col-md-2" for="">Select Category</label>
+                <select ng-model="form.category" ng-required="true">
+                    <option  ng-repeat="c in leafs" ng-value="[[c.id]]">[[c.name]]</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <input class="btn btn-success" type="submit" value="Save & Next"/>
+            </div>
+        </form>
+
+        <div class="alert alert-success animate-show" ng-show="courseID">
+            The course has been successfuly created.Click
+            <a class="alert-link" href="<?php echo $this->url->get('dashboard/createCourseDescription/');?>[[courseID]]">Here</a> to add description.
+        </div>
+    </div>
+</div>
+
+<p>ewdw</p>
+
+<script src="<?php echo $this->url->get('public/js/trainer/trainer-app.js');?>"></script>
+<script src="<?php echo $this->url->get('public/js/trainer/controller.js');?>"></script>

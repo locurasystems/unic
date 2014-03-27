@@ -1,6 +1,6 @@
 <?php
 namespace Unic\Models;
-
+use Phalcon\Mvc\Model as DB;
 class Course extends \Phalcon\Mvc\Model
 {
 
@@ -9,54 +9,58 @@ class Course extends \Phalcon\Mvc\Model
      * @var integer
      */
     public $c_id;
-
     /**
      *
      * @var string
      */
     public $courseName;
-
     /**
      *
      * @var integer
      */
-    public $courseSchoolId;
-
+    public $courseCreatorId;
     /**
      *
      * @var string
      */
     public $courseCode;
-
     /**
      *
      * @var integer
      */
     public $coursePage;
-
     /**
      *
      * @var integer
      */
     public $coursePrice;
-
     /**
      *
      * @var integer
      */
     public $courseIsActive;
-
     /**
      *
      * @var string
      */
     public $courseCreatedAt;
-
     /**
      *
      * @var string
      */
     public $courseStartAt;
+
+    private static $percentageColumn = array(
+        'code'        => '5',
+        'page'        => '5',
+        'price'       => '5',
+        'startAt'     => '5',
+        'description' => '5',
+        'about'       => '5',
+        'instructors' => '5',
+        'length'      => '5',
+        'effort'      => '5'
+    );
 
     /**
      * @return Course[]
@@ -78,15 +82,18 @@ class Course extends \Phalcon\Mvc\Model
     {
         return $this->c_id;
     }
+
     /**
-     * Independent Column Mapping.
+     * Map existing database column name with given name
+     *
+     * @return array
      */
     public function columnMap()
     {
         return array(
-            'c_id' => 'c_id',
+            'c_id' => 'id',
             'courseName' => 'name',
-            'courseSchoolId' => 'schoolId',
+            'courseCreatorId' => 'creatorID',
             'courseCode' => 'code',
             'coursePage' => 'page',
             'coursePrice' => 'price',
@@ -95,5 +102,42 @@ class Course extends \Phalcon\Mvc\Model
             'courseStartAt' => 'startAt'
         );
     }
+
+    public function initialize()
+    {
+        $this->hasMany("id",'Unic\Models\CourseVideos', "courseID");
+
+        $this->hasOne('id', 'Unic\Models\CourseSpec', 'specID',array(
+            'alias'=>'Spec',
+            'reusable'=>true
+        ));
+    }
+
+    public static function percentageComplete($course_id)
+    {
+        $percentage=0;
+        $course=Course::findFirst($course_id);
+        $spec=$course->Spec;
+        $spec=$spec->toArray();
+        $course=$course->toArray();
+        foreach(self::$percentageColumn as $key=>$value)
+        {
+            if(isset($spec[$key]))
+            {
+                $percentage = self::$percentageColumn[$key] +$percentage;
+            };
+        }
+
+        foreach(self::$percentageColumn as $key=>$value)
+        {
+            if(isset($course[$key]))
+            {
+                $percentage = self::$percentageColumn[$key] +$percentage;
+            };
+        }
+
+        return $percentage;
+    }
+
 
 }

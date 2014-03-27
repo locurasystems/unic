@@ -1,10 +1,10 @@
 <!DOCTYPE html>
+<html >
 <head>
     <title>Welcome</title>
 
   <link href='http://fonts.googleapis.com/css?family=Open+Sans+Condensed:300' rel='stylesheet' type='text/css'>
   <link href='http://fonts.googleapis.com/css?family=Open+Sans:400italic,400,600italic,600' rel='stylesheet' type='text/css'>
-
 
   <!-- Styles -->
 
